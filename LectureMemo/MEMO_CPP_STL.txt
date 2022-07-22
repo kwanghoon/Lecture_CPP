@@ -1,0 +1,226 @@
+
+STL
+
+http://en.cppreference.com/w/Main_Page
+
+
+1. 컨테이너 (vector, list, stack, queue, set, ...)의 이터레이터 (iterator)
+
+   컨테이너.begin()과 컨테이너.end()
+
+   이터레이터++
+   *이터레이터
+
+
+   #include <vector>
+   using namespace std;
+
+   vector<int> container;
+   vector<int>::iterator p;
+
+   for(int i=1; i<=4; i++) container.push_back(i);
+
+   for(p = container.begin(); p != container.end(); p++) {
+     cout << *p << " ";
+     *p = 0;
+     cout << *p << " ";
+   }
+   cout << endl;
+
+
+ - 각 컨테이너는 서로 다른 종류의 이터레이터를 제공
+
+  (1) 단방향 (forward iterarors)
+     p++
+
+  (2) 양방향 (bidirectional iterators)
+     p++, p--
+
+  (3) 임의접근 (random-access iterators)
+     p++, p--, p[2], *(p+2)
+     (cf. container[2] vs. p[2])
+
+        p = container.begin();
+	cout << container[2] << endl; // 3번째 요소
+	cout << p[2] << endl; // 3번째 요소
+	cout << *(p + 2) << endl; // 3번째 요소
+	p++;
+	p++;
+	cout << *p << endl; // 3번째 요소
+	p--; 
+	cout << *p << endl; // 2번째 요소
+
+  (4) 읽기만 되는 (read-only iterators)
+     *p = ...; 를 허용하지 않음
+
+	vector<int>::const_iterator q;
+	for (q = container.begin(); q != container.end(); q++)
+		cout << *q << " ";
+	cout << endl;
+
+	q = container.begin();
+	*q = 0;  // 컴파일 에러
+   
+  (5) 읽고 쓸 수 있는 (mutable iterators)
+
+  (6) 역방향 (reverse iterators)
+
+	vector<int>::reverse_iterator rp;
+	for (rp = container.rbegin(); rp != container.rend(); rp++)
+		cout << *rp << " ";
+	cout << endl;
+
+
+        // 역방향 이터레이터로 오인하는 예제
+        for(p = container.end(); p != container.begin(); p--)
+          ...
+
+
+2. 컨테이너
+
+ - 순차 컨테이너(sequential containers)
+    : 순서대로 원소들을 나열해서 저장하는 컨테이너
+
+     list, vector, deque
+
+
+        #include <list>
+        #include <algorithm>
+        using namespace std;
+
+	list<int> l = { 7, 5, 16, 8 };
+	l.push_front(25);
+	l.push_back(13);
+
+	auto it = find(l.begin(), l.end(), 16);
+	if (it != l.end())
+		l.insert(it, 42);
+
+	for (int n : l)
+		cout << n << " ";
+	cout << endl;
+
+
+
+ - 컨테이너 어댑터(container adapters)
+    : 다른 컨테이너를 사용해서 만든 응용 컨테이너
+      (예: stack<int> 스택 컨테이너는 데큐 컨테이너를 디폴트로 사용
+           stack<int, vector<int> > 스택 컨테이너는 벡터 컨테이너를 사용)
+
+     stack, queue, priority_queue
+
+
+        #include <stack>
+        using namespace std;
+
+        stach<char> s;
+        char next;
+        cin.get(next);
+        while (next != '\n') {
+           s.push(next);
+           cin.get(next);
+        }
+
+        while ( !s.empty() ) {
+           cout << s.top();
+           s.pop();
+        }
+        cout << endl;
+
+ - 연합 컨테이너(associative containers)
+     : 키와 값의 쌍으로 이루어진 구조
+
+     set, map
+
+     (set 템플릿은 키와 값이 동일하게 취급하는 간단한 형태의 연합 컨테이너)
+
+
+
+     #include <set>
+     using namespace std;
+
+     set<char> s;
+
+     s.insert('A');
+     s.insert('D');
+     s.insert('D');  // 이미 집합에 포함된 원소는 새로 추가하지 않음
+     s.insert('C');
+     s.insert('C');  // 이미 집합에 포함된 원소는 새로 추가하지 않음
+     s.insert('B');
+     
+     set<char>::const_iterator;
+     for(p = s.begin(); p != s.end(); p++)
+        cout << *p << " ";
+     cout << endl;
+
+     if( s.find('C') == s.end() )
+           cout << "Not found..." << endl;
+     else
+           cout << "Found..." << endl;
+
+     s.erase('C');
+
+
+
+     #include<map>
+     using namespace std;
+
+     map<string,string> planets;
+     planets["Mercury"] = "Hot planet";  // 수성
+     planets["Venus"] = "Atmosphere of sulfuric acid";  // 금성
+     planets["Earth"] = "Home"; // 지구
+     planets["Mars"] = "Alien planet"; // 화성
+     planets["Jupiter"] = "largest planet in our solar system"; // 목성
+     planets["Saturn"] = "Has rings"; // 토성
+     planets["Uranus"] = "Tilts on its side";  // 천왕성
+     planets["Neptune"] = "1500 mile-per-hour winds"; // 해왕성
+     planets["Pluto"] = "Dwarf planet"; // 명왕성
+
+     cout << planets["Mercury"] << endl;
+     if (planets.find("Mercury") != planets.end())
+     	cout << "Mercury is in the map." << endl;
+
+             // map은 키를 기준으로 정렬하므로
+             // Earth, Jupiter, Mars, ... 순서로 출력됨
+
+     map<string, string>::const_iterator iter;
+     for (iter = planets.begin(); iter != planets.end(); iter++)
+     	cout << iter->first << " - " << iter->second << endl;     
+
+             // map템플릿은 pair템플릿을 이용하여 원소를 저장
+             // pair 템플릿은 쌍을 나타나는 클래스를 만들어내고
+             //   first,second가 각각의 원소를 저장하는 멤버변수이다.
+
+
+
+3. (제네릭) 알고리즘
+
+ 내용을 읽는 알고리즘
+
+  - find
+  - count
+  - equal
+  - search
+  - binary_search
+
+
+ 내용을 변경할 수 있는 알고리즘
+
+  - copy
+  - remove
+  - reverse
+  - random_shuffle
+
+
+ 집합 알고리즘
+  - includes
+  - set_union
+  - set_intersection
+  - set_difference
+
+
+ 정렬 알고리즘
+  - sort
+  - merge
+
+

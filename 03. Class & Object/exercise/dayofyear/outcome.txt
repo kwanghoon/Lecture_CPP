@@ -1,0 +1,15 @@
+DayOfYear (2,3) is called.
+DayOfYear (6,1) is called.
+DayOfYear(6) is called
+DayOfYear (1,1) is called.
+DayOfYear() is called
+Initialized dates :
+month : 2,day:3
+
+month : 6,day:1
+
+month : 1,day:1
+
+~DayOfYear() is called
+~DayOfYear() is called
+~DayOfYear() is called

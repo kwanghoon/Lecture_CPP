@@ -1,0 +1,35 @@
+problems but
+I can promise
+you won't have
+to face them alone.
+^Z
+Total : 19words
+A : **
+B : *
+C : **
+D :
+E :
+F : **
+G :
+H : *
+I : **
+J :
+K :
+L :
+M :
+N :
+O :
+P : ***
+Q :
+R :
+S :
+T : ***
+U :
+V :
+W : *
+X :
+Y : **
+Z :
+
+C:\Users\Student\Desktop\new for ++c\Project3\Debug\Project3.exe(5264 프로세스)이(가) 0 코드로 인해 종료되었습니다.
+이 창을 닫으려면 아무 키나 누르세요.
