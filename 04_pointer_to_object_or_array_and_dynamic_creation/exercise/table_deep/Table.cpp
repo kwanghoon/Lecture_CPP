@@ -11,7 +11,7 @@ Table::Table(int n) {
 	size = n;
 }
 Table::Table(Table& tbl) {
-	cout << "Table 복사생성자 호출" << endl;
+	cout << "Table copy constructor is called" << endl;
 	// 1) 얕은 복사
 	// this->size = tbl.size;
 // 	this->table = tbl.table;

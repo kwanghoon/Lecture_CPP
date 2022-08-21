@@ -1,5 +1,7 @@
 #pragma once
+
 // Table.h
+
 class Table {
 	int size;
 	int* table;  // 포인터 변수
