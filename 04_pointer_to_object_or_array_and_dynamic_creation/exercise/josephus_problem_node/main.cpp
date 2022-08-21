@@ -14,7 +14,7 @@ void printCycle(Node* list) {
 }
 
 int main() {
-	cout << "아군의 숫자? ";
+	cout << "How many our forces? ";
 	int N;
 	cin >> N;
 
