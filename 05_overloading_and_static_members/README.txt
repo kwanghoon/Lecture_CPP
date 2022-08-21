@@ -1,23 +1,23 @@
-6Àå ¸Þ¸ð
+6ìž¥ ë©”ëª¨
 
 http://swlab.jnu.ac.kr/wordpress/2016/10/16/cpp-static-member/
 
  
 
-ÇÔ¼ö ¿À¹ö·Îµù
+í•¨ìˆ˜ ì˜¤ë²„ë¡œë”©
 
 http://swlab.jnu.ac.kr/wordpress/2016/10/16/cpp-overloading/
 
 
 =====
 
-[½Ç½À]
-- 3Àå ¸Þ¸ð Ã·ºÎ ÆÄÀÏ classExamples.pptÀÇ
+[ì‹¤ìŠµ]
+- 3ìž¥ ë©”ëª¨ ì²¨ë¶€ íŒŒì¼ classExamples.pptì˜
 
-   : GasPump Å¬·¡½º ¿¹Á¦
+   : GasPump í´ëž˜ìŠ¤ ì˜ˆì œ
 
-   => Á¤ÀûÀ¸·Î ¼±¾ðÇÏ±â¿¡ ÀûÀýÇÑ ¸â¹ö¿¡ staticÀ» »ç¿ëÇÏ¿© ¼öÁ¤ÇÏ½Ã¿À.
+   => ì •ì ìœ¼ë¡œ ì„ ì–¸í•˜ê¸°ì— ì ì ˆí•œ ë©¤ë²„ì— staticì„ ì‚¬ìš©í•˜ì—¬ ìˆ˜ì •í•˜ì‹œì˜¤.
 
-   => Á¤Àû ¸â¹ö º¯¼ö¸¦ ¸ðµÎ ÃÊ±âÈ­ ÇÏµµ·Ï ¼öÁ¤ÇÏ½Ã¿À.
+   => ì •ì  ë©¤ë²„ ë³€ìˆ˜ë¥¼ ëª¨ë‘ ì´ˆê¸°í™” í•˜ë„ë¡ ìˆ˜ì •í•˜ì‹œì˜¤.
 
 

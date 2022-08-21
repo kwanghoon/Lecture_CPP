@@ -1,7 +1,7 @@
 
-15Àå. ´ÙÇü¼º°ú °¡»ó ÇÔ¼ö
+15ìž¥. ë‹¤í˜•ì„±ê³¼ ê°€ìƒ í•¨ìˆ˜
 
-µ¿±â
+ë™ê¸°
   - void print(Employee& e) {
          e.printCheck();
     }
@@ -13,28 +13,28 @@
     print( he );  // b)
 
 
-    a)ÀÇ °æ¿ì SalariedEmployee::printCheck()À»
-    b)ÀÇ °æ¿ì SalariedEmployee::printCheck()À» È£ÃâÇØ¾ß ÇÏÁö¸¸,
+    a)ì˜ ê²½ìš° SalariedEmployee::printCheck()ì„
+    b)ì˜ ê²½ìš° SalariedEmployee::printCheck()ì„ í˜¸ì¶œí•´ì•¼ í•˜ì§€ë§Œ,
 
-    a)¿Í b) ¸ðµÎ Employee::printCheck()À» È£ÃâÇÑ´Ù.
-    (»çÀü ¹ÙÀÎµù)
+    a)ì™€ b) ëª¨ë‘ Employee::printCheck()ì„ í˜¸ì¶œí•œë‹¤.
+    (ì‚¬ì „ ë°”ì¸ë”©)
 
-  - »çÀü ¹ÙÀÎµùÀ¸·Î ±¸ÇöÇÒ ¼ö ¹Û¿¡ ¾ø¾ú´ø ÀÌÀ¯´Â
-    printCheckÀÇ È£Ãâ °´Ã¼·Î ½ÇÁ¦ ¹«¾ùÀÌ e·Î µé¾î¿ÃÁö ¸ð¸£±â ¶§¹®¿¡
-    ¼±¾ðµÈ Å¬·¡½º¿¡ ÀÖ´Â printCheckÀ» È£ÃâÇÏ´Â °ÍÀÌ ÃÖ»óÀÇ ¹æ¹ýÀÌ¾ú´Ù.
+  - ì‚¬ì „ ë°”ì¸ë”©ìœ¼ë¡œ êµ¬í˜„í•  ìˆ˜ ë°–ì— ì—†ì—ˆë˜ ì´ìœ ëŠ”
+    printCheckì˜ í˜¸ì¶œ ê°ì²´ë¡œ ì‹¤ì œ ë¬´ì—‡ì´ eë¡œ ë“¤ì–´ì˜¬ì§€ ëª¨ë¥´ê¸° ë•Œë¬¸ì—
+    ì„ ì–¸ëœ í´ëž˜ìŠ¤ì— ìžˆëŠ” printCheckì„ í˜¸ì¶œí•˜ëŠ” ê²ƒì´ ìµœìƒì˜ ë°©ë²•ì´ì—ˆë‹¤.
 
-    ±×·³¿¡µµ ºÒ±¸ÇÏ°í, À§ÀÇ ¿¹¿¡¼­ ¾Ë ¼ö ÀÖµíÀÌ, ÀÌ ¹æ¹ý¸¸À¸·Î ÃæºÐÇÏÁö ¾Ê´Ù.
+    ê·¸ëŸ¼ì—ë„ ë¶ˆêµ¬í•˜ê³ , ìœ„ì˜ ì˜ˆì—ì„œ ì•Œ ìˆ˜ ìžˆë“¯ì´, ì´ ë°©ë²•ë§Œìœ¼ë¡œ ì¶©ë¶„í•˜ì§€ ì•Šë‹¤.
 
 
 
-°¡»ó ÇÔ¼ö
-  - virtual Å°¿öµå¸¦ ºÙÀÎ ¸â¹ö ÇÔ¼ö
+ê°€ìƒ í•¨ìˆ˜
+  - virtual í‚¤ì›Œë“œë¥¼ ë¶™ì¸ ë©¤ë²„ í•¨ìˆ˜
 
-´ÙÇü¼º
-  - ±â¹Ý Å¬·¡½º¿¡ Á¤ÀÇÇÑ °¡»ó ÇÔ¼ö¸¦ ÆÄ»ý Å¬·¡½º¿¡¼­ ¿À¹ö¶óÀÌµù(Overriding)ÇÏ¸é
-  - ±â¹Ý Å¬·¡½ºÀÇ °¡»ó ÇÔ¼ö¸¦ È£ÃâÇÏ´Â ÄÚµå¿¡¼­
-       1) ±â¹Ý Å¬·¡½ºÀÇ °¡»ó ÇÔ¼ö°¡ È£ÃâµÉ ¼öµµ ÀÖ°í
-       2) ÆÄ»ý Å¬·¡½º¿¡¼­ ¿À¹ö¶óÀÌµùÇÑ(ÀçÁ¤ÀÇÇÑ)  ÇÔ¼ö°¡ È£ÃâµÉ ¼öµµ ÀÖ´Ù.
+ë‹¤í˜•ì„±
+  - ê¸°ë°˜ í´ëž˜ìŠ¤ì— ì •ì˜í•œ ê°€ìƒ í•¨ìˆ˜ë¥¼ íŒŒìƒ í´ëž˜ìŠ¤ì—ì„œ ì˜¤ë²„ë¼ì´ë”©(Overriding)í•˜ë©´
+  - ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ê°€ìƒ í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•˜ëŠ” ì½”ë“œì—ì„œ
+       1) ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ê°€ìƒ í•¨ìˆ˜ê°€ í˜¸ì¶œë  ìˆ˜ë„ ìžˆê³ 
+       2) íŒŒìƒ í´ëž˜ìŠ¤ì—ì„œ ì˜¤ë²„ë¼ì´ë”©í•œ(ìž¬ì •ì˜í•œ)  í•¨ìˆ˜ê°€ í˜¸ì¶œë  ìˆ˜ë„ ìžˆë‹¤.
 
   - class A {
        virtual void f(); 
@@ -48,11 +48,11 @@
   (*)
     A obj_a;
 
-    obj_a.f();   // 1) ¹øÀÇ °æ¿ì
+    obj_a.f();   // 1) ë²ˆì˜ ê²½ìš°
 
   (**)
     A* p_a = new B();
-    p_a -> f();   // 2¹øÀÇ °æ¿ì
+    p_a -> f();   // 2ë²ˆì˜ ê²½ìš°
 
   (***)
    B obj_b;
@@ -61,46 +61,46 @@
 
     int g (A& obj_a) {
 
-       obj_a . f();   // 2¹øÀÇ °æ¿ì
+       obj_a . f();   // 2ë²ˆì˜ ê²½ìš°
 
     }
 
 
- (*), (**), (***) ¸ðµÎ A Å¬·¡½ºÀÇ ¸â¹ö ÇÔ¼ö f¸¦ È£ÃâÇÏÁö¸¸
- (*)¿¡¼­´Â AÅ¬·¡½ºÀÇ f¸¦ , (**)°ú (***)¿¡¼­´Â B Å¬·¡½ºÀÇ f¸¦ È£ÃâÇÔ.
+ (*), (**), (***) ëª¨ë‘ A í´ëž˜ìŠ¤ì˜ ë©¤ë²„ í•¨ìˆ˜ fë¥¼ í˜¸ì¶œí•˜ì§€ë§Œ
+ (*)ì—ì„œëŠ” Aí´ëž˜ìŠ¤ì˜ fë¥¼ , (**)ê³¼ (***)ì—ì„œëŠ” B í´ëž˜ìŠ¤ì˜ fë¥¼ í˜¸ì¶œí•¨.
 
- ´ÙÇü¼º!   <= È£Ãâ°´Ã¼¿¡ µû¶ó ´Ù¸¥ Å¬·¡½ºÀÇ f¸¦ ¼±ÅÃÇØ¼­ È£ÃâÇÔ.
+ ë‹¤í˜•ì„±!   <= í˜¸ì¶œê°ì²´ì— ë”°ë¼ ë‹¤ë¥¸ í´ëž˜ìŠ¤ì˜ fë¥¼ ì„ íƒí•´ì„œ í˜¸ì¶œí•¨.
 
 
 
-´ÙÇü¼ºÀÌ ¿Ö À¯¿ëÇÑ°¡?
+ë‹¤í˜•ì„±ì´ ì™œ ìœ ìš©í•œê°€?
 
-  -  Sale Å¬·¡½º¿¡¼­ savings¿Í °°Àº ¸Þ¼Òµå¸¦ Á¤ÀÇÇÒ ¼ö ÀÖ´Ù!
+  -  Sale í´ëž˜ìŠ¤ì—ì„œ savingsì™€ ê°™ì€ ë©”ì†Œë“œë¥¼ ì •ì˜í•  ìˆ˜ ìžˆë‹¤!
   -   virtual double bill() const { ... }
       double Sale::savings(const Sale& other) const {
            return bill() - other.bill();
      }
 
-     ¸¸ÀÏ bill ¸â¹ö ÇÔ¼ö°¡ virtualÀÌ ¾Æ´Ï¸é savings ¸â¹ö ÇÔ¼ö´Â ¾µ¸ð ¾ø´Ù.
-     ¿Ö³ÄÇÏ¸é ==>  ½½¶óÀÌµå 5 
+     ë§Œì¼ bill ë©¤ë²„ í•¨ìˆ˜ê°€ virtualì´ ì•„ë‹ˆë©´ savings ë©¤ë²„ í•¨ìˆ˜ëŠ” ì“¸ëª¨ ì—†ë‹¤.
+     ì™œëƒí•˜ë©´ ==>  ìŠ¬ë¼ì´ë“œ 5 
 
-´ÙÇü¼º°ú °¡»óÇÔ¼ö¸¦ »ç¿ëÇØ¼­ Á¤ÀÇÇÏ´Â ÇÁ·Î±×·¥ ¿¹Á¦
-  - Sale Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º·Î ¸¸µç ÇÁ·Î±×·¥ (º»¹® ¿¹Á¦)
-  - Figure Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º·Î ¸¸µç ÇÁ·Î±×·¥ (ÇÁ·Î±×·¡¹Ö ÇÁ·ÎÁ§Æ® 2¹ø)
-  - Player Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º·Î ¸¸µç ÇÁ·Î±×·¥ (ÇÁ·Î±×·¡¹Ö ÇÁ·ÎÁ§Æ® 5¹ø)
-  - Creature Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º·Î ¸¸µç ÇÁ·Î±×·¥ (ÇÁ·Î±×·¡¹Ö ÇÁ·ÎÁ§Æ® 4¹ø)
+ë‹¤í˜•ì„±ê³¼ ê°€ìƒí•¨ìˆ˜ë¥¼ ì‚¬ìš©í•´ì„œ ì •ì˜í•˜ëŠ” í”„ë¡œê·¸ëž¨ ì˜ˆì œ
+  - Sale í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ë¡œ ë§Œë“  í”„ë¡œê·¸ëž¨ (ë³¸ë¬¸ ì˜ˆì œ)
+  - Figure í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ë¡œ ë§Œë“  í”„ë¡œê·¸ëž¨ (í”„ë¡œê·¸ëž˜ë° í”„ë¡œì íŠ¸ 2ë²ˆ)
+  - Player í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ë¡œ ë§Œë“  í”„ë¡œê·¸ëž¨ (í”„ë¡œê·¸ëž˜ë° í”„ë¡œì íŠ¸ 5ë²ˆ)
+  - Creature í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ë¡œ ë§Œë“  í”„ë¡œê·¸ëž¨ (í”„ë¡œê·¸ëž˜ë° í”„ë¡œì íŠ¸ 4ë²ˆ)
 
 
 ============================================================================================
-                                                1)  virtual·Î ¼±¾ðÇÑ ÇÔ¼ö   2) virtual ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¿© ´ÙÇü¼ºÀÇ ÀåÁ¡À» È°¿ëÇÑ ÇÔ¼ö
+                                                1)  virtualë¡œ ì„ ì–¸í•œ í•¨ìˆ˜   2) virtual í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ë‹¤í˜•ì„±ì˜ ìž¥ì ì„ í™œìš©í•œ í•¨ìˆ˜
 ============================================================================================
-Sale Å¬·¡½º ÇÁ·Î±×·¥               bill()                                     savings(Sale&, Sale&),  operator<(Sale& Sale&)
-Figure Å¬·¡½º ÇÁ·Î±×·¥           draw()                                  center(Figure&)
-Player  Å¬·¡½º ÇÁ·Î±×·¥          getGuess()                          play(Player&, Player&)
-Creature Å¬·¡½º ÇÁ·Î±×·¥       getDamage()                       battleArena(Creature&, Creature&)
+Sale í´ëž˜ìŠ¤ í”„ë¡œê·¸ëž¨               bill()                                     savings(Sale&, Sale&),  operator<(Sale& Sale&)
+Figure í´ëž˜ìŠ¤ í”„ë¡œê·¸ëž¨           draw()                                  center(Figure&)
+Player  í´ëž˜ìŠ¤ í”„ë¡œê·¸ëž¨          getGuess()                          play(Player&, Player&)
+Creature í´ëž˜ìŠ¤ í”„ë¡œê·¸ëž¨       getDamage()                       battleArena(Creature&, Creature&)
 ============================================================================================
 
-Q. Figure, Rectangle, Circle, Triangle ¿¹Á¦
+Q. Figure, Rectangle, Circle, Triangle ì˜ˆì œ
 
 class Figure {
     protected:
@@ -135,47 +135,47 @@ void Triangle::draw() {
 int main() {
      Triangle t;
 
-      t.center();          // »ï°¢ÇüÀ» È­¸é Áß¾ÓÀ¸·Î ¿Å°Ü ±×¸®±â
+      t.center();          // ì‚¼ê°í˜•ì„ í™”ë©´ ì¤‘ì•™ìœ¼ë¡œ ì˜®ê²¨ ê·¸ë¦¬ê¸°
 }
 
-t.center()¸¦ È£Ãâ
--> Figure::center() È£Ãâ
--> this->draw() È£Ãâ
-    (ÀÌ¶§ this´Â tÀÇ ÁÖ¼Ò)
--> Triangle::draw() È£Ãâ
-    (draw´Â °¡»óÇÔ¼öÀÌ¹Ç·Î tÀÇ ½ÇÁ¦ Å¸ÀÔ TriangleÀÇ draw¸¦ ¼±ÅÃÇØ¼­ È£Ãâ)
+t.center()ë¥¼ í˜¸ì¶œ
+-> Figure::center() í˜¸ì¶œ
+-> this->draw() í˜¸ì¶œ
+    (ì´ë•Œ thisëŠ” tì˜ ì£¼ì†Œ)
+-> Triangle::draw() í˜¸ì¶œ
+    (drawëŠ” ê°€ìƒí•¨ìˆ˜ì´ë¯€ë¡œ tì˜ ì‹¤ì œ íƒ€ìž… Triangleì˜ drawë¥¼ ì„ íƒí•´ì„œ í˜¸ì¶œ)
 
 
 
 ---
-½½¶óÀÌ½º ¹®Á¦
+ìŠ¬ë¼ì´ìŠ¤ ë¬¸ì œ
 
-1) Pet, Dog Å¬·¡½º
+1) Pet, Dog í´ëž˜ìŠ¤
 
     Pet value_pet;
     Dog value_dog;
 
     ...
 
-    value_pet = value_dog;   // Dog Å¬·¡½ºÀÇ breed´Â º¹»çµÇÁö ¾Ê´Â´Ù.
-    // value_pet°ú value_dog´Â ¼­·Î ´Ù¸¥ °´Ã¼
+    value_pet = value_dog;   // Dog í´ëž˜ìŠ¤ì˜ breedëŠ” ë³µì‚¬ë˜ì§€ ì•ŠëŠ”ë‹¤.
+    // value_petê³¼ value_dogëŠ” ì„œë¡œ ë‹¤ë¥¸ ê°ì²´
 
-    value_pet.print();   // °¡»ó ÇÔ¼ö print()´Â Pet Å¬·¡½ºÀÇ print()¸¦ È£Ãâ.
+    value_pet.print();   // ê°€ìƒ í•¨ìˆ˜ print()ëŠ” Pet í´ëž˜ìŠ¤ì˜ print()ë¥¼ í˜¸ì¶œ.
 
     Pet* ppet;
     Dog* pdog;
 
     ppet = new Dog;   
-    ppet->print();  // (*ppet).print() ¿Í µ¿ÀÏ. 
-                            // Dog Å¬·¡½ºÀÇ print()¸¦ È£Ãâ.
-                            // ¿Ö? ºñ·Ï *ppetÀÇ ¼±¾ðµÈ Å¬·¡½º´Â PetÀÌÁö¸¸
-                            //                  ½ÇÁ¦ °´Ã¼ÀÇ Å¬·¡½º´Â Dog!
+    ppet->print();  // (*ppet).print() ì™€ ë™ì¼. 
+                            // Dog í´ëž˜ìŠ¤ì˜ print()ë¥¼ í˜¸ì¶œ.
+                            // ì™œ? ë¹„ë¡ *ppetì˜ ì„ ì–¸ëœ í´ëž˜ìŠ¤ëŠ” Petì´ì§€ë§Œ
+                            //                  ì‹¤ì œ ê°ì²´ì˜ í´ëž˜ìŠ¤ëŠ” Dog!
     pdog = dynamic_cast<Pet*>(ppet);
 
-2) Sale, DiscountSale Å¬·¡½º
+2) Sale, DiscountSale í´ëž˜ìŠ¤
 
 
-    double Sale::savings(const Sale other) {    // otherÀÇ Å¸ÀÔÀÌ SaleÀÓ. Sale&°¡ ¾Æ´Ô!
+    double Sale::savings(const Sale other) {    // otherì˜ íƒ€ìž…ì´ Saleìž„. Sale&ê°€ ì•„ë‹˜!
          return this->bill() - other.bill();
     }
 
@@ -183,56 +183,56 @@ t.center()¸¦ È£Ãâ
     Sale s;
     DiscountSale d;
 
-    s.savings( d );   // other = d; ¿Í °°Àº ÄÚµå¸¦ Sale Å¬·¡½ºÀÇ º¹»ç »ý¼ºÀÚ¿¡ ÀÇÇØ ½ÇÇàÇÔ
-                               // ½½¶óÀÌ½º ¹®Á¦ ¹ß»ý
-                               // ¿Ö³ÄÇÏ¸é s´Â price ¸â¹öº¯¼ö¸¸À» °¡Áö°í ÀÖ°í
-                               //          d´Â price¿Í discount ¸â¹ö º¯¼ö¸¦ °¡Áö°í ÀÖ±â ¶§¹®¿¡
-                               //          price´Â º¹»çµÇÁö¸¸ discount´Â º¹»çµÇÁö ¾Ê´Â´Ù.
-                               // ÀÌ¶§ , other.bill()Àº Ç×»ó Sale Å¬·¡½ºÀÇ bill
+    s.savings( d );   // other = d; ì™€ ê°™ì€ ì½”ë“œë¥¼ Sale í´ëž˜ìŠ¤ì˜ ë³µì‚¬ ìƒì„±ìžì— ì˜í•´ ì‹¤í–‰í•¨
+                               // ìŠ¬ë¼ì´ìŠ¤ ë¬¸ì œ ë°œìƒ
+                               // ì™œëƒí•˜ë©´ sëŠ” price ë©¤ë²„ë³€ìˆ˜ë§Œì„ ê°€ì§€ê³  ìžˆê³ 
+                               //          dëŠ” priceì™€ discount ë©¤ë²„ ë³€ìˆ˜ë¥¼ ê°€ì§€ê³  ìžˆê¸° ë•Œë¬¸ì—
+                               //          priceëŠ” ë³µì‚¬ë˜ì§€ë§Œ discountëŠ” ë³µì‚¬ë˜ì§€ ì•ŠëŠ”ë‹¤.
+                               // ì´ë•Œ , other.bill()ì€ í•­ìƒ Sale í´ëž˜ìŠ¤ì˜ bill
 
  
 
 
-°¡»ó ÇÔ¼ö¸¦ »ç¿ëÇÏ±â À§ÇØ virtual Å°¿öµå¸¦ ºÙÀÌ´Â °Í »Ó¸¸ ¾Æ´Ï¶ó 
-½½¶óÀÌ½º ¹®Á¦°¡ »ý±âÁö ¾Êµµ·Ï ÁÖÀÇÇØ¾ß ÇÑ´Ù. ±×·¸Áö ¾ÊÀ¸¸é,
-Á¦ÇÑÀûÀÎ ´ÙÇü¼º¸¸À» ¾òÀ» ¼ö ÀÖ´Ù.
+ê°€ìƒ í•¨ìˆ˜ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ virtual í‚¤ì›Œë“œë¥¼ ë¶™ì´ëŠ” ê²ƒ ë¿ë§Œ ì•„ë‹ˆë¼ 
+ìŠ¬ë¼ì´ìŠ¤ ë¬¸ì œê°€ ìƒê¸°ì§€ ì•Šë„ë¡ ì£¼ì˜í•´ì•¼ í•œë‹¤. ê·¸ë ‡ì§€ ì•Šìœ¼ë©´,
+ì œí•œì ì¸ ë‹¤í˜•ì„±ë§Œì„ ì–»ì„ ìˆ˜ ìžˆë‹¤.
 
 
 ---
 
-¾÷Ä³½ºÆÃ (Up casting)
-   - »ó¼Ó°ü°è¿¡ ÀÇÇÑ Çü È£È¯¼º
+ì—…ìºìŠ¤íŒ… (Up casting)
+   - ìƒì†ê´€ê³„ì— ì˜í•œ í˜• í˜¸í™˜ì„±
    - static_cast<...> ( ... )
 
 
-´Ù¿îÄ³½ºÆÃ (Down casting)
+ë‹¤ìš´ìºìŠ¤íŒ… (Down casting)
 
    - dynamic_cast<... *>( ... )
 
 
-[¸Þ¸ð]  x = y;¿¡¼­ x¿Í yÀÇ Å¸ÀÔÀº ¿øÄ¢ÀûÀ¸·Î ¹Ýµå½Ã °°¾Æ¾ß ÇÑ´Ù.
-            value_pet = value_dog; ¿Í °°ÀÌ ÀÌ ¿øÄ¢À» ÁöÅ°Áö ¾Ê´Â 
-            ÇÁ·Î±×·¡¹ÖÀ» ÇÒ ¼ö ÀÖ´Â ÀÌÀ¯´Â ÄÄÆÄÀÏ·¯°¡ ÀûÀýÇÑ ÄÚµå¸¦
-            Ãß°¡ÇØ¼­ ÀÌ ¿øÄ¢À» ÁöÅ³ ¼ö ÀÖ¾ú±â ¶§¹®ÀÌ´Ù.
+[ë©”ëª¨]  x = y;ì—ì„œ xì™€ yì˜ íƒ€ìž…ì€ ì›ì¹™ì ìœ¼ë¡œ ë°˜ë“œì‹œ ê°™ì•„ì•¼ í•œë‹¤.
+            value_pet = value_dog; ì™€ ê°™ì´ ì´ ì›ì¹™ì„ ì§€í‚¤ì§€ ì•ŠëŠ” 
+            í”„ë¡œê·¸ëž˜ë°ì„ í•  ìˆ˜ ìžˆëŠ” ì´ìœ ëŠ” ì»´íŒŒì¼ëŸ¬ê°€ ì ì ˆí•œ ì½”ë“œë¥¼
+            ì¶”ê°€í•´ì„œ ì´ ì›ì¹™ì„ ì§€í‚¬ ìˆ˜ ìžˆì—ˆê¸° ë•Œë¬¸ì´ë‹¤.
 
-            value_pet = static_cast<Pet>(value_dog);  ¾çÂÊÀÇ Å¸ÀÔÀÌ °°´Ù!
+            value_pet = static_cast<Pet>(value_dog);  ì–‘ìª½ì˜ íƒ€ìž…ì´ ê°™ë‹¤!
 
-            ppet = pdog; // ppetÀÇ Å¸ÀÔÀº Pet*, pdogÀÇ Å¸ÀÔÀº Dog*
-                                  // Dog*¸¦ Pet*·Î ¾÷Ä³½ºÆÃ °¡´É
-                                  // ±× °á°ú ¾çÂÊÀÇ Å¸ÀÔÀÌ °°À¸¹Ç·Î ÇÒ´çÇÒ ¼ö ÀÖÀ½!
+            ppet = pdog; // ppetì˜ íƒ€ìž…ì€ Pet*, pdogì˜ íƒ€ìž…ì€ Dog*
+                                  // Dog*ë¥¼ Pet*ë¡œ ì—…ìºìŠ¤íŒ… ê°€ëŠ¥
+                                  // ê·¸ ê²°ê³¼ ì–‘ìª½ì˜ íƒ€ìž…ì´ ê°™ìœ¼ë¯€ë¡œ í• ë‹¹í•  ìˆ˜ ìžˆìŒ!
 
             int* p = ppet;  
-                                 // ¾çÂÊ Å¸ÀÔÀÌ ´Ù¸£°í, 
-                                 // ppetÀÇ Pet*À» int*·Î º¯È¯ÇÒ ¼ö ÀÖ´Â »ó¼Ó °ü°è°¡ ÀÖ´Â °Íµµ ¾Æ´Ï´Ù.
-                                 // µû¶ó¼­ =¸¦ »ç¿ëÇÒ ¶§ ¾çÂÊÀÇ Å¸ÀÔÀ» °°µµ·Ï ¸¸µå´Â ¿øÄ¢À» ÁöÅ°´Â
-                                 // º¯È¯À» ÇÒ ¼ö ¾øÀ¸¹Ç·Î ÄÄÆÄÀÏ ¿¡·¯!
+                                 // ì–‘ìª½ íƒ€ìž…ì´ ë‹¤ë¥´ê³ , 
+                                 // ppetì˜ Pet*ì„ int*ë¡œ ë³€í™˜í•  ìˆ˜ ìžˆëŠ” ìƒì† ê´€ê³„ê°€ ìžˆëŠ” ê²ƒë„ ì•„ë‹ˆë‹¤.
+                                 // ë”°ë¼ì„œ =ë¥¼ ì‚¬ìš©í•  ë•Œ ì–‘ìª½ì˜ íƒ€ìž…ì„ ê°™ë„ë¡ ë§Œë“œëŠ” ì›ì¹™ì„ ì§€í‚¤ëŠ”
+                                 // ë³€í™˜ì„ í•  ìˆ˜ ì—†ìœ¼ë¯€ë¡œ ì»´íŒŒì¼ ì—ëŸ¬!
 
 
 ---
-C++ °¡»óÇÔ¼ö¸¦ ±¸ÇöÇÏ´Â ¹æ¹ý
+C++ ê°€ìƒí•¨ìˆ˜ë¥¼ êµ¬í˜„í•˜ëŠ” ë°©ë²•
 
-   - °¡»ó ÇÔ¼ö Å×ÀÌºí
-   - ÀüÀÚ Ä¥ÆÇÀÇ Âü°íÀÚ·á mi.pdf
+   - ê°€ìƒ í•¨ìˆ˜ í…Œì´ë¸”
+   - ì „ìž ì¹ íŒì˜ ì°¸ê³ ìžë£Œ mi.pdf
 
 
 

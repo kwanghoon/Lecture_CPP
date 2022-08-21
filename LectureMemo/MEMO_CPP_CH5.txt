@@ -1,82 +1,82 @@
-5Àå ÇÔ¼ö¿Í ÂüÁ¶, º¹»ç »ý¼ºÀÚ
+5ìž¥ í•¨ìˆ˜ì™€ ì°¸ì¡°, ë³µì‚¬ ìƒì„±ìž
 
 
-5.1 ÇÔ¼öÀÇ ÀÎÀÚ Àü´Þ ¹æ½Ä ¸®ºä
-5.2 ÇÔ¼ö È£Ãâ ½Ã °´Ã¼ Àü´Þ
-5.3 °´Ã¼ Ä¡È¯ ¹× °´Ã¼ ¸®ÅÏ
-5.4 ÂüÁ¶¿Í ÇÔ¼ö
+5.1 í•¨ìˆ˜ì˜ ì¸ìž ì „ë‹¬ ë°©ì‹ ë¦¬ë·°
+5.2 í•¨ìˆ˜ í˜¸ì¶œ ì‹œ ê°ì²´ ì „ë‹¬
+5.3 ê°ì²´ ì¹˜í™˜ ë° ê°ì²´ ë¦¬í„´
+5.4 ì°¸ì¡°ì™€ í•¨ìˆ˜
 
 
-ÂüÁ¶Çü º¯¼ö
+ì°¸ì¡°í˜• ë³€ìˆ˜
   
-  (valueVsRef.ppt Âü°íÇÏ¿©) ¾Æ·¡ ¼¼ °¡Áö Áú¹®¿¡ ´ëÇØ ´äÇÒ ¼ö ÀÖ¾î¾ß ÇÔ.
+  (valueVsRef.ppt ì°¸ê³ í•˜ì—¬) ì•„ëž˜ ì„¸ ê°€ì§€ ì§ˆë¬¸ì— ëŒ€í•´ ë‹µí•  ìˆ˜ ìžˆì–´ì•¼ í•¨.
 
-  - Æ÷ÀÎÅÍÇü º¯¼ö¿Í ÂüÁ¶Çü º¯¼öÀÇ À¯»çÁ¡?
+  - í¬ì¸í„°í˜• ë³€ìˆ˜ì™€ ì°¸ì¡°í˜• ë³€ìˆ˜ì˜ ìœ ì‚¬ì ?
 
-  - Æ÷ÀÎÅÍÇü º¯¼ö¿Í ÂüÁ¶Çü º¯¼öÀÇ Â÷ÀÌÁ¡?
+  - í¬ì¸í„°í˜• ë³€ìˆ˜ì™€ ì°¸ì¡°í˜• ë³€ìˆ˜ì˜ ì°¨ì´ì ?
 
-  - C++ ÂüÁ¶Çü°ú Java ÂüÁ¶ÇüÀÇ Â÷ÀÌÁ¡?
+  - C++ ì°¸ì¡°í˜•ê³¼ Java ì°¸ì¡°í˜•ì˜ ì°¨ì´ì ?
 
 
 
-ÇÔ¼ö¸¦ È£ÃâÇÒ ¶§ ¸Å°³º¯¼ö¸¦ Àü´Þ(ÇÏ°í ¸®ÅÏ °ªÀ» ¹ÝÈ¯)ÇÏ´Â ¹æ¹ý
+í•¨ìˆ˜ë¥¼ í˜¸ì¶œí•  ë•Œ ë§¤ê°œë³€ìˆ˜ë¥¼ ì „ë‹¬(í•˜ê³  ë¦¬í„´ ê°’ì„ ë°˜í™˜)í•˜ëŠ” ë°©ë²•
 
- 1) °ª ¹æ½Ä ¸Å°³º¯¼ö Àü´Þ (call-by-value)
+ 1) ê°’ ë°©ì‹ ë§¤ê°œë³€ìˆ˜ ì „ë‹¬ (call-by-value)
 
-    void f(int x) { ...}        // °ª ¹æ½Ä ¸Å°³º¯¼ö Àü´Þ
-    void g(int* p) { ... }      // °ª(Æ÷ÀÎÅÍ ÁÖ¼Ò) ¹æ½Ä  ¸Å°³º¯¼ö Àü´Þ
-                                   cf. Æ÷ÀÎÅÍ´Â ÁÖ¼Ò¶ó´Â Æ¯º°ÇÑ ÇüÅÂÀÇ °ª
+    void f(int x) { ...}        // ê°’ ë°©ì‹ ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
+    void g(int* p) { ... }      // ê°’(í¬ì¸í„° ì£¼ì†Œ) ë°©ì‹  ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
+                                   cf. í¬ì¸í„°ëŠ” ì£¼ì†Œë¼ëŠ” íŠ¹ë³„í•œ í˜•íƒœì˜ ê°’
 
     Ex)
-    int add(int x, int y) {    // °ª ¹æ½ÄÀÇ ÁÁÀº ¿¹
+    int add(int x, int y) {    // ê°’ ë°©ì‹ì˜ ì¢‹ì€ ì˜ˆ
         return x+y;
     }
 
     Ex)
-    void swap(int x, int y) {  // °ª ¹æ½ÄÀÇ ³ª»Û ¿¹
+    void swap(int x, int y) {  // ê°’ ë°©ì‹ì˜ ë‚˜ìœ ì˜ˆ
         int tmp = x;
         x = y;
         y = tmp; 
     }
 
     Ex)
-    void swap(int* px, int* py) { // °ª ¹æ½ÄÀÇ ³ª»Û ¿¹¸¦ Æ÷ÀÎÅÍ ÇüÀ¸·Î º¸¿Ï
+    void swap(int* px, int* py) { // ê°’ ë°©ì‹ì˜ ë‚˜ìœ ì˜ˆë¥¼ í¬ì¸í„° í˜•ìœ¼ë¡œ ë³´ì™„
         int tmp = *px;
         *px = *py;
         *py = tmp;
     }
 
 
-    cf. ÇÔ¼öÀÇ ¸®ÅÏ °ªÀ» µ¹·ÁÁÖ±â
+    cf. í•¨ìˆ˜ì˜ ë¦¬í„´ ê°’ì„ ëŒë ¤ì£¼ê¸°
 
       -  MyClass f() { ...   }
       -  MyClass* f() { ... }
 
 
- 2) ÂüÁ¶ ¹æ½Ä ¸Å°³º¯¼ö Àü´Þ (call-by-reference)
+ 2) ì°¸ì¡° ë°©ì‹ ë§¤ê°œë³€ìˆ˜ ì „ë‹¬ (call-by-reference)
 
-    void h(int& r) { ... }      // ÂüÁ¶ ¹æ½Ä ¸Å°³º¯¼ö Àü´Þ
+    void h(int& r) { ... }      // ì°¸ì¡° ë°©ì‹ ë§¤ê°œë³€ìˆ˜ ì „ë‹¬
 
     Ex)
-    void swap(int& x, int& y) {   // °ª ¹æ½ÄÀÇ ³ª»Û ¿¹¸¦ ÂüÁ¶ÇüÀ¸·Î º¸¿Ï
+    void swap(int& x, int& y) {   // ê°’ ë°©ì‹ì˜ ë‚˜ìœ ì˜ˆë¥¼ ì°¸ì¡°í˜•ìœ¼ë¡œ ë³´ì™„
        int tmp = x;
        x = y;
        y = tmp; 
     }   
 
 
-    cf. ÂüÁ¶ ¹æ½Ä ¸®ÅÏ
+    cf. ì°¸ì¡° ë°©ì‹ ë¦¬í„´
 
       -  MyClass& f() { ...  }
 
-      - Âü°í) P. 235 : ±×¸² 5-9 ¿¹Á¦
-              P. 237 : ¿¹Á¦ 5-8 
+      - ì°¸ê³ ) P. 235 : ê·¸ë¦¼ 5-9 ì˜ˆì œ
+              P. 237 : ì˜ˆì œ 5-8 
 
 
 
-ÂüÁ¶ÇüÀ» »ç¿ëÇÏ´Â ÀüÇüÀûÀÎ µÎ °¡Áö ¿¹
-  - ÇÒ´ç ¿¬»êÀÚ Á¤ÀÇ
-  - ÀÔÃâ·Â ¿¬»êÀÚ Á¤ÀÇ
+ì°¸ì¡°í˜•ì„ ì‚¬ìš©í•˜ëŠ” ì „í˜•ì ì¸ ë‘ ê°€ì§€ ì˜ˆ
+  - í• ë‹¹ ì—°ì‚°ìž ì •ì˜
+  - ìž…ì¶œë ¥ ì—°ì‚°ìž ì •ì˜
 
 
   Ex)   class Money {
@@ -89,7 +89,7 @@
 
         Money m1, m2(10,20);
 
-        m1 = m2;            // <== ÇÒ´ç ¿¬»êÀÚ¸¦ ÇÁ·Î±×·¡¸Ó°¡ Á÷Á¢ ÀÛ¼ºÇÒ ¼ö ÀÖ´Ù.
+        m1 = m2;            // <== í• ë‹¹ ì—°ì‚°ìžë¥¼ í”„ë¡œê·¸ëž˜ë¨¸ê°€ ì§ì ‘ ìž‘ì„±í•  ìˆ˜ ìžˆë‹¤.
 
         Money& operator=(Money& left, const Money& right) {
             left.setDollar( right.getDollar() );
@@ -99,8 +99,8 @@
         }
 
 
-        cin >> m1 >> m2;    // <== ÀÌ·¸°Ô ÄÚµå¸¦ ÀÛ¼ºÇÒ ¼ö ÀÖ´Ù.
-                            //     Money Å¬·¡½ºÀÇ ÀÔ·Â ¿¬»êÀÚ¸¦ ¾Æ·¡¿Í °°ÀÌ Á¤ÀÇÇÏ¸é
+        cin >> m1 >> m2;    // <== ì´ë ‡ê²Œ ì½”ë“œë¥¼ ìž‘ì„±í•  ìˆ˜ ìžˆë‹¤.
+                            //     Money í´ëž˜ìŠ¤ì˜ ìž…ë ¥ ì—°ì‚°ìžë¥¼ ì•„ëž˜ì™€ ê°™ì´ ì •ì˜í•˜ë©´
 
         istream& operator>>(istream& is, Money& m) {
             int d, c;
@@ -111,8 +111,8 @@
             return is;
         }
 
-        cout << m1 << m2;  // <== ÀÌ·¸°Ô ÄÚµå¸¦ ÀÛ¼ºÇÒ ¼ö ÀÖ´Ù.
-                           //     Money Å¬·¡½ºÀÇ Ãâ·Â ¿¬»êÀÚ¸¦ ¾Æ·¡¿Í °°ÀÌ Á¤ÀÇÇÏ¸é
+        cout << m1 << m2;  // <== ì´ë ‡ê²Œ ì½”ë“œë¥¼ ìž‘ì„±í•  ìˆ˜ ìžˆë‹¤.
+                           //     Money í´ëž˜ìŠ¤ì˜ ì¶œë ¥ ì—°ì‚°ìžë¥¼ ì•„ëž˜ì™€ ê°™ì´ ì •ì˜í•˜ë©´
 
         ostream& operator<<(ostream& os, const Money& m) {
             os << m.getDolar() << m.getCent();
@@ -122,65 +122,65 @@
 
 
 
-5.5 º¹»ç »ý¼ºÀÚ  (ÇÒ´ç ¿¬»êÀÚ + ¼Ò¸êÀÚ)
+5.5 ë³µì‚¬ ìƒì„±ìž  (í• ë‹¹ ì—°ì‚°ìž + ì†Œë©¸ìž)
 
-  - Æ÷ÀÎÅÍÇü ¸â¹öº¯¼ö¸¦ Æ÷ÇÔÇÏ´Â Å¬·¡½º¿¡¼­
-    º¹»ç »ý¼ºÀÚ, ÇÒ´ç ¿¬»êÀÚ, ¼Ò¸êÀÚ¸¦ Á¤ÀÇÇÏ´Â ¹æ¹ý
-
-
-  - Æ÷ÀÎÅÍ ¸â¹ö º¯¼ö¸¦ Æ÷ÇÔÇÏ´Â Å¬·¡½º¿¡¼­
-    ±íÀº/¾èÀº º¹»ç/»èÁ¦¸¦ ±¸ºÐÇÏ¿©
-    ÇÒ´ç¿¬»êÀÚ, º¹»ç»ý¼ºÀÚ, ¼Ò¸êÀÚ¸¦ ÀÛ¼ºÇÏ´Â ¹æ¹ý
-
-     1) Çü½Ä
-
-     2) ¾ðÁ¦ È£ÃâµÇ´ÂÁö
-
-         - ¼Ò¸êÀÚ => »ý¼ºÀÚ°¡ È£ÃâµÇ´Â 3°¡Áö °æ¿ì¿Í ¿¬°üÁö¾î ¼³¸í 
-                      (°´Ã¼ ¼±¾ð, ¸í½ÃÀû »ý¼ºÀÚ È£Ãâ, new ¿¬»êÀÚ »ç¿ë)
-
-         - ÇÒ´ç¿¬»êÀÚ => È£Ãâ°´Ã¼¿Í ÀÎÀÚ°¡ °¢°¢ ÇÒ´ç ¿¬»êÀÚÀÇ ¿ÞÂÊ ¿À¸¥ÂÊ 
-
-         - º¹»ç»ý¼ºÀÚ => ´ÙÀ½ 3°¡Áö °æ¿ì¿¡ È£ÃâµÊ
-
-                 1) °ª ¹æ½ÄÀ¸·Î ¸Å°³º¯¼ö¸¦ º¹»ç Àü´ÞÇÏ´Â °æ¿ì È£Ãâ
-                 2) °ª ¹æ½ÄÀ¸·Î ¸®ÅÏÇÒ ¶§ È£Ãâ
-                 3) °´Ã¼¸¦ ¼±¾ðÇÏ¸é¼­ µ¿½Ã¿¡ ÃÊ±âÈ­ÇÒ ¶§ (ex. Money m1 = m2; )
-
-     3) ±¸Çö 
-         - ¼Ò¸êÀÚ (±íÀº ¹æ½ÄÀ¸·Î Áö¿ì±â delete [] a)
-
-         - ÇÒ´ç¿¬»êÀÚ¿Í º¹»ç»ý¼ºÀÚ´Â ¼­·Î ÄÚµå ºñ±³
+  - í¬ì¸í„°í˜• ë©¤ë²„ë³€ìˆ˜ë¥¼ í¬í•¨í•˜ëŠ” í´ëž˜ìŠ¤ì—ì„œ
+    ë³µì‚¬ ìƒì„±ìž, í• ë‹¹ ì—°ì‚°ìž, ì†Œë©¸ìžë¥¼ ì •ì˜í•˜ëŠ” ë°©ë²•
 
 
- - Å¬·¡½º¿¡ ÇÒ´ç ¿¬»êÀÚ, º¹»ç »ý¼ºÀÚ, ¼Ò¸êÀÚ¸¦ µû·Î Á¤ÀÇÇÏÁö ¾Ê¾Ò´Ù¸é
-    ¾èÀº º¹»ç¿Í ¾èÀº »èÁ¦ ¹æ½ÄÀÇ ±âº» ¸Þ¼ÒµåµéÀ» ÄÄÆÄÀÏ·¯°¡ Ãß°¡
+  - í¬ì¸í„° ë©¤ë²„ ë³€ìˆ˜ë¥¼ í¬í•¨í•˜ëŠ” í´ëž˜ìŠ¤ì—ì„œ
+    ê¹Šì€/ì–•ì€ ë³µì‚¬/ì‚­ì œë¥¼ êµ¬ë¶„í•˜ì—¬
+    í• ë‹¹ì—°ì‚°ìž, ë³µì‚¬ìƒì„±ìž, ì†Œë©¸ìžë¥¼ ìž‘ì„±í•˜ëŠ” ë°©ë²•
+
+     1) í˜•ì‹
+
+     2) ì–¸ì œ í˜¸ì¶œë˜ëŠ”ì§€
+
+         - ì†Œë©¸ìž => ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ” 3ê°€ì§€ ê²½ìš°ì™€ ì—°ê´€ì§€ì–´ ì„¤ëª… 
+                      (ê°ì²´ ì„ ì–¸, ëª…ì‹œì  ìƒì„±ìž í˜¸ì¶œ, new ì—°ì‚°ìž ì‚¬ìš©)
+
+         - í• ë‹¹ì—°ì‚°ìž => í˜¸ì¶œê°ì²´ì™€ ì¸ìžê°€ ê°ê° í• ë‹¹ ì—°ì‚°ìžì˜ ì™¼ìª½ ì˜¤ë¥¸ìª½ 
+
+         - ë³µì‚¬ìƒì„±ìž => ë‹¤ìŒ 3ê°€ì§€ ê²½ìš°ì— í˜¸ì¶œë¨
+
+                 1) ê°’ ë°©ì‹ìœ¼ë¡œ ë§¤ê°œë³€ìˆ˜ë¥¼ ë³µì‚¬ ì „ë‹¬í•˜ëŠ” ê²½ìš° í˜¸ì¶œ
+                 2) ê°’ ë°©ì‹ìœ¼ë¡œ ë¦¬í„´í•  ë•Œ í˜¸ì¶œ
+                 3) ê°ì²´ë¥¼ ì„ ì–¸í•˜ë©´ì„œ ë™ì‹œì— ì´ˆê¸°í™”í•  ë•Œ (ex. Money m1 = m2; )
+
+     3) êµ¬í˜„ 
+         - ì†Œë©¸ìž (ê¹Šì€ ë°©ì‹ìœ¼ë¡œ ì§€ìš°ê¸° delete [] a)
+
+         - í• ë‹¹ì—°ì‚°ìžì™€ ë³µì‚¬ìƒì„±ìžëŠ” ì„œë¡œ ì½”ë“œ ë¹„êµ
 
 
-Table Å¬·¡½º
-   - Name* p ¸â¹ö º¯¼ö¸¦ Æ÷ÇÔ
-   - ÇÒ´ç ¿¬»êÀÚ, º¹»ç »ý¼ºÀÚ, ¼Ò¸êÀÚ¸¦ ¾î¶»°Ô Á¤ÀÇÇÏ´ÂÁö
+ - í´ëž˜ìŠ¤ì— í• ë‹¹ ì—°ì‚°ìž, ë³µì‚¬ ìƒì„±ìž, ì†Œë©¸ìžë¥¼ ë”°ë¡œ ì •ì˜í•˜ì§€ ì•Šì•˜ë‹¤ë©´
+    ì–•ì€ ë³µì‚¬ì™€ ì–•ì€ ì‚­ì œ ë°©ì‹ì˜ ê¸°ë³¸ ë©”ì†Œë“œë“¤ì„ ì»´íŒŒì¼ëŸ¬ê°€ ì¶”ê°€
 
 
-   - 1) ±íÀº ¹æ½Ä ±¸Çö  vs. 2) ¾èÀº ¹æ½Ä ±¸Çö
+Table í´ëž˜ìŠ¤
+   - Name* p ë©¤ë²„ ë³€ìˆ˜ë¥¼ í¬í•¨
+   - í• ë‹¹ ì—°ì‚°ìž, ë³µì‚¬ ìƒì„±ìž, ì†Œë©¸ìžë¥¼ ì–´ë–»ê²Œ ì •ì˜í•˜ëŠ”ì§€
+
+
+   - 1) ê¹Šì€ ë°©ì‹ êµ¬í˜„  vs. 2) ì–•ì€ ë°©ì‹ êµ¬í˜„
    
 
 
 
 =====
 
-Table Å¬·¡½º
+Table í´ëž˜ìŠ¤
 
-// 1) ±íÀº ¹æ½Ä ±¸Çö
+// 1) ê¹Šì€ ë°©ì‹ êµ¬í˜„
 
 class Table {
 public:
     Table (const Table&);                       // copy constructor
     Table& operator = (const Table&);   // copy assignment
     virtual ~Table(); // deconstructor
-    ¡¦
+    â€¦
 private:
-    string *p;   // String ¹è¿­À» °¡¸®Å°´Â Æ÷ÀÎÅÍ
+    string *p;   // String ë°°ì—´ì„ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°
     int sz;
 };
 
@@ -205,16 +205,16 @@ Table::~Table() {  // deconstructor
 }
 
 
-// 2) ¾èÀº ¹æ½ÄÀ¸·Î ±¸Çö
+// 2) ì–•ì€ ë°©ì‹ìœ¼ë¡œ êµ¬í˜„
 
 class Table {
 public:
     Table (const Table&);                       // copy constructor
     Table& operator = (const Table&);   // copy assignment
     virtual ~Table(); // deconstructor
-    ¡¦
+    â€¦
 private:
-    string* p;   // stringÇü °´Ã¼¸¦ ¿ø¼Ò·Î ÇÏ´Â ¹è¿­
+    string* p;   // stringí˜• ê°ì²´ë¥¼ ì›ì†Œë¡œ í•˜ëŠ” ë°°ì—´
     int sz;
 };
 
@@ -237,14 +237,14 @@ Table::~Table() {  // deconstructor
 
 ======
 
-½Ç½À ¹®Á¦ 6¹ø: MyIntStack Å¬·¡½º
+ì‹¤ìŠµ ë¬¸ì œ 6ë²ˆ: MyIntStack í´ëž˜ìŠ¤
 
 
 
 ------------------------------------------------------
 // main1.c
-// ¸ñÇ¥: ½ºÅÃ ÀÚ·á±¸Á¶ÀÇ Æ¯Â¡ LIFO - Last-In First-Out
-//       popÇÔ¼ö¿¡¼­ ÂüÁ¶Çü ÀÎÀÚ¸¦ »ç¿ë
+// ëª©í‘œ: ìŠ¤íƒ ìžë£Œêµ¬ì¡°ì˜ íŠ¹ì§• LIFO - Last-In First-Out
+//       popí•¨ìˆ˜ì—ì„œ ì°¸ì¡°í˜• ì¸ìžë¥¼ ì‚¬ìš©
 
 int main() {
   MyIntStack s(10);
@@ -266,13 +266,13 @@ int main() {
 }
 
 
-Q. À§ ÇÁ·Î±×·¥ÀÇ ½ÇÇà °á°ú´Â?   
+Q. ìœ„ í”„ë¡œê·¸ëž¨ì˜ ì‹¤í–‰ ê²°ê³¼ëŠ”?   
 
 
 ------------------------------------------------------
 // main2.c
-// ¸ñÇ¥: main ÇÔ¼ö¿¡¼­ ¸¸µç MyIntStack °´Ã¼¸¦
-//       ÇÔ¼ö f¿¡ °ª ¹æ½ÄÀ¸·Î Àü´Þ
+// ëª©í‘œ: main í•¨ìˆ˜ì—ì„œ ë§Œë“  MyIntStack ê°ì²´ë¥¼
+//       í•¨ìˆ˜ fì— ê°’ ë°©ì‹ìœ¼ë¡œ ì „ë‹¬
 
 
 void f(MyIntStack s1) {
@@ -301,18 +301,18 @@ int main() {
   s2.pop(w); cout << w;
 }
 
-Q. main ÇÔ¼ö¿¡¼­ s2.pop(w)¸¦ ½ÇÇàÇØ¼­ ¾òÀº wÀÇ °ªÀº?
-   wÀÇ °ªÀ¸·Î º¸¾Æ s1°ú s2°¡ ¾î¶² ÇüÅÂ·Î °ü·ÃÀÖ´ÂÁö À¯ÃßÇÏ½Ã¿À.
+Q. main í•¨ìˆ˜ì—ì„œ s2.pop(w)ë¥¼ ì‹¤í–‰í•´ì„œ ì–»ì€ wì˜ ê°’ì€?
+   wì˜ ê°’ìœ¼ë¡œ ë³´ì•„ s1ê³¼ s2ê°€ ì–´ë–¤ í˜•íƒœë¡œ ê´€ë ¨ìžˆëŠ”ì§€ ìœ ì¶”í•˜ì‹œì˜¤.
 
 
 ------------------------------------------------------
 // main3.c 
-// ¸ñÇ¥: ÇÔ¼ö ÀÎÀÚ·Î °ª ¹æ½ÄÀ¸·Î Àü´ÞÇÒ ¶§
-//       º¹»ç »ý¼ºÀÚ°¡ È£ÃâµÇ´Â °ÍÀ» È®ÀÎ.
+// ëª©í‘œ: í•¨ìˆ˜ ì¸ìžë¡œ ê°’ ë°©ì‹ìœ¼ë¡œ ì „ë‹¬í•  ë•Œ
+//       ë³µì‚¬ ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ” ê²ƒì„ í™•ì¸.
 //
-//       (ÇÁ·Î±×·¥¿¡ º¹»ç »ý¼ºÀÚ°¡ ¾øÀ¸¸é
-//        ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î ¾Æ·¡¿Í °°Àº
-//        ¾èÀº ¹æ½ÄÀÇ º¹»ç »ý¼ºÀÚ ÄÚµå¸¦ ¸¸µé¾î ÁØ´Ù.)
+//       (í”„ë¡œê·¸ëž¨ì— ë³µì‚¬ ìƒì„±ìžê°€ ì—†ìœ¼ë©´
+//        ì»´íŒŒì¼ëŸ¬ê°€ ìžë™ìœ¼ë¡œ ì•„ëž˜ì™€ ê°™ì€
+//        ì–•ì€ ë°©ì‹ì˜ ë³µì‚¬ ìƒì„±ìž ì½”ë“œë¥¼ ë§Œë“¤ì–´ ì¤€ë‹¤.)
 
 
 class MyIntStack {
@@ -325,10 +325,10 @@ class MyIntStack {
 
 MyIntStack::MyIntStack(const MyIntStack& myIntStack)
 {
-     cout << "MyInStack º¹»ç »ý¼ºÀÚ" << endl;
+     cout << "MyInStack ë³µì‚¬ ìƒì„±ìž" << endl;
 
      this->size = myIntStack.size;
-     this->p    = myIntStack.p;     // ¾èÀº º¹»ç
+     this->p    = myIntStack.p;     // ì–•ì€ ë³µì‚¬
      this->tos  = myIntStack.tos;
 }
 
@@ -367,38 +367,38 @@ int main() {
   s2.pop(w); cout << w;
 }
 
-Q. "MyIntStack º¹»ç»ý¼ºÀÚ"°¡ Ãâ·ÂµÇ´Â À§Ä¡·Î ÆÇ´ÜÇÏ°Çµ¥
-   º¹»ç»ý¼ºÀÚ°¡ ¾ðÁ¦ È£ÃâµÇ¾ú´ÂÁö?
+Q. "MyIntStack ë³µì‚¬ìƒì„±ìž"ê°€ ì¶œë ¥ë˜ëŠ” ìœ„ì¹˜ë¡œ íŒë‹¨í•˜ê±´ë°
+   ë³µì‚¬ìƒì„±ìžê°€ ì–¸ì œ í˜¸ì¶œë˜ì—ˆëŠ”ì§€?
 
-Q. °ª ¹æ½ÄÀ¸·Î ÀÎÀÚ¸¦ ¹Þ´Â 
+Q. ê°’ ë°©ì‹ìœ¼ë¡œ ì¸ìžë¥¼ ë°›ëŠ” 
 
-     void f(MyIntStack s1) { ... }¸¦
+     void f(MyIntStack s1) { ... }ë¥¼
 
-   ÂüÁ¶ ¹æ½ÄÀ¸·Î ÀÎÀÚ¸¦ ¹Þµµ·Ï ¼öÁ¤ÇÏ°í,
+   ì°¸ì¡° ë°©ì‹ìœ¼ë¡œ ì¸ìžë¥¼ ë°›ë„ë¡ ìˆ˜ì •í•˜ê³ ,
 
-     void f(MyIntStack& s1) { ... }¸¦
+     void f(MyIntStack& s1) { ... }ë¥¼
 
-   º¹»ç »ý¼ºÀÚ°¡ È£ÃâµÇ´ÂÁö È®ÀÎÇÏ½Ã¿À.
+   ë³µì‚¬ ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ”ì§€ í™•ì¸í•˜ì‹œì˜¤.
 
-Q. °ª ¹æ½ÄÀ¸·Î ÀÎÀÚ¸¦ ¹Þ´Â 
+Q. ê°’ ë°©ì‹ìœ¼ë¡œ ì¸ìžë¥¼ ë°›ëŠ” 
 
-     void f(MyIntStack s1) { ... }¸¦
+     void f(MyIntStack s1) { ... }ë¥¼
 
-   Æ÷ÀÎÅÍ ¹æ½ÄÀ¸·Î ÀÎÀÚ¸¦ ¹Þµµ·Ï ¼öÁ¤ÇÏ°í,
+   í¬ì¸í„° ë°©ì‹ìœ¼ë¡œ ì¸ìžë¥¼ ë°›ë„ë¡ ìˆ˜ì •í•˜ê³ ,
 
-     void f(MyIntStack* s1) { ... }¸¦
+     void f(MyIntStack* s1) { ... }ë¥¼
 
-   º¹»ç »ý¼ºÀÚ°¡ È£ÃâµÇ´ÂÁö È®ÀÎÇÏ½Ã¿À.
-   ÇÔ¼ö f¸¦ È£ÃâÇÒ ¶§ ÁÖ¼Ò¸¦ ³Ñ°ÜÁÖµµ·Ï 
-   Ãß°¡ ¼öÁ¤ÀÌ ÇÊ¿äÇÏ´Ù.
+   ë³µì‚¬ ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ”ì§€ í™•ì¸í•˜ì‹œì˜¤.
+   í•¨ìˆ˜ fë¥¼ í˜¸ì¶œí•  ë•Œ ì£¼ì†Œë¥¼ ë„˜ê²¨ì£¼ë„ë¡ 
+   ì¶”ê°€ ìˆ˜ì •ì´ í•„ìš”í•˜ë‹¤.
 
-Q. ÇÔ¼ö ÀÎÀÚ¸¦ Àü´ÞÇÏ´Â ¼¼ °¡Áö ¹æ¹ý, °ª ¹æ½Ä, ÂüÁ¶ ¹æ½Ä,
-   Æ÷ÀÎÅÍ ¹æ½Ä¿¡¼­ º¹»ç »ý¼ºÀÚ°¡ È£ÃâµÇ´Â °æ¿ì´Â?
+Q. í•¨ìˆ˜ ì¸ìžë¥¼ ì „ë‹¬í•˜ëŠ” ì„¸ ê°€ì§€ ë°©ë²•, ê°’ ë°©ì‹, ì°¸ì¡° ë°©ì‹,
+   í¬ì¸í„° ë°©ì‹ì—ì„œ ë³µì‚¬ ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ” ê²½ìš°ëŠ”?
 
 ------------------------------------------------------
 // main4.c 
-// ¸ñÇ¥: ±íÀº ¹æ½Ä º¹»ç »ý¼ºÀÚ¸¦ ¸¸µé¾î µ¿ÀÏÇÑ ÄÚµåÀÇ
-//       main ÇÔ¼ö¿¡¼­ w °ªÀÌ ¾î¶»°Ô ´Þ¶óÁö´ÂÁö È®ÀÎ.
+// ëª©í‘œ: ê¹Šì€ ë°©ì‹ ë³µì‚¬ ìƒì„±ìžë¥¼ ë§Œë“¤ì–´ ë™ì¼í•œ ì½”ë“œì˜
+//       main í•¨ìˆ˜ì—ì„œ w ê°’ì´ ì–´ë–»ê²Œ ë‹¬ë¼ì§€ëŠ”ì§€ í™•ì¸.
 //       
 
 
@@ -412,13 +412,13 @@ class MyIntStack {
 
 MyIntStack::MyIntStack(const MyIntStack& myIntStack)
 {
-     cout << "MyInStack º¹»ç »ý¼ºÀÚ" << endl;
+     cout << "MyInStack ë³µì‚¬ ìƒì„±ìž" << endl;
 
-     this->size = myIntStack.size;    // intÇü °ªÀÇ °æ¿ì
-                                      // ±íÀº º¹»ç¿Í ¾èÀº º¹»çÀÇ 
-                                      // Â÷ÀÌ°¡ ¾øÀ½
+     this->size = myIntStack.size;    // intí˜• ê°’ì˜ ê²½ìš°
+                                      // ê¹Šì€ ë³µì‚¬ì™€ ì–•ì€ ë³µì‚¬ì˜ 
+                                      // ì°¨ì´ê°€ ì—†ìŒ
 
-     this->p = new int[this->size];   // ±íÀº º¹»ç
+     this->p = new int[this->size];   // ê¹Šì€ ë³µì‚¬
      for(int i=0; i<this->size; i++)  // 
        this->p[i] = myIntStack.p[i];  //
 
@@ -428,7 +428,7 @@ MyIntStack::MyIntStack(const MyIntStack& myIntStack)
 
 ------------------------------------------------------
 // main5.c 
-// ¸ñÇ¥: º¹»ç »ý¼ºÀÚ°¡ È£ÃâµÇ´Â 3°¡Áö °æ¿ì¸¦ È®ÀÎ
+// ëª©í‘œ: ë³µì‚¬ ìƒì„±ìžê°€ í˜¸ì¶œë˜ëŠ” 3ê°€ì§€ ê²½ìš°ë¥¼ í™•ì¸
 // 
 
 
@@ -437,9 +437,9 @@ void f(MyIntStack s3) {
 }
 
 
-MyIntStack g() {             // MyIntStack& ÂüÁ¶ÇüÀÌ³ª
-                             // MyIntStack* Æ÷ÀÎÅÍÇüÀÌ ¾Æ´Ñ
-                             // MyIntStack °ªÇüÀ¸·Î ¸®ÅÏ
+MyIntStack g() {             // MyIntStack& ì°¸ì¡°í˜•ì´ë‚˜
+                             // MyIntStack* í¬ì¸í„°í˜•ì´ ì•„ë‹Œ
+                             // MyIntStack ê°’í˜•ìœ¼ë¡œ ë¦¬í„´
 
    return MyIntStack(10);    
 }
@@ -447,43 +447,43 @@ MyIntStack g() {             // MyIntStack& ÂüÁ¶ÇüÀÌ³ª
 int main() {
   MyIntStack s1(10);
 
-  MyIntStack s2 = s1;   // (1) °´Ã¼ ¼±¾ðÇÏ¸é¼­ ÃÊ±âÈ­ÇÏ´Â °æ¿ì
+  MyIntStack s2 = s1;   // (1) ê°ì²´ ì„ ì–¸í•˜ë©´ì„œ ì´ˆê¸°í™”í•˜ëŠ” ê²½ìš°
 
-  f( s1 );    // (2) ÇÔ¼ö¿¡ °ª Çü ÀÎÀÚ¸¦ Àü´ÞÇÏ´Â °æ¿ì
+  f( s1 );    // (2) í•¨ìˆ˜ì— ê°’ í˜• ì¸ìžë¥¼ ì „ë‹¬í•˜ëŠ” ê²½ìš°
 
-  g();        // (3) °ª ÇüÀ¸·Î ¸®ÅÏ ¹Þ´Â °æ¿ì
+  g();        // (3) ê°’ í˜•ìœ¼ë¡œ ë¦¬í„´ ë°›ëŠ” ê²½ìš°
 
 }
 
-Q. (1), (2), (3)ÀÇ °æ¿ì¿¡ MyIntStack º¹»ç »ý¼ºÀÚ°¡
-   È£ÃâµÇ´Â °ÍÀ» È®ÀÎÇÏ½Ã¿À.
+Q. (1), (2), (3)ì˜ ê²½ìš°ì— MyIntStack ë³µì‚¬ ìƒì„±ìžê°€
+   í˜¸ì¶œë˜ëŠ” ê²ƒì„ í™•ì¸í•˜ì‹œì˜¤.
 
 
 
 ------------------------------------------------------
 // main6.c 
-// ¸ñÇ¥: ¾èÀº ¹æ½ÄÀ¸·Î º¹»çÇÏ¸é ¾èÀº ¹æ½ÄÀ¸·Î »èÁ¦ÇÏ°í
-//       ±íÀº ¹æ½ÄÀ¸·Î º¹»çÇÏ¸é ±íÀº ¹æ½ÄÀ¸·Î »èÁ¦ÇÏ´Â
-//       °ÍÀÌ ÀÏ¹ÝÀûÀ¸·Î ¹Ù¶÷Á÷ÇÏ´Ù. 
+// ëª©í‘œ: ì–•ì€ ë°©ì‹ìœ¼ë¡œ ë³µì‚¬í•˜ë©´ ì–•ì€ ë°©ì‹ìœ¼ë¡œ ì‚­ì œí•˜ê³ 
+//       ê¹Šì€ ë°©ì‹ìœ¼ë¡œ ë³µì‚¬í•˜ë©´ ê¹Šì€ ë°©ì‹ìœ¼ë¡œ ì‚­ì œí•˜ëŠ”
+//       ê²ƒì´ ì¼ë°˜ì ìœ¼ë¡œ ë°”ëžŒì§í•˜ë‹¤. 
 // 
 
-Q. MyIntStack Å¬·¡½ºÀÇ ¾èÀº ¹æ½Ä ¼Ò¸êÀÚ¿Í
-   ±íÀº ¹æ½Ä ¼Ò¸êÀÚ¸¦ °¢°¢ ÀÛ¼ºÇÏ½Ã¿À.
+Q. MyIntStack í´ëž˜ìŠ¤ì˜ ì–•ì€ ë°©ì‹ ì†Œë©¸ìžì™€
+   ê¹Šì€ ë°©ì‹ ì†Œë©¸ìžë¥¼ ê°ê° ìž‘ì„±í•˜ì‹œì˜¤.
 
-   (ÈùÆ®: Table Å¬·¡½ºÀÇ ¼Ò¸êÀÚ ±¸ÇöÀ» Âü°í)
+   (ížŒíŠ¸: Table í´ëž˜ìŠ¤ì˜ ì†Œë©¸ìž êµ¬í˜„ì„ ì°¸ê³ )
 
-Q. main2.c¿¡¼­ 
+Q. main2.cì—ì„œ 
 
-   - ±íÀº ¹æ½ÄÀÇ ¼Ò¸êÀÚ¿Í 
-   - ¾èÀº ¹æ½ÄÀÇ º¹»ç »ý¼ºÀÚ¸¦
+   - ê¹Šì€ ë°©ì‹ì˜ ì†Œë©¸ìžì™€ 
+   - ì–•ì€ ë°©ì‹ì˜ ë³µì‚¬ ìƒì„±ìžë¥¼
 
-   °¡Á¤ÇÒ ¶§, ÇÁ·Î±×·¥ ½ÇÇà¿¡ ¹®Á¦°¡ ¹ß»ýÇÑ´Ù.
-   ÀÌ ¹®Á¦¸¦ ¼³¸íÇÏ½Ã¿À.
+   ê°€ì •í•  ë•Œ, í”„ë¡œê·¸ëž¨ ì‹¤í–‰ì— ë¬¸ì œê°€ ë°œìƒí•œë‹¤.
+   ì´ ë¬¸ì œë¥¼ ì„¤ëª…í•˜ì‹œì˜¤.
 
 ------------------------------------------------------
 // main7.c 
-// ¸ñÇ¥: º¹»ç»ý¼ºÀÚ, ¼Ò¸êÀÚ¿Í ÇÔ²² ÇÒ´ç ¿¬»êÀÚµµ
-//       ÀÏ°üµÈ ¹æ½ÄÀ¸·Î ±¸ÇöÇÏ´Â °ÍÀÌ ¹Ù¶÷Á÷ÇÏ´Ù. 
+// ëª©í‘œ: ë³µì‚¬ìƒì„±ìž, ì†Œë©¸ìžì™€ í•¨ê»˜ í• ë‹¹ ì—°ì‚°ìžë„
+//       ì¼ê´€ëœ ë°©ì‹ìœ¼ë¡œ êµ¬í˜„í•˜ëŠ” ê²ƒì´ ë°”ëžŒì§í•˜ë‹¤. 
 // 
 
 int main() {
@@ -493,22 +493,22 @@ int main() {
   s2 = s1;
 }
 
-Q. MyIntStack Å¬·¡½ºÀÇ ¾èÀº ¹æ½Ä ÇÒ´ç¿¬»êÀÚ¿Í
-   ±íÀº ¹æ½Ä ÇÒ´ç¿¬»êÀÚ¸¦ °¢°¢ ÀÛ¼ºÇÏ½Ã¿À.
+Q. MyIntStack í´ëž˜ìŠ¤ì˜ ì–•ì€ ë°©ì‹ í• ë‹¹ì—°ì‚°ìžì™€
+   ê¹Šì€ ë°©ì‹ í• ë‹¹ì—°ì‚°ìžë¥¼ ê°ê° ìž‘ì„±í•˜ì‹œì˜¤.
 
-   (ÈùÆ®: Table Å¬·¡½ºÀÇ ÇÒ´ç¿¬»êÀÚ ±¸ÇöÀ» Âü°í)
+   (ížŒíŠ¸: Table í´ëž˜ìŠ¤ì˜ í• ë‹¹ì—°ì‚°ìž êµ¬í˜„ì„ ì°¸ê³ )
 
-Q. º¹»ç»ý¼ºÀÚ¿Í ÇÒ´ç¿¬»êÀÚÀÇ Â÷ÀÌ¸¦ ¾Æ·¡ÀÇ ÄÚµå·Î ºñ±³ÇÏ½Ã¿À.
+Q. ë³µì‚¬ìƒì„±ìžì™€ í• ë‹¹ì—°ì‚°ìžì˜ ì°¨ì´ë¥¼ ì•„ëž˜ì˜ ì½”ë“œë¡œ ë¹„êµí•˜ì‹œì˜¤.
 
   MyIntStack s1(10);
   MyIntStack s2;
 
-  s2 = s1;  // ÇÒ´ç¿¬»êÀÚ È£Ãâ
+  s2 = s1;  // í• ë‹¹ì—°ì‚°ìž í˜¸ì¶œ
 
 
   MyIntStack s1(10);
-  MyIntStack s2 = s1;  // º¹»ç»ý¼ºÀÚ È£Ãâ
-                       // ÇÒ´ç¿¬»êÀÚ¸¦ È£ÃâÇÏÁö ¾ÊÀ½
+  MyIntStack s2 = s1;  // ë³µì‚¬ìƒì„±ìž í˜¸ì¶œ
+                       // í• ë‹¹ì—°ì‚°ìžë¥¼ í˜¸ì¶œí•˜ì§€ ì•ŠìŒ
 
 
  

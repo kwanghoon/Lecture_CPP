@@ -1,126 +1,126 @@
 
-8Àå. »ó¼Ó
+8ìž¥. ìƒì†
 
-ÁÖÁ¦
- - »õ·Î¿î Å¬·¡½º¸¦ ¸¸µå´Â ¹æ¹ýÀ¸·Î½á »ó¼Ó
-    1) Æ÷ÀÎÅÍÇü ¸â¹ö°¡ ¾ø´Â °æ¿ì
-    2) Æ÷ÀÎÅÍÇü ¸â¹ö°¡ ÀÖ´Â °æ¿ì
- - ÆÄ»ý Å¬·¡½ºÀÇ °´Ã¼
- - ¾÷Ä³½ºÆÃ°ú ´Ù¿îÄ³½ºÆÃ
- - public/private/protectd ¸â¹ö Á¢±Ù Á¦¾î
- - »ó¼Ó°ü°è¿¡¼­ »ý¼ºÀÚ¿Í ¼Ò¸êÀÚ È£Ãâ ¼ø¼­
-   (ÃÊ±âÈ­ ¼½¼Ç¿¡¼­ ±â¹Ý Å¬·¡½ºÀÇ »ý¼ºÀÚ ¼±ÅÃ)
- - »ó¼Ó ¹æ¹ý : public, : private, : protected
- - ´ÙÁß »ó¼Ó
- - °¡»ó »ó¼Ó
-
-
+ì£¼ì œ
+ - ìƒˆë¡œìš´ í´ëž˜ìŠ¤ë¥¼ ë§Œë“œëŠ” ë°©ë²•ìœ¼ë¡œì¨ ìƒì†
+    1) í¬ì¸í„°í˜• ë©¤ë²„ê°€ ì—†ëŠ” ê²½ìš°
+    2) í¬ì¸í„°í˜• ë©¤ë²„ê°€ ìžˆëŠ” ê²½ìš°
+ - íŒŒìƒ í´ëž˜ìŠ¤ì˜ ê°ì²´
+ - ì—…ìºìŠ¤íŒ…ê³¼ ë‹¤ìš´ìºìŠ¤íŒ…
+ - public/private/protectd ë©¤ë²„ ì ‘ê·¼ ì œì–´
+ - ìƒì†ê´€ê³„ì—ì„œ ìƒì„±ìžì™€ ì†Œë©¸ìž í˜¸ì¶œ ìˆœì„œ
+   (ì´ˆê¸°í™” ì„¹ì…˜ì—ì„œ ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ìƒì„±ìž ì„ íƒ)
+ - ìƒì† ë°©ë²• : public, : private, : protected
+ - ë‹¤ì¤‘ ìƒì†
+ - ê°€ìƒ ìƒì†
 
 
-14Àå. »ó¼Ó
 
 
-1. Á÷¿øÀ» Ç¥ÇöÇÏ´Â Å¬·¡½º SalariedEmployee¿Í HourlyEmployee¸¦ ¸¸µé±â
-2. ¸â¹ö name, ssn, netpay°¡ °ãÄ¡´Â °ÍÀ» È®ÀÎ
-3. °ãÄ¡´Â ºÎºÐÀ» Ç¥ÇöÇÏ´Â Employee Å¬·¡½º¸¦ ¸¸µé°í »ó¼Ó
-4. ÆÄ»ý Å¬·¡½ºÀÇ »ý¼ºÀÚ¿Í ÀÏ¹Ý ¸â¹öÇÔ¼ö ¸¸µå´Â ¿ä·É
-     (ºÎ¸ð Å¬·¡½ºÀÇ ¸â¹ö¸¦ ¸ðµÎ ¹°·Á¹ÞÀ¸³ª 
-      Á÷Á¢ ¾ð±ÞÇÒ ¼ö´Â ¾øÀ½)
+14ìž¥. ìƒì†
+
+
+1. ì§ì›ì„ í‘œí˜„í•˜ëŠ” í´ëž˜ìŠ¤ SalariedEmployeeì™€ HourlyEmployeeë¥¼ ë§Œë“¤ê¸°
+2. ë©¤ë²„ name, ssn, netpayê°€ ê²¹ì¹˜ëŠ” ê²ƒì„ í™•ì¸
+3. ê²¹ì¹˜ëŠ” ë¶€ë¶„ì„ í‘œí˜„í•˜ëŠ” Employee í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ê³  ìƒì†
+4. íŒŒìƒ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžì™€ ì¼ë°˜ ë©¤ë²„í•¨ìˆ˜ ë§Œë“œëŠ” ìš”ë ¹
+     (ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ ë©¤ë²„ë¥¼ ëª¨ë‘ ë¬¼ë ¤ë°›ìœ¼ë‚˜ 
+      ì§ì ‘ ì–¸ê¸‰í•  ìˆ˜ëŠ” ì—†ìŒ)
 5. void printName(Employee x) { cout << x.getName(); }
    printName( SalariedEmployee() );
    printName( HourlyEmployee() );
 
-6. IsA °ü°è (»ó¼Ó) HasA °ü°è (¸â¹ö º¯¼ö·Î Employee °´Ã¼¸¦ Æ÷ÇÔ)
+6. IsA ê´€ê³„ (ìƒì†) HasA ê´€ê³„ (ë©¤ë²„ ë³€ìˆ˜ë¡œ Employee ê°ì²´ë¥¼ í¬í•¨)
 
-   - À¯»çÁ¡
-     SalariedEmployee°¡ 4°³ ¸â¹ö º¯¼ö¸¦ °®°í
-      HourlyEmployee°¡ 5°³ ¸â¹ö º¯¼ö¸¦ °®À¸³ª
-     °øÅë ºÎºÐ 3°³¸¦ Employee ¸â¹ö º¯¼ö·Î ´ëÃ¼ÇÑ Á¡
+   - ìœ ì‚¬ì 
+     SalariedEmployeeê°€ 4ê°œ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ê°–ê³ 
+      HourlyEmployeeê°€ 5ê°œ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ê°–ìœ¼ë‚˜
+     ê³µí†µ ë¶€ë¶„ 3ê°œë¥¼ Employee ë©¤ë²„ ë³€ìˆ˜ë¡œ ëŒ€ì²´í•œ ì 
 
-   - Â÷ÀÌÁ¡
-     »ó¼Ó °ü°è°¡ ¾Æ´Ï¸é printNameÀ» °øÀ¯ÇÒ ¼ö ¾ø´Ù.
-     (»ó¼Ó °ü°è¿¡ ÀÇÇÑ Çü È£È¯¼ºÀÌ ¾øÀ½)
-
-
-±âÁ¸ Å¬·¡½º¸¦ È®Àå ¶Ç´Â ÀÏºÎ ¼öÁ¤ÇÏ¿© »õ·Î¿î Å¬·¡½º¸¦ ¸¸µå´Â ¹æ¹ý
-
- -  ±â¹Ý Å¬·¡½º(Base Class) -- »ó¼Ó--> ÆÄ»ý Å¬·¡½º(Derived Class)
- -  ºÎ¸ð Å¬·¡½º -- »ó¼Ó--> ÀÚ½Ä Å¬·¡½º
+   - ì°¨ì´ì 
+     ìƒì† ê´€ê³„ê°€ ì•„ë‹ˆë©´ printNameì„ ê³µìœ í•  ìˆ˜ ì—†ë‹¤.
+     (ìƒì† ê´€ê³„ì— ì˜í•œ í˜• í˜¸í™˜ì„±ì´ ì—†ìŒ)
 
 
- - »ó¼Ó °ü°è¿¡ ÀÖ´Â Å¬·¡½º¶ó¸é ³²³²ÀÌ ¾Æ´Ï´Ù!
+ê¸°ì¡´ í´ëž˜ìŠ¤ë¥¼ í™•ìž¥ ë˜ëŠ” ì¼ë¶€ ìˆ˜ì •í•˜ì—¬ ìƒˆë¡œìš´ í´ëž˜ìŠ¤ë¥¼ ë§Œë“œëŠ” ë°©ë²•
 
-     => ºÎ¸ð Å¬·¡½ºÀÇ °´Ã¼¸¦  ¿ä±¸ÇÏ´Â ÀÚ¸®¿¡¼­
-          ÀÚ½Ä Å¬·¡½ºÀÇ °´Ã¼¸¦ ´ë½Å »ç¿ëÇÒ ¼ö ÀÖ´Ù!  (È¿µµÇÒ ¼ö ÀÖ´Ù.)
-
-     => »ó¼Ó °ü°è°¡ ¾Æ´Ñ ³²³² Å¬·¡½ºµé³¢¸®´Â ´ë½Å »ç¿ëÇÒ ¼ö ¾øÀ½
-          ´ë½Å »ç¿ëÇÏ·Á°í ÇÏ¸é Å¸ÀÔ ¿À·ù·Î ÄÄÆÄÀÏ ¿¡·¯   (ºÎ¸ð°¡ ´ë½ÅÇØ ÁÙ ¼ö ¾ø´Ù.)
+ -  ê¸°ë°˜ í´ëž˜ìŠ¤(Base Class) -- ìƒì†--> íŒŒìƒ í´ëž˜ìŠ¤(Derived Class)
+ -  ë¶€ëª¨ í´ëž˜ìŠ¤ -- ìƒì†--> ìžì‹ í´ëž˜ìŠ¤
 
 
-Q. Employee Å¬·¡½º¸¦ »ó¼Ó¹Þ¾Æ SalariedEmployee Å¬·¡½º¸¦ Á¤ÀÇÇØº¸½Ã¿À.
+ - ìƒì† ê´€ê³„ì— ìžˆëŠ” í´ëž˜ìŠ¤ë¼ë©´ ë‚¨ë‚¨ì´ ì•„ë‹ˆë‹¤!
+
+     => ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼  ìš”êµ¬í•˜ëŠ” ìžë¦¬ì—ì„œ
+          ìžì‹ í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ëŒ€ì‹  ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤!  (íš¨ë„í•  ìˆ˜ ìžˆë‹¤.)
+
+     => ìƒì† ê´€ê³„ê°€ ì•„ë‹Œ ë‚¨ë‚¨ í´ëž˜ìŠ¤ë“¤ë¼ë¦¬ëŠ” ëŒ€ì‹  ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ
+          ëŒ€ì‹  ì‚¬ìš©í•˜ë ¤ê³  í•˜ë©´ íƒ€ìž… ì˜¤ë¥˜ë¡œ ì»´íŒŒì¼ ì—ëŸ¬   (ë¶€ëª¨ê°€ ëŒ€ì‹ í•´ ì¤„ ìˆ˜ ì—†ë‹¤.)
+
+
+Q. Employee í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì•„ SalariedEmployee í´ëž˜ìŠ¤ë¥¼ ì •ì˜í•´ë³´ì‹œì˜¤.
 
 
 
-µÎ °¡Áö »óÈ²¿¡¼­ ÆÄ»ý Å¬·¡½º ¸¸µé±â
+ë‘ ê°€ì§€ ìƒí™©ì—ì„œ íŒŒìƒ í´ëž˜ìŠ¤ ë§Œë“¤ê¸°
 
 
- 1) ±â¹Ý Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º¿¡ Æ÷ÀÎÅÍÇü ¸â¹ö º¯¼ö°¡ ¾ø´Â °æ¿ì
+ 1) ê¸°ë°˜ í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ì— í¬ì¸í„°í˜• ë©¤ë²„ ë³€ìˆ˜ê°€ ì—†ëŠ” ê²½ìš°
    (ex. Employee ----> HourlyEmployee
           Employee ----> SalariedEmployee )
 
-     1) ±â¹Ý Å¬·¡½ºÀÇ ¸â¹ö°¡ privateÀÌ¸é
-         ÆÄ»ý Å¬·¡½º¿¡¼­ ºñ·Ï ÀÌ private ¸â¹ö¸¦ ¹°·Á¹Þ±ä ÇÏÁö¸¸
-         ÀÌ ¸â¹ö ÀÌ¸§À» Á÷Á¢ ºÒ·¯ »ç¿ëÇÒ ¼ö ¾ø´Ù. (±â¹Ý Å¬·¡½ºÀÇ ¹Û À§Ä¡ÀÌ¹Ç·Î)
+     1) ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ë©¤ë²„ê°€ privateì´ë©´
+         íŒŒìƒ í´ëž˜ìŠ¤ì—ì„œ ë¹„ë¡ ì´ private ë©¤ë²„ë¥¼ ë¬¼ë ¤ë°›ê¸´ í•˜ì§€ë§Œ
+         ì´ ë©¤ë²„ ì´ë¦„ì„ ì§ì ‘ ë¶ˆëŸ¬ ì‚¬ìš©í•  ìˆ˜ ì—†ë‹¤. (ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ë°– ìœ„ì¹˜ì´ë¯€ë¡œ)
 
-         => ÆÄ»ý Å¬·¡½º¿¡¼­ ±â¹Ý Å¬·¡½º¸¦ »ý¼ºÀÚ¸¦ ¼±ÅÃÇÒ ¶§
-              ÃÊ±âÈ­ ¼½¼Ç »ç¿ëÇÏ´Â ¹æ¹ý
+         => íŒŒìƒ í´ëž˜ìŠ¤ì—ì„œ ê¸°ë°˜ í´ëž˜ìŠ¤ë¥¼ ìƒì„±ìžë¥¼ ì„ íƒí•  ë•Œ
+              ì´ˆê¸°í™” ì„¹ì…˜ ì‚¬ìš©í•˜ëŠ” ë°©ë²•
 
-     2) ÆÄ»ý Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ ¸ÕÀú È£ÃâÇÏµÇ ¾ÆÁ÷ ½ÇÇàÇÏÁö ¾ÊÀº »óÈ²¿¡¼­
-         ±â¹Ý Å¬·¡½ºÀÇ »ý¼ºÀÚ¸¦ È£ÃâÇÏ¿© ½ÇÇàÀ» ¿Ï·áÇÏ¸é
-         ÆÄ»ý Å¬·¡½ºÀÌ »ý¼ºÀÚ ÄÚµå¸¦ ½ÇÇàÇÑ´Ù.
-
-
-     3) protected Å°¿öµå
-             »ó¼Ó °ü°è¿¡ ÀÖ´Â Å¬·¡½ºµé¸¸ Á÷Á¢ »ç¿ë
+     2) íŒŒìƒ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ ë¨¼ì € í˜¸ì¶œí•˜ë˜ ì•„ì§ ì‹¤í–‰í•˜ì§€ ì•Šì€ ìƒí™©ì—ì„œ
+         ê¸°ë°˜ í´ëž˜ìŠ¤ì˜ ìƒì„±ìžë¥¼ í˜¸ì¶œí•˜ì—¬ ì‹¤í–‰ì„ ì™„ë£Œí•˜ë©´
+         íŒŒìƒ í´ëž˜ìŠ¤ì´ ìƒì„±ìž ì½”ë“œë¥¼ ì‹¤í–‰í•œë‹¤.
 
 
- 2) ±â¹Ý Å¬·¡½º¿Í ÆÄ»ý Å¬·¡½º¿¡ Æ÷ÀÎÅÍÇü ¸â¹ö º¯¼ö°¡ ÀÖ´Â °æ¿ì
+     3) protected í‚¤ì›Œë“œ
+             ìƒì† ê´€ê³„ì— ìžˆëŠ” í´ëž˜ìŠ¤ë“¤ë§Œ ì§ì ‘ ì‚¬ìš©
+
+
+ 2) ê¸°ë°˜ í´ëž˜ìŠ¤ì™€ íŒŒìƒ í´ëž˜ìŠ¤ì— í¬ì¸í„°í˜• ë©¤ë²„ ë³€ìˆ˜ê°€ ìžˆëŠ” ê²½ìš°
    (ex. PFArrayD ----> PFArrayDBak)
 
-   º¹»ç »ý¼ºÀÚ, ÇÒ´ç ¿¬»êÀÚ, ¼Ò¸êÀÚ¸¦ 
-     a) ±íÀº º¹»ç/»èÁ¦ ¹æ½ÄÀ¸·Î ±¸ÇöÇÒÁö
-     b) ¾èÀº º¹»ç/»èÁ¦ ¹æ½ÄÀ¸·Î ±¸ÇöÇÒÁö
+   ë³µì‚¬ ìƒì„±ìž, í• ë‹¹ ì—°ì‚°ìž, ì†Œë©¸ìžë¥¼ 
+     a) ê¹Šì€ ë³µì‚¬/ì‚­ì œ ë°©ì‹ìœ¼ë¡œ êµ¬í˜„í• ì§€
+     b) ì–•ì€ ë³µì‚¬/ì‚­ì œ ë°©ì‹ìœ¼ë¡œ êµ¬í˜„í• ì§€
 
-    ±íÀº º¹»ç/»èÁ¦ ¹æ½ÄÀÎ °æ¿ì ºÎ¸ð Å¬·¡½ºÀÇ º¹»ç »ý¼ºÀÚ, ÇÒ´ç ¿¬»êÀÚ, ¼Ò¸êÀÚ¸¦
-    »ç¿ëÇÏ¿© ÀÚ½Ä Å¬·¡½ºÀÇ º¹»ç »ý¼ºÀÚ, ÇÒ´ç ¿¬»êÀÚ, ¼Ò¸êÀÚ¸¦ ±¸ÇöÇÏ´Â ¹æ¹ý!!!
+    ê¹Šì€ ë³µì‚¬/ì‚­ì œ ë°©ì‹ì¸ ê²½ìš° ë¶€ëª¨ í´ëž˜ìŠ¤ì˜ ë³µì‚¬ ìƒì„±ìž, í• ë‹¹ ì—°ì‚°ìž, ì†Œë©¸ìžë¥¼
+    ì‚¬ìš©í•˜ì—¬ ìžì‹ í´ëž˜ìŠ¤ì˜ ë³µì‚¬ ìƒì„±ìž, í• ë‹¹ ì—°ì‚°ìž, ì†Œë©¸ìžë¥¼ êµ¬í˜„í•˜ëŠ” ë°©ë²•!!!
 
-Q. PFArrayDBak ÆÄ»ý Å¬·¡½º¸¦ Á¤ÀÇÇÑ °ÍÀ» Èä³»³»¾î
-    TableBak ÆÄ»ý Å¬·¡½º¸¦ Á¤ÀÇÇÏ½Ã¿À.
+Q. PFArrayDBak íŒŒìƒ í´ëž˜ìŠ¤ë¥¼ ì •ì˜í•œ ê²ƒì„ í‰ë‚´ë‚´ì–´
+    TableBak íŒŒìƒ í´ëž˜ìŠ¤ë¥¼ ì •ì˜í•˜ì‹œì˜¤.
 
-     - º¹»ç»ý¼ºÀÚ, ÇÒ´ç¿¬»êÀÚ, ¼Ò¸êÀÚ¸¦ ±íÀº ¹æ½ÄÀ» ¼±ÅÃÇØ ±¸ÇöÇÏ½Ã¿À.
-     - backup°ú restore ¸Þ¼Òµå¸¦ Ãß°¡ÇÏ½Ã¿À.
-     - TableBak Å¬·¡½º¸¦ »ç¿ëÇÏ´Â main ÇÔ¼ö¸¦ ÀÛ¼ºÇÏ½Ã¿À.
+     - ë³µì‚¬ìƒì„±ìž, í• ë‹¹ì—°ì‚°ìž, ì†Œë©¸ìžë¥¼ ê¹Šì€ ë°©ì‹ì„ ì„ íƒí•´ êµ¬í˜„í•˜ì‹œì˜¤.
+     - backupê³¼ restore ë©”ì†Œë“œë¥¼ ì¶”ê°€í•˜ì‹œì˜¤.
+     - TableBak í´ëž˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ëŠ” main í•¨ìˆ˜ë¥¼ ìž‘ì„±í•˜ì‹œì˜¤.
 
 Q
-  - PFArrayD Å¬·¡½º¿Í PFArrayDBak Å¬·¡½º¸¦ »ç¿ëÇÏ´Â ¾Æ·¡ ¿¹Á¦ ÄÚµå¿¡¼­
-    °¢ ¹®ÀåÀÌ ½ÇÇàµÉ ¶§¸¶´Ù 
-       1) È£ÃâµÇ´Â ¸â¹öÇÔ¼ö¸¦ ³ª¿­ÇÏ°í, 
-       2) °´Ã¼¿¡ Æ÷ÇÔµÈ Æ÷ÀÎÅÍÇü ¸â¹ö¸¦ À¯³äÇÏ¿© °¢ ¹®Àå ½ÇÇà Á÷ÈÄÀÇ °´Ã¼ÀÇ ¸ð¾çÀ» ±×¸®½Ã¿À.
+  - PFArrayD í´ëž˜ìŠ¤ì™€ PFArrayDBak í´ëž˜ìŠ¤ë¥¼ ì‚¬ìš©í•˜ëŠ” ì•„ëž˜ ì˜ˆì œ ì½”ë“œì—ì„œ
+    ê° ë¬¸ìž¥ì´ ì‹¤í–‰ë  ë•Œë§ˆë‹¤ 
+       1) í˜¸ì¶œë˜ëŠ” ë©¤ë²„í•¨ìˆ˜ë¥¼ ë‚˜ì—´í•˜ê³ , 
+       2) ê°ì²´ì— í¬í•¨ëœ í¬ì¸í„°í˜• ë©¤ë²„ë¥¼ ìœ ë…í•˜ì—¬ ê° ë¬¸ìž¥ ì‹¤í–‰ ì§í›„ì˜ ê°ì²´ì˜ ëª¨ì–‘ì„ ê·¸ë¦¬ì‹œì˜¤.
 
 
-´ÙÁß »ó¼Ó
+ë‹¤ì¤‘ ìƒì†
 
-  - µÑ ÀÌ»óÀÇ ±â¹Ý Å¬·¡½º¸¦ »ó¼Ó
+  - ë‘˜ ì´ìƒì˜ ê¸°ë°˜ í´ëž˜ìŠ¤ë¥¼ ìƒì†
   - class A : public B, public C {
     }
 
-  - B¿Í C°¡ µ¿ÀÏÇÑ Å¬·¡½º¶ó¸é AÀÇ °´Ã¼¿¡ Æ÷ÇÔµÉ ¸â¹ö°¡ Áßº¹µÉ ¼ö ÀÖ´Ù. 
-    ÀÌ¶§ B·Î ºÎÅÍ À¯·¡ÇÑ ¸â¹öÀÎÁö, C·Î ºÎÅÍ À¯·¡ÇÑ ¸â¹öÀÎÁö ±¸ºÐÇÏ·Á¸é 
-    ¿µ¿ª ÁöÁ¤ ¿¬»êÀÚ(::)¸¦ »ç¿ëÇÑ´Ù.
+  - Bì™€ Cê°€ ë™ì¼í•œ í´ëž˜ìŠ¤ë¼ë©´ Aì˜ ê°ì²´ì— í¬í•¨ë  ë©¤ë²„ê°€ ì¤‘ë³µë  ìˆ˜ ìžˆë‹¤. 
+    ì´ë•Œ Bë¡œ ë¶€í„° ìœ ëž˜í•œ ë©¤ë²„ì¸ì§€, Cë¡œ ë¶€í„° ìœ ëž˜í•œ ë©¤ë²„ì¸ì§€ êµ¬ë¶„í•˜ë ¤ë©´ 
+    ì˜ì—­ ì§€ì • ì—°ì‚°ìž(::)ë¥¼ ì‚¬ìš©í•œë‹¤.
 
 
 
-°¡»ó »ó¼Ó
+ê°€ìƒ ìƒì†
 
   - class istream : virtual public ios { ... }
     class ostream : virtual public ios { ... }

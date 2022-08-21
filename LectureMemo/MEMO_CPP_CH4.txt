@@ -1,42 +1,42 @@
 
-4. °´Ã¼ Æ÷ÀÎÅÍ¿Í °´Ã¼ ¹è¿­, °´Ã¼ÀÇ µ¿Àû »ý¼º
+4. ê°ì²´ í¬ì¸í„°ì™€ ê°ì²´ ë°°ì—´, ê°ì²´ì˜ ë™ì  ìƒì„±
 
-    - Ã·ºÎ ½½¶óÀÌµå pointerCopyDelete.ppt (P. 1~20±îÁö)
+    - ì²¨ë¶€ ìŠ¬ë¼ì´ë“œ pointerCopyDelete.ppt (P. 1~20ê¹Œì§€)
         
-4.1 °´Ã¼ Æ÷ÀÎÅÍ  
+4.1 ê°ì²´ í¬ì¸í„°  
 
- - Å¬·¡½º Æ÷ÀÎÅÍÇüÀº Á¤¼ö Æ÷ÀÎÅÍÇüÀÇ ¾²ÀÓ»õ¿Í ´Ù¸£Áö ¾Ê´Ù.
+ - í´ëž˜ìŠ¤ í¬ì¸í„°í˜•ì€ ì •ìˆ˜ í¬ì¸í„°í˜•ì˜ ì“°ìž„ìƒˆì™€ ë‹¤ë¥´ì§€ ì•Šë‹¤.
 
-   Á¤¼ö Æ÷ÀÎÅÍÀÇ ¿¹Á¦
+   ì •ìˆ˜ í¬ì¸í„°ì˜ ì˜ˆì œ
 
    int x;
    int* p;
 
    p = &x;
    *p = 123;
-   cout << x;   // 123 Ãâ·Â
+   cout << x;   // 123 ì¶œë ¥
 
 
-   °´Ã¼ Æ÷ÀÎÅÍÀÇ ¿¹Á¦
+   ê°ì²´ í¬ì¸í„°ì˜ ì˜ˆì œ
 
    Circle donut;
    Circle* p;
 
    p = &donut;
-   (*p).setRadius( 10 ); // ¹ÝÁö¸§À» 10À¸·Î ¼³Á¤
-   p->setRadius( 10 );   // ¹ÝÁö¸§À» 10À¸·Î ¼³Á¤ (À§ÀÇ ¹®Àå°ú µ¿ÀÏÇÑ ÀÇ¹Ì)
+   (*p).setRadius( 10 ); // ë°˜ì§€ë¦„ì„ 10ìœ¼ë¡œ ì„¤ì •
+   p->setRadius( 10 );   // ë°˜ì§€ë¦„ì„ 10ìœ¼ë¡œ ì„¤ì • (ìœ„ì˜ ë¬¸ìž¥ê³¼ ë™ì¼í•œ ì˜ë¯¸)
 
-   cout << (*p).getArea();   // ¸éÀûÀ» Ãâ·Â
-   cout << p->getArea();     // ¸éÀûÀ» Ãâ·Â (À§ÀÇ ¹®Àå°ú µ¿ÀÏÇÑ ÀÇ¹Ì)
-
-
-4.2 °´Ã¼ ¹è¿­
-
- - °´Ã¼ ¹è¿­µµ Á¤¼ö ¹è¿­ÀÇ ¾²ÀÓ»õ¿Í ´Ù¸£Áö ¾Ê´Ù.
-   ´Ù¸¸, °´Ã¼¸¦ ¼±¾ðÇÏ¸é ÀÌ °´Ã¼ÀÇ »ý¼ºÀÚ¸¦ ÀÚµ¿À¸·Î È£ÃâÇÑ´Ù´Â Á¡ÀÌ ´Ù¸£´Ù.
+   cout << (*p).getArea();   // ë©´ì ì„ ì¶œë ¥
+   cout << p->getArea();     // ë©´ì ì„ ì¶œë ¥ (ìœ„ì˜ ë¬¸ìž¥ê³¼ ë™ì¼í•œ ì˜ë¯¸)
 
 
-   ¿¹Á¦4-3
+4.2 ê°ì²´ ë°°ì—´
+
+ - ê°ì²´ ë°°ì—´ë„ ì •ìˆ˜ ë°°ì—´ì˜ ì“°ìž„ìƒˆì™€ ë‹¤ë¥´ì§€ ì•Šë‹¤.
+   ë‹¤ë§Œ, ê°ì²´ë¥¼ ì„ ì–¸í•˜ë©´ ì´ ê°ì²´ì˜ ìƒì„±ìžë¥¼ ìžë™ìœ¼ë¡œ í˜¸ì¶œí•œë‹¤ëŠ” ì ì´ ë‹¤ë¥´ë‹¤.
+
+
+   ì˜ˆì œ4-3
 
    class Circle {
      int radius;
@@ -55,27 +55,27 @@
    Circle circleArray[3];   // cf.int intArray[3];
 
 
-   À§ ¿¹Á¦¸¦ ½ÇÇàÇÑ °á°ú´Â?
+   ìœ„ ì˜ˆì œë¥¼ ì‹¤í–‰í•œ ê²°ê³¼ëŠ”?
 
 
-   (ÈùÆ®)
+   (ížŒíŠ¸)
 
-     ¹è¿­¿¡ Æ÷ÇÔµÈ 3°³ÀÇ Circle °´Ã¼¿¡ ´ëÇØ °¢°¢ (±âº») »ý¼ºÀÚ¸¦ È£ÃâÇÑ´Ù.
-
-
+     ë°°ì—´ì— í¬í•¨ëœ 3ê°œì˜ Circle ê°ì²´ì— ëŒ€í•´ ê°ê° (ê¸°ë³¸) ìƒì„±ìžë¥¼ í˜¸ì¶œí•œë‹¤.
 
 
-4.3 µ¿Àû ¸Þ¸ð¸® ÇÒ´ç ¹× ¹ÝÈ¯   4.4 °´Ã¼¿Í °´Ã¼ ¹è¿­ÀÇ µ¿Àû »ý¼º ¹× ¹ÝÈ¯
-
- - new¿Í delete ¿¬»êÀÚ
-
- - new[]¿Í delete[] ¿¬»êÀÚ
-
- - new¿Í new[] ¿¬»êÀÚ·Î »ý¼ºµÈ Á¤¼ö³ª °´Ã¼°¡ À§Ä¡ÇÏ´Â °÷Àº Èü(heap)
-   Áö¿ª º¯¼ö·Î ¼±¾ðµÈ Á¤¼ö³ª °´Ã¼°¡ À§Ä¡ÇÏ´Â °÷Àº ½ºÅÃ(stack)
 
 
-4.5 this Æ÷ÀÎÅÍ
+4.3 ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹ ë° ë°˜í™˜   4.4 ê°ì²´ì™€ ê°ì²´ ë°°ì—´ì˜ ë™ì  ìƒì„± ë° ë°˜í™˜
+
+ - newì™€ delete ì—°ì‚°ìž
+
+ - new[]ì™€ delete[] ì—°ì‚°ìž
+
+ - newì™€ new[] ì—°ì‚°ìžë¡œ ìƒì„±ëœ ì •ìˆ˜ë‚˜ ê°ì²´ê°€ ìœ„ì¹˜í•˜ëŠ” ê³³ì€ íž™(heap)
+   ì§€ì—­ ë³€ìˆ˜ë¡œ ì„ ì–¸ëœ ì •ìˆ˜ë‚˜ ê°ì²´ê°€ ìœ„ì¹˜í•˜ëŠ” ê³³ì€ ìŠ¤íƒ(stack)
+
+
+4.5 this í¬ì¸í„°
 
  - Circle a, b;
 
@@ -86,27 +86,27 @@
    }
 
 
-   a.setRadius(10);À» È£ÃâÇÒ ¶§ this´Â &aÀÌ°í,
+   a.setRadius(10);ì„ í˜¸ì¶œí•  ë•Œ thisëŠ” &aì´ê³ ,
 
-   b.setRadius(20);°ú °°ÀÌ È£ÃâÇÒ ¶§ thisms &bÀÌ´Ù.
+   b.setRadius(20);ê³¼ ê°™ì´ í˜¸ì¶œí•  ë•Œ thisms &bì´ë‹¤.
 
 
- - ½Ç½À¹®Á¦ 2¹ø Æ÷ÀÎÅÍÇü ¸â¹ö º¯¼ö¸¦ °®´Â Å¬·¡½º
+ - ì‹¤ìŠµë¬¸ì œ 2ë²ˆ í¬ì¸í„°í˜• ë©¤ë²„ ë³€ìˆ˜ë¥¼ ê°–ëŠ” í´ëž˜ìŠ¤
 
- - ½Ç½À¹®Á¦ 8¹ø Family Å¬·¡½º: 4.1~4.5¸¦ Á¾ÇÕÇÑ ³»¿ëÀÇ ¿¹Á¦
+ - ì‹¤ìŠµë¬¸ì œ 8ë²ˆ Family í´ëž˜ìŠ¤: 4.1~4.5ë¥¼ ì¢…í•©í•œ ë‚´ìš©ì˜ ì˜ˆì œ
    
 
 
-4.6 string Å¬·¡½º¸¦ ÀÌ¿ëÇÑ ¹®ÀÚ¿­ »ç¿ë
+4.6 string í´ëž˜ìŠ¤ë¥¼ ì´ìš©í•œ ë¬¸ìžì—´ ì‚¬ìš©
 
-  MEMO_CPP_CH2 Âü°í
+  MEMO_CPP_CH2 ì°¸ê³ 
 
 
-  - string Å¬·¡½º È°¿ë ¿¹Á¦
+  - string í´ëž˜ìŠ¤ í™œìš© ì˜ˆì œ
 
-   1) palindrome ÇÁ·Î±×·¥ 
+   1) palindrome í”„ë¡œê·¸ëž¨ 
 
-   2) ÀÔ·Â ¹ÞÀº ÅØ½ºÆ®ÀÇ ÁÙ(line), ´Ü¾î(word), ¾ËÆÄºª ¼ö¸¦ ¼¼´Â ÇÁ·Î±×·¥
+   2) ìž…ë ¥ ë°›ì€ í…ìŠ¤íŠ¸ì˜ ì¤„(line), ë‹¨ì–´(word), ì•ŒíŒŒë²³ ìˆ˜ë¥¼ ì„¸ëŠ” í”„ë¡œê·¸ëž¨
 
 
 

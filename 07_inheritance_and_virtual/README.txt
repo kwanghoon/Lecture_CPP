@@ -1,78 +1,78 @@
 
  
-»ó¼Ó (Ã¹¹øÂ° ÁÖÁ¦)
-- ±³Àç ½½¶óÀÌµå
-- °­ÀÇ ½½¶óÀÌµå
+ìƒì† (ì²«ë²ˆì§¸ ì£¼ì œ)
+- êµìž¬ ìŠ¬ë¼ì´ë“œ
+- ê°•ì˜ ìŠ¬ë¼ì´ë“œ
 
 http://swlab.jnu.ac.kr/wordpress/2016/10/30/cpp-inheritnace1/
 
 
 
-9Àå °¡»óÇÔ¼ö¿Í Ãß»óÅ¬·¡½º
+9ìž¥ ê°€ìƒí•¨ìˆ˜ì™€ ì¶”ìƒí´ëž˜ìŠ¤
 
- - ±³Àç ½½¶óÀÌµå
+ - êµìž¬ ìŠ¬ë¼ì´ë“œ
 
- - °­ÀÇ ½½¶óÀÌµå
+ - ê°•ì˜ ìŠ¬ë¼ì´ë“œ
 
- - ¸Þ¸ð : http://swlab.jnu.ac.kr/wordpress/2016/10/30/cpp-inheritance2/
+ - ë©”ëª¨ : http://swlab.jnu.ac.kr/wordpress/2016/10/30/cpp-inheritance2/
 
 
 =======
 
 [HOMEWORK]
 
-[°úÁ¦] ÅØ½ºÆ®±â¹Ý ·ÑÇÃ·¹À× °ÔÀÓ
+[ê³¼ì œ] í…ìŠ¤íŠ¸ê¸°ë°˜ ë¡¤í”Œë ˆìž‰ ê²Œìž„
 
- - Ã·ºÎ PDF ÆÄÀÏÀ» Âü°í
+ - ì²¨ë¶€ PDF íŒŒì¼ì„ ì°¸ê³ 
 
- - main.cpp ÆÄÀÏ Âü°í
+ - main.cpp íŒŒì¼ ì°¸ê³ 
 
 
-[ »ó¼Ó°ú virtual ÇÔ¼ö È°¿ëÇÏ´Â ÇÁ·ÎÁ§Æ® ]
+[ ìƒì†ê³¼ virtual í•¨ìˆ˜ í™œìš©í•˜ëŠ” í”„ë¡œì íŠ¸ ]
 
-- °øÀ¯ÀÚ·á½ÇÀÇ ·ÑÇÃ·¹ÀÓ °ÔÀÓ ¹®Á¦¸¦ È®ÀåÇÏ¿© ÀÛ¼ºÇÑ´Ù.
+- ê³µìœ ìžë£Œì‹¤ì˜ ë¡¤í”Œë ˆìž„ ê²Œìž„ ë¬¸ì œë¥¼ í™•ìž¥í•˜ì—¬ ìž‘ì„±í•œë‹¤.
 
-- °ÔÀÓ º¸µå 5x5
+- ê²Œìž„ ë³´ë“œ 5x5
 
-- °ÔÀÓ ½ÃÀÛÇÏ¸é Ä³¸¯ÅÍ Human, Cyberdemon, Balrog, Elf¸¦ °¢°¢ ÇÏ³ª¾¿ ¹èÄ¡ÇÑ´Ù.
+- ê²Œìž„ ì‹œìž‘í•˜ë©´ ìºë¦­í„° Human, Cyberdemon, Balrog, Elfë¥¼ ê°ê° í•˜ë‚˜ì”© ë°°ì¹˜í•œë‹¤.
 
-- Creature Å¬·¡½º¸¦ »ó¼Ó¹Þ¾Æ °¢ Ä³¸¯ÅÍ¸¦ Ç¥ÇöÇÏ´Â Å¬·¡½º¸¦ ¸¸µç´Ù.
+- Creature í´ëž˜ìŠ¤ë¥¼ ìƒì†ë°›ì•„ ê° ìºë¦­í„°ë¥¼ í‘œí˜„í•˜ëŠ” í´ëž˜ìŠ¤ë¥¼ ë§Œë“ ë‹¤.
 
-- Creature Å¬·¡½ºÀÇ ¸â¹ö º¯¼ö·Î º¸µå¿¡¼­ Ä³¸¯ÅÍÀÇ À§Ä¡¸¦ ³ªÅ¸³»´Â int x, y¸¦ Ãß°¡ Æ÷ÇÔÇÑ´Ù.
+- Creature í´ëž˜ìŠ¤ì˜ ë©¤ë²„ ë³€ìˆ˜ë¡œ ë³´ë“œì—ì„œ ìºë¦­í„°ì˜ ìœ„ì¹˜ë¥¼ ë‚˜íƒ€ë‚´ëŠ” int x, yë¥¼ ì¶”ê°€ í¬í•¨í•œë‹¤.
 
-- º¸µå¿¡ Potion of hitpoints¿Í Potion of strength¸¦ °¢°¢ 1°³¾¿ ¹èÄ¡ÇÑ´Ù.
+- ë³´ë“œì— Potion of hitpointsì™€ Potion of strengthë¥¼ ê°ê° 1ê°œì”© ë°°ì¹˜í•œë‹¤.
 
-- °ÔÀÓ ÁøÇà °úÁ¤Àº HumanÀÇ hitpoints°¡ 0ÀÌ µÇ°Å³ª
-  3°¡Áö ±«¹° Ä³¸¯ÅÍÀÇ hitpoints°¡ ¸ðµÎ 0ÀÌ µÉ ¶§±îÁö ¾Æ·¡ °úÁ¤À» ¹Ýº¹ÇÑ´Ù.
+- ê²Œìž„ ì§„í–‰ ê³¼ì •ì€ Humanì˜ hitpointsê°€ 0ì´ ë˜ê±°ë‚˜
+  3ê°€ì§€ ê´´ë¬¼ ìºë¦­í„°ì˜ hitpointsê°€ ëª¨ë‘ 0ì´ ë  ë•Œê¹Œì§€ ì•„ëž˜ ê³¼ì •ì„ ë°˜ë³µí•œë‹¤.
 
-    1) ÀÌµ¿ ¹æÇâ left(¿ÞÂÊ), down(¾Æ·¡), up(À§), right(¿À¸¥ÂÊ), stay(±×ÀÚ¸®¿¡ ¸Ó¹«¸£±â)À» ÀÔ·Â ¹Þ¾Æ
-       HumanÀ» ÇÑ Ä­ ÀÌµ¿
+    1) ì´ë™ ë°©í–¥ left(ì™¼ìª½), down(ì•„ëž˜), up(ìœ„), right(ì˜¤ë¥¸ìª½), stay(ê·¸ìžë¦¬ì— ë¨¸ë¬´ë¥´ê¸°)ì„ ìž…ë ¥ ë°›ì•„
+       Humanì„ í•œ ì¹¸ ì´ë™
 
-    2) Cyberdemon, Balrog, Elf´Â ·£´ýÀ¸·Î »óÇÏÁÂ¿ì ÇÑ Ä­¾¿ ÀÌµ¿ÇÏ°Å³ª ±× ÀÚ¸®¿¡¼­ ¸Ó¹«¸¥´Ù.
+    2) Cyberdemon, Balrog, ElfëŠ” ëžœë¤ìœ¼ë¡œ ìƒí•˜ì¢Œìš° í•œ ì¹¸ì”© ì´ë™í•˜ê±°ë‚˜ ê·¸ ìžë¦¬ì—ì„œ ë¨¸ë¬´ë¥¸ë‹¤.
 
-    3) Human°ú Cyberdemon, Balrog, Elf°¡ µ¿ÀÏÇÑ x,y À§Ä¡¿¡ ÀÌ¸£¸é getDamage() ÇÔ¼ö·Î ¼­·Î °ø°Ý
+    3) Humanê³¼ Cyberdemon, Balrog, Elfê°€ ë™ì¼í•œ x,y ìœ„ì¹˜ì— ì´ë¥´ë©´ getDamage() í•¨ìˆ˜ë¡œ ì„œë¡œ ê³µê²©
 
-       (ÀÌ¶§ HumanÀº Cyberdemon, balrog, Elf¸¦ °ø°ÝÇÏ°í, Cyberdemon, balrog, Elf´Â ¼­·Î °ø°ÝÇÏÁö ¾Ê´Â´Ù.)
+       (ì´ë•Œ Humanì€ Cyberdemon, balrog, Elfë¥¼ ê³µê²©í•˜ê³ , Cyberdemon, balrog, ElfëŠ” ì„œë¡œ ê³µê²©í•˜ì§€ ì•ŠëŠ”ë‹¤.)
 
-       (HumanÀÇ x,y À§Ä¡¿¡ Cyberdemon, balrog, Elf°¡ µÑ ÀÌ»ó °°ÀÌ ÀÖÀ» °æ¿ì Human°ú °¢ creature¿Í ½ÖÀ» ÀÌ·ç¾î ¼­·Î °ø°ÝÇÑ´Ù.)
+       (Humanì˜ x,y ìœ„ì¹˜ì— Cyberdemon, balrog, Elfê°€ ë‘˜ ì´ìƒ ê°™ì´ ìžˆì„ ê²½ìš° Humanê³¼ ê° creatureì™€ ìŒì„ ì´ë£¨ì–´ ì„œë¡œ ê³µê²©í•œë‹¤.)
 
-    4) Human Ä³¸¯ÅÍ°¡ PotionÀÌ À§Ä¡ÇÑ °÷À» ÀÌµ¿ÇÏ¸é Potion Á¾·ù¿¡ µû¶ó health ¶Ç´Â hitpoint¸¦ Áõ°¡½ÃÅ²´Ù.
+    4) Human ìºë¦­í„°ê°€ Potionì´ ìœ„ì¹˜í•œ ê³³ì„ ì´ë™í•˜ë©´ Potion ì¢…ë¥˜ì— ë”°ë¼ health ë˜ëŠ” hitpointë¥¼ ì¦ê°€ì‹œí‚¨ë‹¤.
 
-    5) getDamage()¸¦ ½ÇÇàÇÒÇÏ°Å³ª, potionÀ¸·Î heath, hitpoint¸¦ Áõ°¡½ÃÅ³ ¶§ °£´ÜÇÑ ÇÑ ÁÙ ¸Þ½ÃÁö¸¦ Ãâ·ÂÇÑ´Ù.
+    5) getDamage()ë¥¼ ì‹¤í–‰í• í•˜ê±°ë‚˜, potionìœ¼ë¡œ heath, hitpointë¥¼ ì¦ê°€ì‹œí‚¬ ë•Œ ê°„ë‹¨í•œ í•œ ì¤„ ë©”ì‹œì§€ë¥¼ ì¶œë ¥í•œë‹¤.
 
-[º¸³Ê½º Á¡¼ö: °ÔÀÓ Á¾·á Àü¿¡ HumanÀÌ ÀÌ°å´ÂÁö Ãâ·ÂÇÑ ´ÙÀ½ ÀüÃ¼ °ÔÀÓ ÁøÇà °úÁ¤À» ÀÚµ¿À¸·Î Replay]
+[ë³´ë„ˆìŠ¤ ì ìˆ˜: ê²Œìž„ ì¢…ë£Œ ì „ì— Humanì´ ì´ê²¼ëŠ”ì§€ ì¶œë ¥í•œ ë‹¤ìŒ ì „ì²´ ê²Œìž„ ì§„í–‰ ê³¼ì •ì„ ìžë™ìœ¼ë¡œ Replay]
 
-- È­¸é Ãâ·Â ¹æ¹ýÀº ±³Àç 9Àå ¿ÀÇÂÃ§¸°Áö ¹®Á¦ (P.447)¿¡¼­ ¼³¸íÇÑ ¹æ¹ý°ú À¯»çÇÏ°Ô Âü°íÇÏ¼¼¿ä.
+- í™”ë©´ ì¶œë ¥ ë°©ë²•ì€ êµìž¬ 9ìž¥ ì˜¤í”ˆì±Œë¦°ì§€ ë¬¸ì œ (P.447)ì—ì„œ ì„¤ëª…í•œ ë°©ë²•ê³¼ ìœ ì‚¬í•˜ê²Œ ì°¸ê³ í•˜ì„¸ìš”.
 
-[ ÁÖÀÇ »çÇ× ]
+[ ì£¼ì˜ ì‚¬í•­ ]
 
-1) virtual ¸â¹ö ÇÔ¼ö¿Í ´ÙÇü¼ºÀ» È°¿ëÇÏ¿© ³ªÁß¿¡ »õ·Î¿î ±«¹° Ä³¸¯ÅÍ¸¦
-  Ãß°¡ÇÏ´õ¶óµµ µ¿ÀÛÇÏµµ·Ï ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¼¼¿ä.
+1) virtual ë©¤ë²„ í•¨ìˆ˜ì™€ ë‹¤í˜•ì„±ì„ í™œìš©í•˜ì—¬ ë‚˜ì¤‘ì— ìƒˆë¡œìš´ ê´´ë¬¼ ìºë¦­í„°ë¥¼
+  ì¶”ê°€í•˜ë”ë¼ë„ ë™ìž‘í•˜ë„ë¡ í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì„¸ìš”.
 
-    [º¸³Ê½º Á¡¼ö: 2) ÀÚµ¿ Replay µ¿ÀÛÀ» À§ÇØ Å¬·¡½º »ó¼ÓÀ» È°¿ëÇÏ½Ã¿À. ]
+    [ë³´ë„ˆìŠ¤ ì ìˆ˜: 2) ìžë™ Replay ë™ìž‘ì„ ìœ„í•´ í´ëž˜ìŠ¤ ìƒì†ì„ í™œìš©í•˜ì‹œì˜¤. ]
 
-[ Á¦Ãâ ¹æ¹ý ]
+[ ì œì¶œ ë°©ë²• ]
 
-- ¼Ò½º ÄÚµå, outcome.txt¸¦ ÇÐ¹ø_ÀÌ¸§.zipÀ¸·Î ¹­¾î ¾÷·Îµå
+- ì†ŒìŠ¤ ì½”ë“œ, outcome.txtë¥¼ í•™ë²ˆ_ì´ë¦„.zipìœ¼ë¡œ ë¬¶ì–´ ì—…ë¡œë“œ
 
-  (½ÇÇà °á°ú¸¦ ÅØ½ºÆ®·Î Ä¸Ã³ÇØ¼­ outcome.txt¸¦ ÀÛ¼º)
+  (ì‹¤í–‰ ê²°ê³¼ë¥¼ í…ìŠ¤íŠ¸ë¡œ ìº¡ì²˜í•´ì„œ outcome.txtë¥¼ ìž‘ì„±)

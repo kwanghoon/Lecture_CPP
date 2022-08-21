@@ -4,12 +4,12 @@ STL
 http://en.cppreference.com/w/Main_Page
 
 
-1. ÄÁÅ×ÀÌ³Ê (vector, list, stack, queue, set, ...)ÀÇ ÀÌÅÍ·¹ÀÌÅÍ (iterator)
+1. ì»¨í…Œì´ë„ˆ (vector, list, stack, queue, set, ...)ì˜ ì´í„°ë ˆì´í„° (iterator)
 
-   ÄÁÅ×ÀÌ³Ê.begin()°ú ÄÁÅ×ÀÌ³Ê.end()
+   ì»¨í…Œì´ë„ˆ.begin()ê³¼ ì»¨í…Œì´ë„ˆ.end()
 
-   ÀÌÅÍ·¹ÀÌÅÍ++
-   *ÀÌÅÍ·¹ÀÌÅÍ
+   ì´í„°ë ˆì´í„°++
+   *ì´í„°ë ˆì´í„°
 
 
    #include <vector>
@@ -28,30 +28,30 @@ http://en.cppreference.com/w/Main_Page
    cout << endl;
 
 
- - °¢ ÄÁÅ×ÀÌ³Ê´Â ¼­·Î ´Ù¸¥ Á¾·ùÀÇ ÀÌÅÍ·¹ÀÌÅÍ¸¦ Á¦°ø
+ - ê° ì»¨í…Œì´ë„ˆëŠ” ì„œë¡œ ë‹¤ë¥¸ ì¢…ë¥˜ì˜ ì´í„°ë ˆì´í„°ë¥¼ ì œê³µ
 
-  (1) ´Ü¹æÇâ (forward iterarors)
+  (1) ë‹¨ë°©í–¥ (forward iterarors)
      p++
 
-  (2) ¾ç¹æÇâ (bidirectional iterators)
+  (2) ì–‘ë°©í–¥ (bidirectional iterators)
      p++, p--
 
-  (3) ÀÓÀÇÁ¢±Ù (random-access iterators)
+  (3) ì„ì˜ì ‘ê·¼ (random-access iterators)
      p++, p--, p[2], *(p+2)
      (cf. container[2] vs. p[2])
 
         p = container.begin();
-	cout << container[2] << endl; // 3¹øÂ° ¿ä¼Ò
-	cout << p[2] << endl; // 3¹øÂ° ¿ä¼Ò
-	cout << *(p + 2) << endl; // 3¹øÂ° ¿ä¼Ò
+	cout << container[2] << endl; // 3ë²ˆì§¸ ìš”ì†Œ
+	cout << p[2] << endl; // 3ë²ˆì§¸ ìš”ì†Œ
+	cout << *(p + 2) << endl; // 3ë²ˆì§¸ ìš”ì†Œ
 	p++;
 	p++;
-	cout << *p << endl; // 3¹øÂ° ¿ä¼Ò
+	cout << *p << endl; // 3ë²ˆì§¸ ìš”ì†Œ
 	p--; 
-	cout << *p << endl; // 2¹øÂ° ¿ä¼Ò
+	cout << *p << endl; // 2ë²ˆì§¸ ìš”ì†Œ
 
-  (4) ÀĞ±â¸¸ µÇ´Â (read-only iterators)
-     *p = ...; ¸¦ Çã¿ëÇÏÁö ¾ÊÀ½
+  (4) ì½ê¸°ë§Œ ë˜ëŠ” (read-only iterators)
+     *p = ...; ë¥¼ í—ˆìš©í•˜ì§€ ì•ŠìŒ
 
 	vector<int>::const_iterator q;
 	for (q = container.begin(); q != container.end(); q++)
@@ -59,11 +59,11 @@ http://en.cppreference.com/w/Main_Page
 	cout << endl;
 
 	q = container.begin();
-	*q = 0;  // ÄÄÆÄÀÏ ¿¡·¯
+	*q = 0;  // ì»´íŒŒì¼ ì—ëŸ¬
    
-  (5) ÀĞ°í ¾µ ¼ö ÀÖ´Â (mutable iterators)
+  (5) ì½ê³  ì“¸ ìˆ˜ ìˆëŠ” (mutable iterators)
 
-  (6) ¿ª¹æÇâ (reverse iterators)
+  (6) ì—­ë°©í–¥ (reverse iterators)
 
 	vector<int>::reverse_iterator rp;
 	for (rp = container.rbegin(); rp != container.rend(); rp++)
@@ -71,15 +71,15 @@ http://en.cppreference.com/w/Main_Page
 	cout << endl;
 
 
-        // ¿ª¹æÇâ ÀÌÅÍ·¹ÀÌÅÍ·Î ¿ÀÀÎÇÏ´Â ¿¹Á¦
+        // ì—­ë°©í–¥ ì´í„°ë ˆì´í„°ë¡œ ì˜¤ì¸í•˜ëŠ” ì˜ˆì œ
         for(p = container.end(); p != container.begin(); p--)
           ...
 
 
-2. ÄÁÅ×ÀÌ³Ê
+2. ì»¨í…Œì´ë„ˆ
 
- - ¼øÂ÷ ÄÁÅ×ÀÌ³Ê(sequential containers)
-    : ¼ø¼­´ë·Î ¿ø¼ÒµéÀ» ³ª¿­ÇØ¼­ ÀúÀåÇÏ´Â ÄÁÅ×ÀÌ³Ê
+ - ìˆœì°¨ ì»¨í…Œì´ë„ˆ(sequential containers)
+    : ìˆœì„œëŒ€ë¡œ ì›ì†Œë“¤ì„ ë‚˜ì—´í•´ì„œ ì €ì¥í•˜ëŠ” ì»¨í…Œì´ë„ˆ
 
      list, vector, deque
 
@@ -102,10 +102,10 @@ http://en.cppreference.com/w/Main_Page
 
 
 
- - ÄÁÅ×ÀÌ³Ê ¾î´ğÅÍ(container adapters)
-    : ´Ù¸¥ ÄÁÅ×ÀÌ³Ê¸¦ »ç¿ëÇØ¼­ ¸¸µç ÀÀ¿ë ÄÁÅ×ÀÌ³Ê
-      (¿¹: stack<int> ½ºÅÃ ÄÁÅ×ÀÌ³Ê´Â µ¥Å¥ ÄÁÅ×ÀÌ³Ê¸¦ µğÆúÆ®·Î »ç¿ë
-           stack<int, vector<int> > ½ºÅÃ ÄÁÅ×ÀÌ³Ê´Â º¤ÅÍ ÄÁÅ×ÀÌ³Ê¸¦ »ç¿ë)
+ - ì»¨í…Œì´ë„ˆ ì–´ëŒ‘í„°(container adapters)
+    : ë‹¤ë¥¸ ì»¨í…Œì´ë„ˆë¥¼ ì‚¬ìš©í•´ì„œ ë§Œë“  ì‘ìš© ì»¨í…Œì´ë„ˆ
+      (ì˜ˆ: stack<int> ìŠ¤íƒ ì»¨í…Œì´ë„ˆëŠ” ë°í ì»¨í…Œì´ë„ˆë¥¼ ë””í´íŠ¸ë¡œ ì‚¬ìš©
+           stack<int, vector<int> > ìŠ¤íƒ ì»¨í…Œì´ë„ˆëŠ” ë²¡í„° ì»¨í…Œì´ë„ˆë¥¼ ì‚¬ìš©)
 
      stack, queue, priority_queue
 
@@ -127,12 +127,12 @@ http://en.cppreference.com/w/Main_Page
         }
         cout << endl;
 
- - ¿¬ÇÕ ÄÁÅ×ÀÌ³Ê(associative containers)
-     : Å°¿Í °ªÀÇ ½ÖÀ¸·Î ÀÌ·ç¾îÁø ±¸Á¶
+ - ì—°í•© ì»¨í…Œì´ë„ˆ(associative containers)
+     : í‚¤ì™€ ê°’ì˜ ìŒìœ¼ë¡œ ì´ë£¨ì–´ì§„ êµ¬ì¡°
 
      set, map
 
-     (set ÅÛÇÃ¸´Àº Å°¿Í °ªÀÌ µ¿ÀÏÇÏ°Ô Ãë±ŞÇÏ´Â °£´ÜÇÑ ÇüÅÂÀÇ ¿¬ÇÕ ÄÁÅ×ÀÌ³Ê)
+     (set í…œí”Œë¦¿ì€ í‚¤ì™€ ê°’ì´ ë™ì¼í•˜ê²Œ ì·¨ê¸‰í•˜ëŠ” ê°„ë‹¨í•œ í˜•íƒœì˜ ì—°í•© ì»¨í…Œì´ë„ˆ)
 
 
 
@@ -143,9 +143,9 @@ http://en.cppreference.com/w/Main_Page
 
      s.insert('A');
      s.insert('D');
-     s.insert('D');  // ÀÌ¹Ì ÁıÇÕ¿¡ Æ÷ÇÔµÈ ¿ø¼Ò´Â »õ·Î Ãß°¡ÇÏÁö ¾ÊÀ½
+     s.insert('D');  // ì´ë¯¸ ì§‘í•©ì— í¬í•¨ëœ ì›ì†ŒëŠ” ìƒˆë¡œ ì¶”ê°€í•˜ì§€ ì•ŠìŒ
      s.insert('C');
-     s.insert('C');  // ÀÌ¹Ì ÁıÇÕ¿¡ Æ÷ÇÔµÈ ¿ø¼Ò´Â »õ·Î Ãß°¡ÇÏÁö ¾ÊÀ½
+     s.insert('C');  // ì´ë¯¸ ì§‘í•©ì— í¬í•¨ëœ ì›ì†ŒëŠ” ìƒˆë¡œ ì¶”ê°€í•˜ì§€ ì•ŠìŒ
      s.insert('B');
      
      set<char>::const_iterator;
@@ -166,36 +166,36 @@ http://en.cppreference.com/w/Main_Page
      using namespace std;
 
      map<string,string> planets;
-     planets["Mercury"] = "Hot planet";  // ¼ö¼º
-     planets["Venus"] = "Atmosphere of sulfuric acid";  // ±İ¼º
-     planets["Earth"] = "Home"; // Áö±¸
-     planets["Mars"] = "Alien planet"; // È­¼º
-     planets["Jupiter"] = "largest planet in our solar system"; // ¸ñ¼º
-     planets["Saturn"] = "Has rings"; // Åä¼º
-     planets["Uranus"] = "Tilts on its side";  // Ãµ¿Õ¼º
-     planets["Neptune"] = "1500 mile-per-hour winds"; // ÇØ¿Õ¼º
-     planets["Pluto"] = "Dwarf planet"; // ¸í¿Õ¼º
+     planets["Mercury"] = "Hot planet";  // ìˆ˜ì„±
+     planets["Venus"] = "Atmosphere of sulfuric acid";  // ê¸ˆì„±
+     planets["Earth"] = "Home"; // ì§€êµ¬
+     planets["Mars"] = "Alien planet"; // í™”ì„±
+     planets["Jupiter"] = "largest planet in our solar system"; // ëª©ì„±
+     planets["Saturn"] = "Has rings"; // í† ì„±
+     planets["Uranus"] = "Tilts on its side";  // ì²œì™•ì„±
+     planets["Neptune"] = "1500 mile-per-hour winds"; // í•´ì™•ì„±
+     planets["Pluto"] = "Dwarf planet"; // ëª…ì™•ì„±
 
      cout << planets["Mercury"] << endl;
      if (planets.find("Mercury") != planets.end())
      	cout << "Mercury is in the map." << endl;
 
-             // mapÀº Å°¸¦ ±âÁØÀ¸·Î Á¤·ÄÇÏ¹Ç·Î
-             // Earth, Jupiter, Mars, ... ¼ø¼­·Î Ãâ·ÂµÊ
+             // mapì€ í‚¤ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬í•˜ë¯€ë¡œ
+             // Earth, Jupiter, Mars, ... ìˆœì„œë¡œ ì¶œë ¥ë¨
 
      map<string, string>::const_iterator iter;
      for (iter = planets.begin(); iter != planets.end(); iter++)
      	cout << iter->first << " - " << iter->second << endl;     
 
-             // mapÅÛÇÃ¸´Àº pairÅÛÇÃ¸´À» ÀÌ¿ëÇÏ¿© ¿ø¼Ò¸¦ ÀúÀå
-             // pair ÅÛÇÃ¸´Àº ½ÖÀ» ³ªÅ¸³ª´Â Å¬·¡½º¸¦ ¸¸µé¾î³»°í
-             //   first,second°¡ °¢°¢ÀÇ ¿ø¼Ò¸¦ ÀúÀåÇÏ´Â ¸â¹öº¯¼öÀÌ´Ù.
+             // mapí…œí”Œë¦¿ì€ pairí…œí”Œë¦¿ì„ ì´ìš©í•˜ì—¬ ì›ì†Œë¥¼ ì €ì¥
+             // pair í…œí”Œë¦¿ì€ ìŒì„ ë‚˜íƒ€ë‚˜ëŠ” í´ë˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ë‚´ê³ 
+             //   first,secondê°€ ê°ê°ì˜ ì›ì†Œë¥¼ ì €ì¥í•˜ëŠ” ë©¤ë²„ë³€ìˆ˜ì´ë‹¤.
 
 
 
-3. (Á¦³×¸¯) ¾Ë°í¸®Áò
+3. (ì œë„¤ë¦­) ì•Œê³ ë¦¬ì¦˜
 
- ³»¿ëÀ» ÀĞ´Â ¾Ë°í¸®Áò
+ ë‚´ìš©ì„ ì½ëŠ” ì•Œê³ ë¦¬ì¦˜
 
   - find
   - count
@@ -204,7 +204,7 @@ http://en.cppreference.com/w/Main_Page
   - binary_search
 
 
- ³»¿ëÀ» º¯°æÇÒ ¼ö ÀÖ´Â ¾Ë°í¸®Áò
+ ë‚´ìš©ì„ ë³€ê²½í•  ìˆ˜ ìˆëŠ” ì•Œê³ ë¦¬ì¦˜
 
   - copy
   - remove
@@ -212,14 +212,14 @@ http://en.cppreference.com/w/Main_Page
   - random_shuffle
 
 
- ÁıÇÕ ¾Ë°í¸®Áò
+ ì§‘í•© ì•Œê³ ë¦¬ì¦˜
   - includes
   - set_union
   - set_intersection
   - set_difference
 
 
- Á¤·Ä ¾Ë°í¸®Áò
+ ì •ë ¬ ì•Œê³ ë¦¬ì¦˜
   - sort
   - merge
 

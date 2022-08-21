@@ -1,31 +1,31 @@
  
-11Àå & 12Àå Ç¥ÁØ ÀÔÃâ·Â, ÆÄÀÏ ÀÔÃâ·Â
+11ìž¥ & 12ìž¥ í‘œì¤€ ìž…ì¶œë ¥, íŒŒì¼ ìž…ì¶œë ¥
 
  
 
-°­ÀÇ ³ëÆ®
+ê°•ì˜ ë…¸íŠ¸
 
-?Ç¥ÁØ ÀÔÃâ·Â  http://swlab.jnu.ac.kr/wordpress/2016/11/27/cpp-basic-str-io/
-?¹®ÀÚ¿­ ÀÔÃâ·Â  http://swlab.jnu.ac.kr/wordpress/2016/05/13/cppstring/
-?ÆÄÀÏ ÀÔÃâ·Â - ¼øÂ÷ ÆÄÀÏ, ÀÓÀÇ Á¢±Ù ÆÄÀÏ http://swlab.jnu.ac.kr/wordpress/2016/06/02/cppio/
-?ÀÔÃâ·Â Çü½Ä ÁöÁ¤ (cf. C¾ð¾î¿¡¼­ %d %4.2f µî°ú °°Àº ¿ä¼Ò) - Á¶ÀÛÀÚ
-?(ÀÔÃâ·Â ¿¬»êÀÚ ¿À¹ö·Îµù)
+?í‘œì¤€ ìž…ì¶œë ¥  http://swlab.jnu.ac.kr/wordpress/2016/11/27/cpp-basic-str-io/
+?ë¬¸ìžì—´ ìž…ì¶œë ¥  http://swlab.jnu.ac.kr/wordpress/2016/05/13/cppstring/
+?íŒŒì¼ ìž…ì¶œë ¥ - ìˆœì°¨ íŒŒì¼, ìž„ì˜ ì ‘ê·¼ íŒŒì¼ http://swlab.jnu.ac.kr/wordpress/2016/06/02/cppio/
+?ìž…ì¶œë ¥ í˜•ì‹ ì§€ì • (cf. Cì–¸ì–´ì—ì„œ %d %4.2f ë“±ê³¼ ê°™ì€ ìš”ì†Œ) - ì¡°ìž‘ìž
+?(ìž…ì¶œë ¥ ì—°ì‚°ìž ì˜¤ë²„ë¡œë”©)
 
-ÆÄÀÏ ÀÔÃâ·Â
+íŒŒì¼ ìž…ì¶œë ¥
 
- 1) ÆÄÀÏ ¿­±â, ÀÐ±â, Ç¥ÁØ Ãâ·Â, ÆÄÀÏ ´Ý±â
- 2) ÆÄÀÏ ¿­±â, ÀÐ±â, ¾¾¸¦ ¾¾»Ô»Ô·Î ´ëÃ¼ÇÑ°í Ç¥ÁØ Ãâ·Â, ÆÄÀÏ ´Ý±â
- 3) ÆÄÀÏ ¿­±â, ¾µ ÆÄÀÏµµ ¿­±â, ÀÐ°í, ´ëÃ¼ÇÑ ´ÙÀ½ ÆÄÀÏ Ãâ·Â, µÎ ÆÄÀÏ ´Ý±â 
+ 1) íŒŒì¼ ì—´ê¸°, ì½ê¸°, í‘œì¤€ ì¶œë ¥, íŒŒì¼ ë‹«ê¸°
+ 2) íŒŒì¼ ì—´ê¸°, ì½ê¸°, ì”¨ë¥¼ ì”¨ë¿”ë¿”ë¡œ ëŒ€ì²´í•œê³  í‘œì¤€ ì¶œë ¥, íŒŒì¼ ë‹«ê¸°
+ 3) íŒŒì¼ ì—´ê¸°, ì“¸ íŒŒì¼ë„ ì—´ê¸°, ì½ê³ , ëŒ€ì²´í•œ ë‹¤ìŒ íŒŒì¼ ì¶œë ¥, ë‘ íŒŒì¼ ë‹«ê¸° 
 
-ÀÔÃâ·Â Å¬·¡½º
- - istream, ostream ±â¹Ý Å¬·¡½º¿Í
-   ifstream, ofstream, istringstream, ostringstream ÀÚ½Ä Å¬·¡½º
+ìž…ì¶œë ¥ í´ëž˜ìŠ¤
+ - istream, ostream ê¸°ë°˜ í´ëž˜ìŠ¤ì™€
+   ifstream, ofstream, istringstream, ostringstream ìžì‹ í´ëž˜ìŠ¤
 
- - iostream ´ÙÁß »ó¼Ó
+ - iostream ë‹¤ì¤‘ ìƒì†
 
- - io ÀÔÃâ·Â »ó¼ö Å¬·¡½º, °¡»ó »ó¼Ó 
+ - io ìž…ì¶œë ¥ ìƒìˆ˜ í´ëž˜ìŠ¤, ê°€ìƒ ìƒì† 
 
 
-±³Àç ½½¶óÀÌµå
+êµìž¬ ìŠ¬ë¼ì´ë“œ
 
- - Ã·ºÎ ÆÄÀÏ
+ - ì²¨ë¶€ íŒŒì¼

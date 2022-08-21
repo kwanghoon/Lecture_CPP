@@ -1,36 +1,36 @@
 
-[SFML] C++ SFML ÇÁ·Î±×·¡¹Ö
+[SFML] C++ SFML í”„ë¡œê·¸ëž˜ë°
 
  
 
-Ã·ºÎ PDF ÆÄÀÏ¿¡¼­ SFML ¶óÀÌºê·¯¸® ´Ù¿î·Îµå ¹æ¹ý ¹×
+ì²¨ë¶€ PDF íŒŒì¼ì—ì„œ SFML ë¼ì´ë¸ŒëŸ¬ë¦¬ ë‹¤ìš´ë¡œë“œ ë°©ë²• ë°
 
-Visual Studio ÇÁ·ÎÁ§Æ®¿¡¼­ ÀÌ ¶óÀÌºê·¯¸®¸¦ »ç¿ëÇÏ´Â ¹æ¹ý Âü°í.
+Visual Studio í”„ë¡œì íŠ¸ì—ì„œ ì´ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì‚¬ìš©í•˜ëŠ” ë°©ë²• ì°¸ê³ .
 
-1) ÄÄÆÄÀÏ
-    - SFML ¶óÀÌºê·¯¸® include °æ·Î Ãß°¡
+1) ì»´íŒŒì¼
+    - SFML ë¼ì´ë¸ŒëŸ¬ë¦¬ include ê²½ë¡œ ì¶”ê°€
 
-2) ¸µÅ©
-   - SFML ¶óÀÌºê·¯¸® lib °æ·Î Ãß°¡
+2) ë§í¬
+   - SFML ë¼ì´ë¸ŒëŸ¬ë¦¬ lib ê²½ë¡œ ì¶”ê°€
 
-3) ½ÇÇà
-   - SFML ¶óÀÌºê·¯¸®¸¦ »ç¿ëÇÒ ¶§ ·ÎµùÇÒ dll °æ·Î Ãß°¡   
+3) ì‹¤í–‰
+   - SFML ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì‚¬ìš©í•  ë•Œ ë¡œë”©í•  dll ê²½ë¡œ ì¶”ê°€   
 
-     (ÇÁ·ÎÁ§Æ® ¼Ó¼º : µð¹ö±× - È¯°æ : PATH=%PATH%; ... bin °æ·Î ...   Ãß°¡)
+     (í”„ë¡œì íŠ¸ ì†ì„± : ë””ë²„ê·¸ - í™˜ê²½ : PATH=%PATH%; ... bin ê²½ë¡œ ...   ì¶”ê°€)
 
 
 =======
 [Exercise]
 
-[°úÁ¦] 16Àå º®µ¹±ú±â ÇÁ·Î±×·¥ ÀÛ¼º (SMLF ÇÁ·ÎÁ§Æ® ¼³Á¤ ¹æ¹ý Ã·ºÎÇÕ´Ï´Ù).
+[ê³¼ì œ] 16ìž¥ ë²½ëŒê¹¨ê¸° í”„ë¡œê·¸ëž¨ ìž‘ì„± (SMLF í”„ë¡œì íŠ¸ ì„¤ì • ë°©ë²• ì²¨ë¶€í•©ë‹ˆë‹¤).
 
  
 
- - ¹èÆ÷ÇÑ SFML PDF 16Àå¿¡¼­ ¼³¸íÇÏ´Â º®µ¹±ú±â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ¿© Á¦ÃâÇÏ¼¼¿ä.
+ - ë°°í¬í•œ SFML PDF 16ìž¥ì—ì„œ ì„¤ëª…í•˜ëŠ” ë²½ëŒê¹¨ê¸° í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì—¬ ì œì¶œí•˜ì„¸ìš”.
 
- - Á¦Ãâ ¹æ¹ý
+ - ì œì¶œ ë°©ë²•
 
-    - ¼Ò½º ÄÚµå, È­¸é Ä¸Ã³.JPG
+    - ì†ŒìŠ¤ ì½”ë“œ, í™”ë©´ ìº¡ì²˜.JPG
 
-    - ÇÐ¹ø_ÀÌ¸§.zip ÆÄÀÏ·Î ¾ÐÃàÇØ¼­ ¾÷·ÎµåÇÏ¼¼¿ä.
+    - í•™ë²ˆ_ì´ë¦„.zip íŒŒì¼ë¡œ ì••ì¶•í•´ì„œ ì—…ë¡œë“œí•˜ì„¸ìš”.
 

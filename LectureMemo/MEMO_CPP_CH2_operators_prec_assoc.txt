@@ -1,12 +1,12 @@
-[¸Þ¸ð] C++ ¿¬»êÀÚ ¿ì¼±¼øÀ§¿Í °áÇÕ¼º
+[ë©”ëª¨] C++ ì—°ì‚°ìž ìš°ì„ ìˆœìœ„ì™€ ê²°í•©ì„±
 
 https://msdn.microsoft.com/ko-kr/library/126fe14k.aspx
 
 
 
-º¯¼ö p¸¦ ±¸Á¶Ã¼¸¦ °¡¸®Å°´Â Æ÷ÀÎÅÍ·Î °¡Á¤ÇÏ°í,
+ë³€ìˆ˜ pë¥¼ êµ¬ì¡°ì²´ë¥¼ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°ë¡œ ê°€ì •í•˜ê³ ,
 
-ÀÌ º¯¼ö p¸¦ ÂüÁ¶ÇØ¼­ ±¸Á¶Ã¼ ¸â¹ö f¸¦ ÀÐ´Â´Ù°í ÇÏÀÚ.
+ì´ ë³€ìˆ˜ pë¥¼ ì°¸ì¡°í•´ì„œ êµ¬ì¡°ì²´ ë©¤ë²„ fë¥¼ ì½ëŠ”ë‹¤ê³  í•˜ìž.
 
 
 
@@ -14,11 +14,11 @@ https://msdn.microsoft.com/ko-kr/library/126fe14k.aspx
 
 
 
-Q1) ÀÌ ½Ä¿¡¼­ ¿¬»êÀÚ´Â?
+Q1) ì´ ì‹ì—ì„œ ì—°ì‚°ìžëŠ”?
 
-Q2) ÀÌ ½Ä¿¡¼­ (* p) . f ¼ø¼­·Î ½ÇÇàµÉ±î, * (p . f) ¼ø¼­·Î ½ÇÇàµÉ±î?
+Q2) ì´ ì‹ì—ì„œ (* p) . f ìˆœì„œë¡œ ì‹¤í–‰ë ê¹Œ, * (p . f) ìˆœì„œë¡œ ì‹¤í–‰ë ê¹Œ?
 
-     À§ URLÀÇ À¥»çÀÌÆ®¸¦ Âü°íÇØ¼­ ´äÇÏ½Ã¿À.
+     ìœ„ URLì˜ ì›¹ì‚¬ì´íŠ¸ë¥¼ ì°¸ê³ í•´ì„œ ë‹µí•˜ì‹œì˜¤.
 
 
 

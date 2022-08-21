@@ -3,41 +3,41 @@
 
 =====
 
-½Ç½À1) Å¬·¡½º ¸¸µé±â ±âÃÊ
+ì‹¤ìŠµ1) í´ëž˜ìŠ¤ ë§Œë“¤ê¸° ê¸°ì´ˆ
 
-1) Á¦°øÇÑ ClassExamples.pdf¸¦ Âü°íÇÏ¿© ´ÙÀ½ 4°³ÀÇ Å¬·¡½º¿¡ ´ëÇÑ °¢ ÇÁ·ÎÁ§Æ®¸¦ ÀÛ¼ºÇÏ¿© Á¦ÃâÇÏ½Ã¿À.
+1) ì œê³µí•œ ClassExamples.pdfë¥¼ ì°¸ê³ í•˜ì—¬ ë‹¤ìŒ 4ê°œì˜ í´ëž˜ìŠ¤ì— ëŒ€í•œ ê° í”„ë¡œì íŠ¸ë¥¼ ìž‘ì„±í•˜ì—¬ ì œì¶œí•˜ì‹œì˜¤.
 
-- Money Å¬·¡½º (1st Trial, 8¹ø)
-- Money Å¬·¡½º (2st Trial, 9¹ø)
-- Fraction Å¬·¡½º
-- GasPump Å¬·¡½º
+- Money í´ëž˜ìŠ¤ (1st Trial, 8ë²ˆ)
+- Money í´ëž˜ìŠ¤ (2st Trial, 9ë²ˆ)
+- Fraction í´ëž˜ìŠ¤
+- GasPump í´ëž˜ìŠ¤
 
-2) H1 ~ H10 ¹®Á¦¸¦ Ç®¾î ÅØ½ºÆ® ÆÄÀÏ¿¡ ÀÛ¼ºÇÏ¿© Á¦ÃâÇÏ½Ã¿À.
+2) H1 ~ H10 ë¬¸ì œë¥¼ í’€ì–´ í…ìŠ¤íŠ¸ íŒŒì¼ì— ìž‘ì„±í•˜ì—¬ ì œì¶œí•˜ì‹œì˜¤.
 
-[Á¦Ãâ ¹æ¹ý]
-1) µð·ºÅä¸® ¹× ÆÄÀÏ ±¸Á¶¸¦ ¾Æ·¡¿Í °°ÀÌ ÀÛ¼ºÇÏ°í ÃÖ»óÀ§ µð·ºÅä¸®¿¡ ÇÐ¹ø_ÀÌ¸§À¸·Î ¸í¸íÇÏ½Ã¿À. (¿¹:201812344_È«±æµ¿)
-   (¸Ç »óÀ§ µð·ºÅä¸®) ÇÐ¹ø_ÀÌ¸§
-     -> (¹Ù·Î ¾Æ·¡ µð·ºÅä¸®) Money1, Money2 Fraction, GasPump µð·ºÅä¸®¿Í H1_10_answer.txt ÆÄÀÏ
-     -> °¢ ¼­ºê µð·ºÅä¸®¿¡ main.cpp¿Í ÇØ´ç Å¬·¡½ºÀÇ cpp¿Í h ÆÄÀÏ ÇÏ³ª¾¿. ÃÑ 3°³ÀÇ ÆÄÀÏÀ» Æ÷ÇÔ½ÃÅ´
-         ¿¹)  Money1 µð·ºÅä¸®
+[ì œì¶œ ë°©ë²•]
+1) ë””ë ‰í† ë¦¬ ë° íŒŒì¼ êµ¬ì¡°ë¥¼ ì•„ëž˜ì™€ ê°™ì´ ìž‘ì„±í•˜ê³  ìµœìƒìœ„ ë””ë ‰í† ë¦¬ì— í•™ë²ˆ_ì´ë¦„ìœ¼ë¡œ ëª…ëª…í•˜ì‹œì˜¤. (ì˜ˆ:201812344_í™ê¸¸ë™)
+   (ë§¨ ìƒìœ„ ë””ë ‰í† ë¦¬) í•™ë²ˆ_ì´ë¦„
+     -> (ë°”ë¡œ ì•„ëž˜ ë””ë ‰í† ë¦¬) Money1, Money2 Fraction, GasPump ë””ë ‰í† ë¦¬ì™€ H1_10_answer.txt íŒŒì¼
+     -> ê° ì„œë¸Œ ë””ë ‰í† ë¦¬ì— main.cppì™€ í•´ë‹¹ í´ëž˜ìŠ¤ì˜ cppì™€ h íŒŒì¼ í•˜ë‚˜ì”©. ì´ 3ê°œì˜ íŒŒì¼ì„ í¬í•¨ì‹œí‚´
+         ì˜ˆ)  Money1 ë””ë ‰í† ë¦¬
                  Money.h, Money.cpp, main.cpp
-         ¿¹)  GasPump µð·ºÅä¸®
+         ì˜ˆ)  GasPump ë””ë ‰í† ë¦¬
                  GasPump.h, GasPump.cpp, main.cpp
 
-     -> H1 ~ H10Àº ÅØ½ºÆ® ÆÄÀÏ H1_10_answer.txt¿¡ ÀÛ¼ºÇÏ¿© ¸Ç »óÀ§ µð·ºÅä¸®¿¡ Æ÷ÇÔ½ÃÅ²´Ù.
-(ÁÖÀÇ)
- 1) Á¦Ãâ ¹æ¹ýÀ» ÁöÅ°Áö ¾ÊÀ¸¸é °¨Á¡
- 2) Visual Studio ÇÁ·ÎÁ§Æ® ºÎ°¡ ÆÄÀÏÀ» Á¦ÃâÇÏÁö ¾Ê½À´Ï´Ù.
+     -> H1 ~ H10ì€ í…ìŠ¤íŠ¸ íŒŒì¼ H1_10_answer.txtì— ìž‘ì„±í•˜ì—¬ ë§¨ ìƒìœ„ ë””ë ‰í† ë¦¬ì— í¬í•¨ì‹œí‚¨ë‹¤.
+(ì£¼ì˜)
+ 1) ì œì¶œ ë°©ë²•ì„ ì§€í‚¤ì§€ ì•Šìœ¼ë©´ ê°ì 
+ 2) Visual Studio í”„ë¡œì íŠ¸ ë¶€ê°€ íŒŒì¼ì„ ì œì¶œí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.
 
 
 
-½Ç½À2) Å¬·¡½º »ý¼ºÀÚ, ¼Ò¸êÀÚ, ÃÊ±âÈ­¼½¼Ç
+ì‹¤ìŠµ2) í´ëž˜ìŠ¤ ìƒì„±ìž, ì†Œë©¸ìž, ì´ˆê¸°í™”ì„¹ì…˜
 
-ÇÐ¹ø_ÀÌ¸§ Æú´õ
+í•™ë²ˆ_ì´ë¦„ í´ë”
  - main.cpp
  - DayOfYear.h
  - DayOfYear.cpp
- - output.txt     <=== ½ÇÇà °á°ú (»ý¼ºÀÚ ¼Ò¸êÀÚ È£ÃâµÇ¾ú´Ù´Â ¸Þ½ÃÁö)
+ - output.txt     <=== ì‹¤í–‰ ê²°ê³¼ (ìƒì„±ìž ì†Œë©¸ìž í˜¸ì¶œë˜ì—ˆë‹¤ëŠ” ë©”ì‹œì§€)
 
-ZIP ÆÄÀÏ·Î ¾ÐÃàÇØ¼­ ¿Ã·ÁÁÖ¼¼¿À.
+ZIP íŒŒì¼ë¡œ ì••ì¶•í•´ì„œ ì˜¬ë ¤ì£¼ì„¸ì˜¤.
 

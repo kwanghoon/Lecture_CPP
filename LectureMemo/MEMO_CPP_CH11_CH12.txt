@@ -1,0 +1,143 @@
+
+12장. 스트림과 파일 입출력
+
+
+(1) 파일 다루는 프로그램의 기본적인 패턴
+
+  - 파일을 열고, 데이터를 읽거나 출력하고, 파일을 닫기
+    (디스플레이 12.1 예제)
+
+  - #include <fstream>
+    using namespace std;
+    ...
+
+    ifstream inStream;
+    ofstream outStream;
+
+    inStream.open("infile.txt");
+    outStream.open("outfile.txt");
+
+    int first, second, thrid;
+    inStream >> first >> second;
+    outStream << "first=" << first << endl;
+    outStream << "second=" << second << endl;
+
+    inStream.close();
+    outStream.close();
+
+
+
+(2) 파일의 데이터를 모두(파일의 끝에 도달할 때까지) 읽기 
+
+  - 
+    ... 파일 열기 ...
+
+
+    int next;
+    while ( instream >> next ) {
+        cout << next << endl;
+    }
+
+    ... 파일 닫기 ...
+
+
+  - 
+
+    ... 파일 열기 ...
+
+
+    int next;
+    while ( inStream.eof() == false ) {
+        inStream >> next;
+        cout << next << endl;
+    }
+
+    ... 파일 닫기 ...
+
+
+  - 
+
+
+(3) 문자열로 출력하고, 문자열에서 입력받기
+
+    #include <sstream>
+    #include <string>
+    using namespace std;
+
+    // 문자열로 출력
+    ostringstream ost;
+
+    ost << 123;
+
+    string s = ost.str();  // "123"
+
+
+
+    // 문자열에서 입력받기
+    istringstream ist(s);
+    int x;
+
+    ist >> x;    // 123
+
+
+  
+  (cf. 9장 슬라이드의 페이지 17)
+
+    string concat(conststring& cs1, conststring& cs2 ) {
+         ostringstreamost; // s = concat(“Hello”, “World”);
+         ost<< cs1 << cs2; // s는“HelloWorld”
+         return ost.str();
+    }
+
+
+   void wordPerLine(conststring& s) { // wordPerLine(“Hello World”);
+         istringstreamist( s ); // 출력결과:
+         string w; // Hello<return>
+         while ( ist>> w ) // World<return>
+             cout<< w << endl;
+    }
+
+
+(4) 파일 임의 접근 (vs. 파일 순차 접근 (1) ~ (3) )
+
+   - 텍스트 파일 처리 방식 => 보통 파일의 처음에서 끝까지 순서대로 읽음
+
+   - 특정 MP3 파일에서 가수 정보만을 얻으려면
+     해당 정보가 저장된 위치로 이동해서  (파일 임의 접근!)
+     가수 정보를 읽는다.
+
+   - #include <fstream>
+     using namespace std;
+
+     fstream rwStream;
+
+     rwStream.open ( “stuff”, ios::in | ios::out );  // 입출력 모드를 지정
+
+     rwStream.seekp ( 1000 );  // 1000번째 바이트 위치로 put-pointer를 이동
+     rwStream.seekg ( 1000 );  // 1000번째 바이트 위치로 get-pointer를 이동
+
+     rwStream.get ( symbol );  // char symbol;
+     rwStream.put ( symbol );
+
+     rwStream.close ();
+
+
+=====
+
+Hangman 예제
+
+ words.txt 
+
+ 단어 세기
+
+ 입력한 알파벳을 set<char> s;으로 저장하고
+ s.find( key )
+ s.count()
+ 활용
+
+ 소문자로 미리 환원
+ 단어에서 알파벳이 아닌 문자는 처음부터 보여주고
+ 알파벳인 문자만 처음에 -로 표시
+
+ 
+

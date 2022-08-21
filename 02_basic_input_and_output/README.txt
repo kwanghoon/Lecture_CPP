@@ -1,14 +1,14 @@
 
-°­ÀÇ ³ëÆ®: [CPP] ±âº» ÇÁ·Î±×·¥ ±¸Á¶ ¹× ÀÔÃâ·Â 
+ê°•ì˜ ë…¸íŠ¸: [CPP] ê¸°ë³¸ í”„ë¡œê·¸ëž¨ êµ¬ì¡° ë° ìž…ì¶œë ¥ 
    - http://swlab.jnu.ac.kr/wordpress/2016/11/27/cpp-basic-str-io/
- °­ÀÇ ³ëÆ®: [CPP] ¹®ÀÚ¿­
+ ê°•ì˜ ë…¸íŠ¸: [CPP] ë¬¸ìžì—´
    - http://swlab.jnu.ac.kr/wordpress/2016/05/13/cppstring/
 
- °­ÀÇ½Ã°£¿¡ ÀÛ¼ºÇÑ ¿¹Á¦ ÆÄÀÏ : Ã·ºÎ ZIP ÆÄÀÏ Âü°í.
+ ê°•ì˜ì‹œê°„ì— ìž‘ì„±í•œ ì˜ˆì œ íŒŒì¼ : ì²¨ë¶€ ZIP íŒŒì¼ ì°¸ê³ .
 
 
 =====
 
-[½Ç½À] ÇÁ·Î±×·¥±âº»±¸Á¶ ¹× ¹®ÀÚ¿­ (ÅØ½ºÆ® ÀÔ·Â¹Þ¾Æ È÷½ºÅä±×·¥ ±×¸®±â)
- - ¿¬½À¹®Á¦ : http://swlab.jnu.ac.kr/wordpress/2016/11/27/cpp-basic-str-io/
+[ì‹¤ìŠµ] í”„ë¡œê·¸ëž¨ê¸°ë³¸êµ¬ì¡° ë° ë¬¸ìžì—´ (í…ìŠ¤íŠ¸ ìž…ë ¥ë°›ì•„ ížˆìŠ¤í† ê·¸ëž¨ ê·¸ë¦¬ê¸°)
+ - ì—°ìŠµë¬¸ì œ : http://swlab.jnu.ac.kr/wordpress/2016/11/27/cpp-basic-str-io/
 
