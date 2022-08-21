@@ -6,12 +6,12 @@ int main() {
 	string word;
 	string line;
 
-	//cout << "단어 입력: ";
+	//cout << "Input a word: ";
 	//cin >> word;
 	//cout << word << endl;
 
-	cout << "줄/라인 입력: ";
-	getline(cin, line); // geline은 전역함수
+	cout << "Input a line: ";
+	getline(cin, line); // geline is a global function
 	cout << line << endl;
 
 	return 0;

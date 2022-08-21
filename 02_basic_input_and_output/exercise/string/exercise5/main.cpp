@@ -7,7 +7,7 @@ int main() {
 	ostringstream ost;
 
 	ost << 123 << "," << 456; // sprintf
-	cout << ost.str();
+	cout << ost.str() << endl;
 
 	istringstream ist("choi kwanghoon");  // sscanf
 	string w1, w2;

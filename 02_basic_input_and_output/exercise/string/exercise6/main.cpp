@@ -11,7 +11,7 @@ int main() {
 	while (cin >> word) {
 		count = count + 1;
 	}
-	// EOF¿¡ µµ´Þ
+	// We are at EOF!
 	cout << "Total: " << count << endl;
 
 	return 0;

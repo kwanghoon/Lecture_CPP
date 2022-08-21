@@ -20,7 +20,7 @@ int main() {
 	string s5(s4); // s4를 가지고 s5를 초기화
 
 	if (s4 == s5) {    // strcmp(str4, str5)==0
-		cout << "s4와 s5는 동일함" << endl;
+		cout << "s4 == s5" << endl;
 	}
 
 
