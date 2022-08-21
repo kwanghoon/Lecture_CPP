@@ -16,6 +16,6 @@ int main() {
 	stk.push(1); stk.push(2); stk.push(3); stk.push(4); stk.push(5);
 	f(stk);
 	int z;
-	stk.pop(z); cout << "±íÀº º¹»ç ¹æ½Ä: " << z << endl;
+	stk.pop(z); cout << "deep copy: " << z << endl;
 }
 
