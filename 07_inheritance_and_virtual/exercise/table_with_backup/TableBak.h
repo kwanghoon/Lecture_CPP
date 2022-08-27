@@ -10,8 +10,8 @@ public:
 	TableBak(const TableBak& tablebak);
 	~TableBak();
 	const TableBak& operator=(const TableBak& tablebak);
-	// void backup();
-	// void restore();
+	void backup();
+	void restore();
 private:
 	int sizebak;
 	string* pbak;

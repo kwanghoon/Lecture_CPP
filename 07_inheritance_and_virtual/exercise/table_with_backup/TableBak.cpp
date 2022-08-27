@@ -22,7 +22,15 @@ TableBak::TableBak(const TableBak& tablebak) : Table(tablebak) {
 }
 
 const TableBak& TableBak::operator=(const TableBak& tablebak) {
-
+        this->Table::operator=(tablebak);
+        if (this != & tablebak) {
+                this->sizebak = tablebak.sizebak;
+                delete[] this->pbak;
+                this->pbak = new string[this->sizebak];
+                for (int i = 0; i < this->sizebak; i++) 
+                        this->pbak[i] = tablebak.pbak[i];
+        }
+        return *this;
 }
 
 TableBak::~TableBak() {
@@ -30,9 +38,22 @@ TableBak::~TableBak() {
 		delete[] this->pbak;
 }
 
-TableBak::restore() {
-  
+void TableBak::restore() {
+        if (this->p != NULL) delete[] this->p;
+
+        this->p = new string[this->sizebak];
+        this->size = this->sizebak;
+        for (int i = 0; i < this->sizebak; i++) {
+                this->p[i] = this->pbak[i];
+        }
 }
 
-TableBak::backup() {
+void TableBak::backup() {
+        if (this->pbak != NULL) delete[] this->pbak;
+
+        this->pbak = new string[this->size];
+        this->sizebak = this->size;
+        for (int i = 0; i < this->size; i++) {
+                this->pbak[i] = this->p[i];
+        }
 }

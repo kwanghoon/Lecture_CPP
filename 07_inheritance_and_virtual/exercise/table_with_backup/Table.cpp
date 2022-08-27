@@ -37,6 +37,3 @@ const Table& Table::operator=(const Table& table) {
 	}
 	return *this;
 }
-
-
-

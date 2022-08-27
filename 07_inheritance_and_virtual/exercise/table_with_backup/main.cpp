@@ -16,7 +16,7 @@ int main() {
 
 	t3 = t1;
 
-	cout << t3[0] << " " << t3[1] << endl;
+	cout << "t3[0] = " << t3[0] << ", t3[1] = " << t3[1] << endl;
 
 
 	// Using tables with backup/restore.
@@ -28,22 +28,28 @@ int main() {
 
 	tb3 = tb1;
 
-	cout << tb3[0] << " " << tb3[1] << endl;
+	cout << "tb3[0] = " << tb3[0] << ", tb3[1] = " << tb3[1] << endl;
 
 	// backup tb3!
+	tb3[0] = "Nice to";
+	tb3[1] = "meet you";
+
+	cout << "tb3[0] = " << tb3[0] << ", tb3[1] = " << tb3[1] << endl;
+
+        cout << "backup tb3" << endl;
+
 	tb3.backup();  
 
-	tb2[0] = "hello from table2";
-	tb2[1] = "world from table2";
-
-	tb3 = tb2;
-
-	cout << tb3[0] << " " << tb3[1] << endl;
-
 	// restore the backup table!
+	tb3[0] = "Write this";
+	tb3[1] = "with something new";
+
+	cout << "tb3[0] = " << tb3[0] << ", tb3[1] = " << tb3[1] << endl;
+
+        cout << "restore the backup table in tb3" << endl;
 	tb3.restore();  
 
-	cout << tb3[0] << " " << tb3[1] << endl;
+	cout << "tb3[0] = " << tb3[0] << ", tb3[1] = " << tb3[1] << endl;
 
 	return 0;
 }
