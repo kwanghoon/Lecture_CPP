@@ -3,48 +3,19 @@
 using namespace std;
 
 int main() {
-	//pump.initialize();
-	GasPump::initialize();
+	GasPump pump;
 
-	// pump.buyFromJobber(25);
-	GasPump::buyFromJobber(25);
+	pump.initialize();
 
-	// pump.setPricePerGallon(1.50);
-	GasPump::setPricePerGallon(1.50);
+	pump.buyFromJobber(25);
 
-	// pump.displayAmountInMainTank();
-	GasPump::displayAmountInMainTank();
-        GasPump:: displayCostPerGallon();
+	pump.setPricePerGallon(1.50);
 
-	{
-	  GasPump pump1, pump2;
+	pump.displayAmountInMainTank();
 
-	  string name;
+	pump.reset();
+	
+	pump.dispense();
 
-	  while (1) {
-	     cout << "Enter gas pump name (pump1 or pump2 or quit): ";
-	     cin >> name;
-
-	     if (name == "pump1") {
-		pump1.reset();
-
-		pump1.dispense();
-
-		GasPump::displayAmountInMainTank();
-	     }
-	     else if (name == "pump2" ) {
-		pump2.reset();
-
-		pump2.dispense();
-
-		GasPump::displayAmountInMainTank();
-	     }
-	     else if (name == "quit") {
-		break;
-	     }
-	     else {
-		cout << "what?" << endl;
-	     }
-	  }
-	}
+	pump.displayAmountInMainTank();
 }

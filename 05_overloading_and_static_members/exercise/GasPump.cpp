@@ -2,14 +2,10 @@
 #include "GasPump.h"
 using namespace std;
 
-// GasPump.cpp에서 정적멤버변수를 초기화하는 코드를 작성!!!
-double GasPump::gasInMainTank = 0.0;
-double GasPump::costPerGallon = 0.0;
-
 void GasPump::initialize() {
 	gasInMainTank = 0;
-	//gasDispensed = 0;
-	//charge = 0;
+	gasDispensed = 0;
+	charge = 0;
 	costPerGallon = 0;
 }
 
@@ -39,7 +35,7 @@ void GasPump::displayGasNCharges() {
              << "$" << charge << endl;
 
 	// for debugging
-        GasPump::displayAmountInMainTank();
+        displayAmountInMainTank();
 }
 
 void GasPump::dispense() {
