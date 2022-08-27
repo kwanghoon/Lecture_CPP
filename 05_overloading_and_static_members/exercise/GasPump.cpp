@@ -27,29 +27,40 @@ void GasPump::buyFromJobber(double quantityBought) {
 }
 
 void GasPump::displayAmountInMainTank() {
-	cout << gasInMainTank;
+	cout << "Gas in the main tank: " << gasInMainTank << endl;
 }
 
 void GasPump::displayCostPerGallon() {
-	cout << costPerGallon;
+	cout << "Cost per gallon: " << costPerGallon << endl;
 }
 
 void GasPump::displayGasNCharges() {
-	cout << "gallons:" << gasDispensed 
-		<<"		   $" << charge << endl;
+	cout << "Gas fuled : " << gasDispensed << " gallons,  " 
+             << "$" << charge << endl;
+
+	// for debugging
+        GasPump::displayAmountInMainTank();
 }
 
 void GasPump::dispense() {
 	displayGasNCharges();
 
 	while (gasInMainTank > 0) {
-		char quit = cin.get();
-		if (quit == 'q' || quit == 'Q') break;
+		string quit;
+                cout << "Fuel up more (Enter yes or no)? ";
+                cin >> quit;
 
-		gasDispensed += 0.1;
-		charge += 0.1 * costPerGallon;
-		gasInMainTank -= gasDispensed;
+		if (quit == "no") break;
+                else if (quit == "yes") {
 
-		displayGasNCharges();
+		   gasDispensed += 0.1;
+		   charge += 0.1 * costPerGallon;
+		   gasInMainTank -= 0.1;
+
+		   displayGasNCharges();
+                }
+                else {
+                   cout << "what?";
+                }
 	}
 }
