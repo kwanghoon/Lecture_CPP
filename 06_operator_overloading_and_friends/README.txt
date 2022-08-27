@@ -21,6 +21,39 @@
      함수 중복 해결에서 고려했던 자동 형 변환 다시 언급
      클래스 생성자에 의한 자동 형 변환을 고려한 연산자 중복 해결
 
+   [샘플 예제]
+     if (m3 == Money(0, 0))
+	     cout << "0달러 0센트" << endl;
+
+     int x, y, z;
+
+     cout << x << y;
+     cin >> x >> y >> z;
+
+     Money m1, m2, m3;
+
+     cout << m1 << m2; 
+     cin >> m1 >> m2 >> m3;
+
+     cin >> x >> y; // x달러, y센트
+     m1 = Money(x,y);
+     cin >> x >> y; // x달러, y센트
+     m2 = Money(x,y);
+     cin >> x >> y; // x달러, y센트
+     m3 = Money(x,y);
+
+     cout << m1;  // << 출력 연산자, cout 첫번째 피연산자. m1 두번째 피연산자
+
+     cout << m1 << m2; ==> (cout << m1) << m2;
+
+      ostream& cout;
+      isteram& cin;
+
+      1 + 2 + 3 ==> (1 + 2) + 3
+
+      ostream& operator<<(ostream& out, const Money& m1)
+
+
 
 =======
 
