@@ -10,15 +10,15 @@ Stack::Stack(int size) {
 }
 
 Stack::Stack(Stack& stk) {
-	// 2) 깊은 방식
+	// 1) 얕은 방식
 }
 
 Stack::~Stack() {
-	// 2) 깊은 방식
+	// 1) 얕은 방식
 }
 
 Stack& Stack::operator=(Stack& stk) {
-	// 2) 깊은 방식
+	// 1) 얕은 방식
 }
 
 // 스택 연산
