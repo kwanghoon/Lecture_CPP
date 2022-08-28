@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
-#include <sstream> // istringstream, ostringstream
+#include /* 완성하시오 */     // istringstream, ostringstream 클래스를 사용하기 위한 헤더
+
 using namespace std;
 
 int main() {
