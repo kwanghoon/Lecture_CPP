@@ -6,3 +6,12 @@
 입력과 출력 형식은 input.txt와 output.txt를 참고하세요.
 
 (참고) cin, cout, >>, <<, iostream, std 사용
+
+       #include <iostream>
+       using namespace std;
+
+       int main() {
+         ...
+         return 0;
+       }
+
