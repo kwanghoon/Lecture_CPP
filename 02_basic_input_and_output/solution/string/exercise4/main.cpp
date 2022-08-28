@@ -11,7 +11,9 @@ int main() {
 
 	string line;
 
-	// 완성하시오
+	cout << "Input a line: ";
+	getline(cin, line); // geline is a global function
+	cout << line << endl;
 
 	return 0;
 }
