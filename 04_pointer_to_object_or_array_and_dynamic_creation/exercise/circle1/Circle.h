@@ -8,8 +8,8 @@ class Circle {
 	int radius;
 	char garbage;
 public:
-	Circle() : Circle(0) { } // ±âº» »ı¼ºÀÚ
-	Circle(int r) {  // (ÀÏ¹İ) »ı¼ºÀÚ
+	Circle() : Circle(0) { } // ê¸°ë³¸ ìƒì„±ì
+	Circle(int r) {  // (ì¼ë°˜) ìƒì„±ì
 		cout << "A constructor is called: " << r << endl;
 		this->radius = r; 
 		(*this).radius = r;
