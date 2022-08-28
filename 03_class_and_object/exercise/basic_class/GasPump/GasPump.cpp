@@ -9,8 +9,7 @@ void GasPump::initialize() {
 }
 
 void GasPump::reset() {
-	gasDispensed = 0;
-	charge = 0;
+        /* H8 */
 }
 
 void GasPump::setPricePerGallon(double newPrice) {
@@ -26,7 +25,7 @@ void GasPump::displayAmountInMainTank() {
 }
 
 void GasPump::displayCostPerGallon() {
-	cout << costPerGallon;
+	cout << /* H9 */  ;
 }
 
 void GasPump::displayGasNCharges() {
@@ -43,7 +42,7 @@ void GasPump::dispense() {
 
 		gasDispensed += 0.1;
 		charge += 0.1 * costPerGallon;
-		gasInMainTank -= gasDispensed;
+		/* H10 */ ;
 
 		displayGasNCharges();
 	}

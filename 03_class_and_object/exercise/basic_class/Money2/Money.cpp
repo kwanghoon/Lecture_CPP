@@ -5,12 +5,12 @@
 
 int Money::getDollars()
 {
-	return static_cast<int>(amount);
+	return /* H3 */ ;
 }
 
 int Money::getCents()
 {
-	int val = amount * 100;
+	int val = /* H4 */ ;
 
 	return val % 100;
 }
@@ -18,13 +18,13 @@ int Money::getCents()
 void Money::setDollars(int d)
 {
 	int c = getCents();
-	amount = static_cast<double>(c) + (d / 100.0);
+	amount = /* H5 */ ;
 
 }
 
 void Money::setCents(int c)
 {
-	int d = getDollars();
+	int d = /* H6 */  ;
 	amount = static_cast<double>(d) + (c / 100.0);
 
 }
