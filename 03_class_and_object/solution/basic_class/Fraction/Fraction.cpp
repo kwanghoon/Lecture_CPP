@@ -13,12 +13,12 @@ double Fraction::getDouble() {
 	return ( static_cast<double>(numerator) / denominator );
 }
 
-void Fraction::outputReducedFraction() {
+void Fraction::outputReducedFraction(ostream& arg_out) {
 
 	int g;
 
 	g = gcd();
-	cout << numerator / g << "/" << denominator / g << endl;
+	arg_out << numerator / g << "/" << denominator / g << endl;
 }
 
 int Fraction::gcd() {
