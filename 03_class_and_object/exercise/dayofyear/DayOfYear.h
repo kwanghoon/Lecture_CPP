@@ -7,14 +7,14 @@ class DayOfYear
 	int day;
 	
 public:
-	DayOfYear(int monthValue, int dayValue);
-	DayOfYear(int monthValue);
-	DayOfYear();
+	/* 완성하시오 */   // 월 monthValue와  일 dayValueDay를 받는 생성자
+	/* 완성하시오 */   // 월 monthValue을 받는 생성자 
+	/* 완성하시오 */   // 기본 생성자
 
 	void output();
 	int getMonthNumber();
 
-	~DayOfYear();
+	/* 완성하시오 */   // 소멸자
 
 };
 #endif
