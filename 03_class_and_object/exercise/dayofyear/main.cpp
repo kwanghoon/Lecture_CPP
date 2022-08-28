@@ -1,19 +1,15 @@
 #include <iostream>
-#include <cstdlib>
-#include "DayOfYear.h"
+#include /* 완성하시오 */  // DayOfYear 클래스를 포함한 헤더 파일 
 
 using namespace std;
 
 int main(void)
 {
-	DayOfYear date1(2, 3), date2(6), date3;
+	DayOfYear /* 완성하시오 */ ;  // date1 객체 월과 일 지정, date2 객체 월만 지정, date3 기본 생성자 사용
 	cout << "Initialized dates :" << endl;
 	date1.output();
-	cout << endl;
 	date2.output();
-	cout << endl;
 	date3.output();
-	cout << endl;
 
 	return 0;
 }
