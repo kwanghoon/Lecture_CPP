@@ -8,16 +8,16 @@ class Circle {
 	int radius;
 	char garbage;
 public:
-	Circle() : Circle(0) { } // 기본 생성자
+	Circle() : /* 완성하시오 */ { } // 기본 생성자
 	Circle(int r) {  // (일반) 생성자
-		cout << "A constructor is called: " << r << endl;
+		/* 완성하시오 */ ;
 		this->radius = r; 
 		(*this).radius = r;
 	}
 	double getArea();
 	void setRadius(int r);
 	~Circle() {
-		cout << "A deconstructor is called" << endl;
+		/* 완성하시오 */ ;
 	}
 
 };
