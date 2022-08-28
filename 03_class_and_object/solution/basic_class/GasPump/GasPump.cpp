@@ -43,7 +43,7 @@ void GasPump::dispense() {
 
 		gasDispensed += 0.1;
 		charge += 0.1 * costPerGallon;
-		gasInMainTank -= gasDispensed;
+		gasInMainTank -= 0.1;
 
 		displayGasNCharges();
 	}
