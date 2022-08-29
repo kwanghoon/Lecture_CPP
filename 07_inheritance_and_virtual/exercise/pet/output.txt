@@ -1,3 +1,0 @@
-name: Tiny
-name: Tiny
-breed: Great Dane
