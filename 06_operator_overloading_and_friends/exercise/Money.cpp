@@ -3,21 +3,18 @@
 using namespace std;
 #include "Money.h"
 
-const Money operator+(const Money& m1, const Money& m2) {
-	return Money(m1.dollar + m2.dollar, m1.cent + m2.cent);
+/* 완성하시오 */ operator+( /* 완성하시오 */ ) {
+        /* 완성하시오 */
 }
 
-bool operator==(const Money& m1, const Money& m2) {
-	return m1.dollar == m2.dollar 
-		&& m1.cent == m2.cent;
+/* 완성하시오 */ operator==( /* 완성하시오 */ ) {
+        /* 완성하시오 */
 }
 
-ostream& operator<< (ostream& o, const Money& m) {
-	o << "$" << m.dollar << "." << m.cent;
-	return o;
+/* 완성하시오 */ operator<< ( /* 완성하시오 */ ) {
+        /* 완성하시오 */
 }
 
-istream& operator>> (istream& i, Money& m) {
-	i >> m.dollar >> m.cent;
-	return i;
+/* 완성하시오 */ operator>> ( /* 완성하시오 */ ) {
+        /* 완성하시오 */
 }
