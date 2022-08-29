@@ -24,27 +24,38 @@ Table<T>::Table() : Table(10) { // 디폴트 크기 10
 
 template <class T>
 Table<T>::Table(int size) {
-        // 완성하시오.
+	this->size = size;
+	this->p = new T[this->size];
 }
 
 template <class T>
 Table<T>::Table(const Table<T>& table) {
-        // 완성하시오.
+	this->size = table.size;
+	this->p = new T[this->size];
+	for (int i = 0; i < this->size; i++)
+		this->p[i] = table.p[i];
 }
 
 template <class T>
 Table<T>::~Table() {
-        // 완성하시오.
+	delete[] p;
 }
 
 template <class T>
 T& Table<T>::operator[](int index) {
-        // 완성하시오.
+	return this->p[index];
 }
 
 template <class T>
 const Table<T>& Table<T>::operator=(const Table<T>& table) {
-        // 완성하시오.
+	if (this != &table) {  // this : Table*, table : Table
+		this->size = table.size;
+		delete[] this->p;
+		this->p = new T[this->size];
+		for (int i = 0; i < this->size; i++)
+			this->p[i] = table.p[i];
+	}
+	return *this;
 }
 
 

@@ -68,10 +68,17 @@ TableBak<T>::~TableBak() {
 
 template <class T>
 void TableBak<T>::backup() {
-        // 완성하시오.
+	this->sizebak = this->size;
+	this->pbak = new T[this->sizebak];
+	for (int i = 0; i < this->sizebak; i++)
+		this->pbak[i] = this->p[i];
 }
 
 template <class T>
 void TableBak<T>::restore() {
-        // 완성하시오.
+	this->size = this->sizebak;
+	delete[] this->p;
+	this->p = new T[this->size];
+	for (int i = 0; i < this->size; i++)
+		this->p[i] = this->pbak[i];
 }
