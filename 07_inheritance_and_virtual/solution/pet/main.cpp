@@ -25,7 +25,7 @@ int main() {
 
   ret = value_pet.print();  // Q1. 출력 결과?
 
-  assert (ret == /* 완성하시오 */ );
+  assert (ret == "name: Tiny\n");
 
 
   // (2) Solution with virtual
@@ -39,7 +39,7 @@ int main() {
   ptr_pet = ptr_dog; // OK
   ret = ptr_pet->print();  // Q2. 출력 결과?
 
-  assert (ret ==  /* 완성하시오 */ );
+  assert (ret == "name: Tiny\nbreed: Great Dane\n");
 
   return 0;
 }
