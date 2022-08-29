@@ -3,7 +3,7 @@
 
 class Figure {
 public:
-  /* 완성하시오 */  void draw() /* 완성하시오 */ ;  // 가상 함수, 구현 코드가 없는 함수
+  virtual void draw() = 0;
   void center();
 
 protected:

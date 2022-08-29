@@ -8,6 +8,5 @@ void Figure::center() {
   x = 320;
   y = 240;
 
-  this->draw();   // [Exercise] 이 this가 가리키는 객체는 
-                  //            Circle일까, Rectangle일까, Figure일까?
+  this->draw();   // 이 this가 가리키는 객체는 무엇일까?
 }

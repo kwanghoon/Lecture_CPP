@@ -1,9 +1,9 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
-#include /* 완성하시오 */   // Circle의 기반 클래스를 선언한 헤더 파일
+#include "Figure.h"
 
-class Rectangle /* 완성하시오 */  {
+class Rectangle : public Figure {
 public:
   Rectangle(double width, double height);
   Rectangle(double x, double y, double width, double height);

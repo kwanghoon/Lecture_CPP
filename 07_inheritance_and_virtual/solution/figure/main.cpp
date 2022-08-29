@@ -26,10 +26,9 @@ int main() {
   // 3) Circle 객체와 Rectangle 객체를 화면 중심으로 이동하여 그리기
   //    Figure.center()를 호출하면 이 멤버 함수 안에서 draw()를 호출하므로
   //    여기에서는 center()만 호출하면 됨
+  circle.center();
 
-  circle. /* 완성하시오 */ ;
-
-  rectangle. /* 완성하시오 */;
+  rectangle.center();
 
 
   return 0;
