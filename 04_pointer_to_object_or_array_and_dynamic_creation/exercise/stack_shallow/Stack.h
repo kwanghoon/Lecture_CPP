@@ -1,19 +1,16 @@
 #pragma once
-
-//Stack.h
-
+// Stack.h
 class Stack {
 	int size;
-	int top;
+	int top;  
 	int* ptr;
-
 public:
 	Stack();
 	Stack(int size);
 	Stack(Stack& stack);
 	~Stack();
 	Stack& operator=(Stack& stack);
-	//stack 연산
+	// stack 연산
 	void push(int elem);
 	void pop(int& elem);
 	bool isEmpty();

@@ -1,14 +1,14 @@
 // main.cpp
-
 #include <iostream>
+
 using namespace std;
+
 #include "Stack.h"
 
 void f(Stack stk) {
 	int x;
 	stk.pop(x); stk.pop(x);
 }
-
 
 int main() {
 	Stack stk(20);
@@ -18,4 +18,3 @@ int main() {
 	int z;
 	stk.pop(z); cout << "deep copy: " << z << endl;
 }
-
