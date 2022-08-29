@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-/* 완성하시오 */ {
+namespace {
 	string password;
 	bool isValid() { 
 	   if (password.size() >= 8) {
@@ -18,7 +18,7 @@ using namespace std;
 	}
 }
 
-/* 완성하시오 */ {
+namespace Authenticate {
 	void inputPassword() { 
 		do {
 			cout << "Enter your password : ";

@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-/* 완성하시오 */ {
+namespace Authenticate {
 	void inputPassword();
 	string getPassword();
 }
