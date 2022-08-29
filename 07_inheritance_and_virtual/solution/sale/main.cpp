@@ -24,8 +24,8 @@ int main() {
     cout << "Discounted item is not cheaper." << endl;
   }
 
-  assert ( abs ( simple.bill() - /* 완성하시오 */ ) < 0.0001 );   // simple의 최종 가격
-  assert ( abs ( discount.bill() - /* 완성하시오 */ ) < 0.0001 ); // discount의 최종 가격
+  assert ( abs ( simple.bill() - 10.00 ) < 0.0001 );
+  assert ( abs ( discount.bill() - 9.9 ) < 0.0001 );
 
   // 2) Second round
   double price, discount_rate;
