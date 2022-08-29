@@ -8,34 +8,23 @@ Table::Table() : Table(10) { // 디폴트 크기 10
 }
 
 Table::Table(int size) {
-	this->size = size;
-	this->p = new string[this->size];
+        // 완성하시오.
 }
 
 Table::Table(const Table& table) {
-	this->size = table.size;
-	this->p = new string[this->size];
-	for (int i=0; i < this->size; i++)
-		this->p[i] = table.p[i];
+        // 완성하시오.
 }
 
 Table::~Table() {
-	delete[] p;
+	// 완성하시오.
 }
 
 string& Table::operator[](int index) {
-	return this->p[index];
+	// 완성하시오.
 }
 
 const Table& Table::operator=(const Table& table) {
-	if (this != &table) {  // this : Table*, table : Table
-		this->size = table.size;
-		delete[] this->p;
-		this->p = new string[this->size];
-		for (int i = 0; i < this->size; i++)
-			this->p[i] = table.p[i];
-	}
-	return *this;
+        // 완성하시오.
 }
 
 
