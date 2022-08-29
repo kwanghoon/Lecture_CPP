@@ -1,0 +1,54 @@
+#include <iostream>
+#include <fstream>
+#include <sstream>
+using namespace std;
+
+
+// 입력 스트림에 대한 일반적인 함수
+int sum( /* 완성하시오 */  number_source) {
+  int n, total;
+
+  total = 0;
+  while (number_source >> n) 
+    total = total + n;
+
+  return total;
+}
+
+// 출력 스트림에 대한 일반적인 함수
+string sayHello(  /* 완성하시오 */  target) {
+  ostringstream oss;  // just for debugging
+  oss << "Hello";     // just for debugging
+
+  target << "Hello";
+
+  return oss.str();   // just for debugging
+}
+
+int main() {
+
+  // 1) 입력 스트림 (키보드, 파일, 문자열)
+  ifstream inStream("infile.txt");  // 입력 파일 객체 선언하고 열기
+  istringstream istrStream( "123 456 789" );
+
+
+  cout << "sum from cin: "           << sum (  /* 완성하시오 */  )  << endl;
+  cout << "sum from infile.txt: "    << sum (  /* 완성하시오 */  )  << endl;
+  cout << "sum from string stream: " << sum (  /* 완성하시오 */  )  << endl;
+
+
+  inStream.close();   // 입력 파일 닫기
+
+
+  // 2) 출력 스트림 (화면, 파일, 문자열)
+  ofstream outStream("outfile.txt");  // 출력 파일 객체 선언하고 열기
+  ostringstream ostrStream;
+
+  cout << "sayHello to cout: "          << sayHello(  /* 완성하시오 */  )  << endl;
+  cout << "sayHello to outfile.txt: "   << sayHello(  /* 완성하시오 */  )  << endl;
+  cout << "sayHello to string stream: " << sayHello(  /* 완성하시오 */  )  << endl;
+
+  outStream.close();
+
+  return 0;
+}
