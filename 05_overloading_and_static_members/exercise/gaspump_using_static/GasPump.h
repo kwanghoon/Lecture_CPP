@@ -7,18 +7,18 @@
 class GasPump
 {
 public:
-	static void initialize();
+	void initialize();
 	void reset();
-	static void displayCostPerGallon();
+	void displayCostPerGallon();
 	void displayGasNCharges();
 	void dispense();
 private:
 	double gasDispensed, charge;
 public:
-	static void setPricePerGallon(double newPrice);
-	static void buyFromJobber(double quantity);
-	static void displayAmountInMainTank();
+	void setPricePerGallon(double newPrice);
+	void buyFromJobber(double quantity);
+	void displayAmountInMainTank();
 private:
-	static double gasInMainTank, costPerGallon;
+	double gasInMainTank, costPerGallon;
 };
 #endif
