@@ -12,33 +12,12 @@ Table::Table(int n) {
 }
 Table::Table(Table& tbl) {
 	cout << "Table copy constructor is called" << endl;
-	// 1) ¾èÀº º¹»ç
-	// this->size = tbl.size;
-// 	this->table = tbl.table;
 	// 2) ±íÀº º¹»ç
-	this->size = tbl.size;
-	this->table = new int[size];
-	for (int i = 0; i < size; i++)
-		this->table[i] = tbl.table[i];
 }
 Table::~Table() {
-	// ¾èÀº »èÁ¦
-	// this->table = NULL; 
-	// ±íÀº »èÁ¦
-	delete[] this->table;
-	this->table = NULL;
+	// 2) ±íÀº »èÁ¦
 }
 
 Table& Table::operator=(Table& tbl) {
-	// 1) ¾èÀº º¹»ç
-	//this->size = tbl.size;
-	//this->table = tbl.table;
 	// 2) ±íÀº º¹»ç
-	this->size = tbl.size;
-	delete[] this->table;  // º¹»ç»ý¼ºÀÚ¿Í ´Ù¸¥Á¡
-	this->table = new int[this->size];
-	for (int i = 0; i < this->size; i++) {
-		this->table[i] = tbl.table[i];
-	}
-	return *this;
 }
