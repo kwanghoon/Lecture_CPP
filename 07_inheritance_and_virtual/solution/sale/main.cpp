@@ -1,6 +1,6 @@
 #include <iostream>
-#include <cassert>
-#include <cstdlib>
+#include <cassert>    //  assert
+#include <cstdlib>    //  abs ( -10  ) = 10
 using namespace std;
 
 #include "Sale.h"
