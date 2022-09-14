@@ -25,8 +25,8 @@
 
 ```cpp
 
-string str = "Hello World!"
-string firstChar = str[0] 
+string str = "Hello World!";
+char firstChar1 = str[0]; 
 
 ```
 
