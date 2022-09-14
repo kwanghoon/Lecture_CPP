@@ -23,7 +23,7 @@
 
 - string의 문자열에 접근할 수 있는 방법
 
-```
+```cpp
 
 string str = "Hello World!"
 string firstChar = str[0] 
