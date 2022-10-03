@@ -10,7 +10,7 @@ public:
   Circle();
   Circle(int r);
   
-  Circle(Circle& circle);
+  Circle(const Circle& circle);
   Circle& operator=(const Circle& circle);
   ~Circle();
   

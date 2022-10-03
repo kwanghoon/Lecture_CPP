@@ -18,7 +18,7 @@ Circle::Circle(int radius) {
 }
 
 // 복사 생성자
-Circle::Circle(Circle& circle) {
+Circle::Circle(const Circle& circle) {
         cout << "The copy constructor is called" << endl;
         this->radius = circle.radius;
 }
