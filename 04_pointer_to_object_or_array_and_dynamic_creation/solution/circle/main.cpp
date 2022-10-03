@@ -3,6 +3,22 @@ using namespace std;
 
 #include "Circle.h"
 
+
+// 값형 매개변수와 값형 리턴 (value types)
+Circle f_value(Circle c) {
+  return c;
+}
+
+// 참조형 매개변수와 참조형 리턴 (reference types)
+Circle& f_ref(Circle& ref_c) {
+  return ref_c;
+}
+
+// 포인터형 매개변수와 포인터형 리턴  (pointer types)
+Circle* f_ptr(Circle* ptr_to_c) {
+  return ptr_to_c;
+}
+
 int main() {
 	Circle donut(15);
 
@@ -29,6 +45,18 @@ int main() {
 	cir3 = cir2;
 	
 	cout << "cir3: " << cir3.getArea() << endl;
+
+	f_value(donut);
+
+	Circle& ref = f_ref(donut);
+
+	if (&ref == &donut)
+	  cout << "&ref == &donut" << endl;
+
+	Circle* ptr = f_ptr(&donut);
+
+	if (ptr == &donut)
+	  cout << "ptr == &donut" << endl;
 
 	return 0;
 }
