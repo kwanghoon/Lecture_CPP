@@ -23,6 +23,6 @@ void Employee::setSsn(string newSsn) { ssn = newSsn; }
 
 void Employee::setNetPay(double newNetPay) { netPay = newNetPay; }
 
-void Employee::printCheck() const { cout << "ERROR: printCheck"; exit(1); }
+void Employee::printCheck() const { cout << "ERROR: Employee::printCheck" << endl; }
 
 
