@@ -4,9 +4,9 @@
 #include <iostream>
 using namespace std;
 
-#include "Employee.h"
+#include /* Q8: 완성하시오 */
 
-class SalariedEmployee : public Employee {
+class SalariedEmployee /* Q9: 완성하시오 */ {
  public:
   SalariedEmployee();
   SalariedEmployee(string theName, string theSsn, double theWeeklySalary);
