@@ -26,11 +26,11 @@ void example1() {
 	int sz = 10;
 	// auto lambda2 = [sz](const string& a) { return a.size() >= sz;  };
 	// capture list에서 & 사용
-	auto lambda2 = [&sz](const string& a) { return a.size() >= sz;  };
+	/* 완성하시오 */ lambda2 = [&sz](const string& a) /* 완성하시오 */  { return a.size() >= sz;  };
 
 	cout << lambda1("abc", "def ghi") << endl;
 
-	cout << lambda2("hello") << endl;
+	cout << /* 완성하시오 */ ("hello") << endl;
 
 	sz = 3;
 
@@ -51,10 +51,10 @@ void example2() {
 		[&os, c](const string& s) { cout << s << c; });
 
 	sort(words.begin(), words.end(),
-		[](const string& s1, const string& s2) { return s1 > s2;  });
+		[](const string& s1, const string& s2) { return /* 완성하시오 */;  });
 
 	for_each(words.begin(), words.end(),
-		[&os, c](const string& s) { cout << s << c; });
+		 /* 완성하시오 */ );
 
 	int num = 2;
 
