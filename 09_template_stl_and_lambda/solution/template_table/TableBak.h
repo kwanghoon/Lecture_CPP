@@ -8,9 +8,9 @@ class TableBak : public Table<T> {
 public:
 	TableBak();
 	TableBak(int size);
-	TableBak(const TableBak& tablebak);
+	TableBak(const TableBak<T>& tablebak);
 	~TableBak();
-	const TableBak& operator=(const TableBak& tablebak);
+	const TableBak<T>& operator=(const TableBak<T>& tablebak);
 	void backup();
 	void restore();
 private:
