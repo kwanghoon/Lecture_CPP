@@ -5,7 +5,7 @@ using std::endl;
 #include "sort.h"
 
 class MyClassWithNoComparisonNoOutput {
-  // with no support for operator< and operator<<
+  // no support for operator< and operator<<
 };
 
 int main() {
@@ -23,7 +23,7 @@ int main() {
   double b[5] = { 5.5, 4.4, 1.1, 3.3, 2.2 };
   cout << "Given" << endl;
   print( b, 5 );
-  sort ( b, 5 ); // 형 매개변수 T에 double을 대입한 경우
+  sort ( /*  완성하시오  */  ); // 형 매개변수 T에 double을 대입한 경우
   cout << "after sorting" << endl;
   print( b, 5 );
 
