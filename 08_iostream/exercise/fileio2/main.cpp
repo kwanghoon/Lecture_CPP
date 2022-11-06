@@ -8,7 +8,7 @@ int main() {
   ofstream outStream; // 출력 파일 객체 선언
 
   inStream.open("infile.txt");                       // 입력 파일 열기
-  outStream.open("outfile.txt",  /* 완성하시오 */ );  // 출력 파일 열기
+  outStream.open("outfile.txt",  ios::app );  // 출력 파일 열기
 
   string word;
 
