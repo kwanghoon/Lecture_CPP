@@ -21,61 +21,17 @@ int main() {
 
 // C++의 람다식을 설명하기 위한 예제
 void example1() {
-	auto lambda1 = [](const string& a, const string& b) -> bool
-	{ return a.size() < b.size();  };
-	int sz = 10;
-	// auto lambda2 = [sz](const string& a) { return a.size() >= sz;  };
-	// capture list에서 & 사용
-	/* 완성하시오 */ lambda2 = [&sz](const string& a) /* 완성하시오 */  { return a.size() >= sz;  };
-
-	cout << lambda1("abc", "def ghi") << endl;
-
-	cout << /* 완성하시오 */ ("hello") << endl;
-
-	sz = 3;
-
-	cout << lambda2("hello") << endl;
+  // 동영상을 보고 완성하시오.
 }
 
 // 람다의 활용예 1번: 템플릿의 인자
+// for_each, sort, count_if, vector
 void example2() {
-	vector<string> words;
-	words.push_back("a");
-	words.push_back("de");
-	words.push_back("ghi");
-
-	char c = ' ';
-	ostream& os = cout;
-
-	for_each(words.begin(), words.end(),
-		[&os, c](const string& s) { cout << s << c; });
-
-	sort(words.begin(), words.end(),
-		[](const string& s1, const string& s2) { return /* 완성하시오 */;  });
-
-	for_each(words.begin(), words.end(),
-		 /* 완성하시오 */ );
-
-	int num = 2;
-
-	cout <<
-		count_if(words.begin(), words.end(),
-			[num](const string& s) { return s.length() < num;  })
-		<< endl;
+  // 동영상을 보고 완성하시오.
 
 }
 
-// 람다의 활용예 2번: 고차원 함수
+// 람다의 활용예 2번: 고차원 함수 (higher-order functions)
 void example3() {
-	auto addtwointegers = [](int x) -> function<int(int)> {
-		return [=](int y) { return x + y;  };
-	};
-
-	auto higherorder = [](const function<int(int)>& f, int z) {
-		return f(z) * 2;
-	};
-
-	auto answer = higherorder(addtwointegers(7), 8);
-
-	cout << answer << endl;
+  // 동영상을 보고 완성하시오.
 }
