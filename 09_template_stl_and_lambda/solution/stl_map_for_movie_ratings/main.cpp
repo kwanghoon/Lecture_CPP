@@ -11,10 +11,7 @@ int main() {
   map<string, int> mapNumReviewers;
   map<string, int> mapSumReviews;
 
-  cout.setf(ios::fixed);
-  cout.setf(ios::showpoint);
-  cout.precision(1);
-  
+  // Input
   int numRatings;
   cin >> numRatings;
   cin.ignore(2, '\n');
@@ -44,6 +41,11 @@ int main() {
       mapSumReviews[title] += rating;
   }
 
+  // Output
+  cout.setf(ios::fixed);
+  cout.setf(ios::showpoint);
+  cout.precision(1);
+  
   map<string, int>::const_iterator iter;
 
   for (iter = mapNumReviewers.begin();
