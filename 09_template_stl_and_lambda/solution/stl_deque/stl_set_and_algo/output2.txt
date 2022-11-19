@@ -1,0 +1,4 @@
+The similarity is 0.142412
+the intesection set size is 63
+the doc set size is 475
+the query set size is 412
