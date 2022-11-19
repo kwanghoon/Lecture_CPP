@@ -34,9 +34,9 @@ void example2() {
 
   for (p = container.begin(); p != container.end(); p++)
     *p = 0;
-    
-  for (p = container.begin(); p != container.end(); p++)
-    std::cout << *p << " ";
+
+  for (int j = 0; j<container.size(); j++)
+    std::cout << container[j] << " ";
   
   std::cout << std::endl;
 }
