@@ -6,7 +6,6 @@ using namespace std;
 int main() {
   int numSoldiers;
 
-  cout << "Enter the number of soldiers" << endl;
   cin >> numSoldiers;
 
   vector<int> soldiers(numSoldiers);
