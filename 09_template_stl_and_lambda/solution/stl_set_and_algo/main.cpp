@@ -1,3 +1,5 @@
+// Power C++, Chapter 19
+
 #include <iostream>
 #include <cstdlib>
 #include <algorithm>

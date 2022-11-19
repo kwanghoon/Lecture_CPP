@@ -1,3 +1,5 @@
+// Power C++, Chapter 19
+
 #include <string>
 #include <iostream>
 #include <cstdlib>
