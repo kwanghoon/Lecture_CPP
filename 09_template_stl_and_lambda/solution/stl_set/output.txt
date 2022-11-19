@@ -1,0 +1,6 @@
+The set contains: 
+A B C D 
+The set contains "C": yes
+Removing "C".
+A B D 
+The set contains "C": no
