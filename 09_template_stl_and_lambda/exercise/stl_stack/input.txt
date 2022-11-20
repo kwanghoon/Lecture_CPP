@@ -1,0 +1,1 @@
+Container adapters are template classes that are implemented on top of other classes.
