@@ -52,6 +52,8 @@ void example_intersection()
                           std::back_inserter(v_intersection));
     for(int n : v_intersection)
         std::cout << n << ' ';
+    
+    std::cout << std::endl;
 }
 
 
